@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<div onmousedown="deney()">Bu Alan Üzerinde Mouse'un Herhangi Bir Tuşuna Basınız</div>
+	<div id="sonuc"></div>
+	
+<script type="text/javascript" language="javascript">
+	// button	= Belge içerisinde mouse (fare) ile tıklama event'ı (olayı) gerçekleştiğinde mouse'un  (farenin) hangi tuşuna basıldığı	değerini geriye döndürür.
+	/*
+	0			= Sol Tuş
+	1			= Orta Tuş & Tekerlek
+	2			= Sağ Tuş
+	3			= ileri Tuş
+	4			= geri Tuş
+	
+	Internet Explorer ( 8 ve 8 öncesi sürümleri ) // Çalışmıyor.
+	1			= Sol Tuş
+	2			= Sağ Tuş
+	4			= Orta Tuş & Tekerlek
+	*/
+	function deney(){
+		var tusdegeri	= event.button;
+		if(tusdegeri==0){
+		 		document.getElementById("sonuc").innerHTML = "Mouse'un sol tuşuna basıldı.";
+		   }else if(tusdegeri==1){
+		   		document.getElementById("sonuc").innerHTML = "Mouse'un Orta & Tekerlek tuşuna basıldı.";
+		   }else if(tusdegeri==2){
+		   		document.getElementById("sonuc").innerHTML = "Mouse'un Sağ tuşuna basıldı.";
+		   }else if(tusdegeri==3){
+		   		document.getElementById("sonuc").innerHTML = "Mouse'un geri tuşuna basıldı.";
+		   }else if(tusdegeri==4){
+		   		document.getElementById("sonuc").innerHTML = "Mouse'un ileri tuşuna basıldı.";
+		   }
+	}
+	
+</script>	
+</body>
+</html>

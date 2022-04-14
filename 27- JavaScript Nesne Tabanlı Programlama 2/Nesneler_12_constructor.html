@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	//		constructor = Nesnenin constructor'ını (yapıcı metodunu) elde etmek için kullanılır ve constructor'ın (yapıcı metodun) değerini geriye döndürür. Ayrıca kontrol işlemleri içinde kullanılabilir.
+	
+	function bilgiler(){
+		isim:"Volkan";
+	}
+	
+	var sonuc 	= new bilgiler();
+	var islem	= sonuc.constructor; // Direkt fonksiyonu verir.
+	if(sonuc.constructor == bilgiler){
+	   	document.write("Yapıcı metot adı bilgiler'dir" + "<br>");
+	   }else{
+	   	document.write("Yapıcı metot adı bilgiler değildir.");
+	   }
+	// Aynı function ise true değeri verilir ve if çalışır. Yanlış ise false değeri döndürmez. direkt kapanır.
+	document.write(islem);
+	
+</script>	
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+// trim()  	= Değişkenin içeriğinin varsa başındaki ve sonundaki tüm boşlukları temizleyerek değeri geriye döndürür.
+	
+	var ornek 		= "        JavaScript         ";
+	var icerik 		= "Eğitim seti";
+	var sonuc 		= ornek + icerik
+	document.write(ornek + icerik + "<br>");
+	
+	alert(sonuc); // Boşluklu yapı
+	
+	var islem 		= ornek.trim();
+	var uyari 		= islem + " " + icerik;
+	document.write(islem + " " + icerik + "<br>");
+	
+	alert(uyari); // Boşluksuz hali
+		
+	
+	
+</script>	
+</body>
+</html>

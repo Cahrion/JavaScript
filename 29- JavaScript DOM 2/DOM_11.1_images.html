@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	
+	<img id="bir" src="Images - embeds/Javascript_Resmi.jpg" alt="">
+	<img id="iki" src="Images - embeds/HTML_Resmi.jpg" alt="">
+	<img id="uc" src="Images - embeds/CSS_Resmi.jpg" alt="">
+	<div id="sonuc"></div>
+
+<script type="text/javascript" language="javascript">
+	// images	= Belge içerisindeki img tag'ına (etiketine) sahip tüm elemanların referansını elde etmek için kullanılır. Eleman referansları birden fazla ise her bir referans döngüyle elde edilebilir.
+
+	var sonuc = document.images;
+	var metin = "";
+	for(var baslangic = 0;baslangic<sonuc.length;baslangic++){
+		var degerimiz = sonuc[baslangic].src
+		metin 		 += degerimiz + " & ";
+	}
+	document.getElementById("sonuc").innerHTML = "Resim Dosyaları: " + metin;	
+
+</script>	
+</body>
+</html>

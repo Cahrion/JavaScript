@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body style="margin:0;">
+	<div onMouseMove="deney()" class="" style="background-color:#F1F1F1;border:1px solid black;margin:0;padding:0;text-align: center;width: 100%;height: 500px">Mouse'u (Fareyi) bu alan içerisinde gezdiriniz.</div>
+	<div id="sonucalani" style="background-color:#F1F1F1;border:1px solid black;margin:0;margin-top: 5px; padding:0;text-align: center;width: 100%;">Mouse'un Koordinatı ~ (X): <span id="xdeger"></span>(Y): <span id="ydeger"></span></div>
+<script type="text/javascript" language="javascript">
+	// clientX	= Belge içerisindeki herhangi bir mouse(fare) event'i (olayı) gerçekleştiğinde browser penceresine göre mouse'un (farenin) yatay konum koordinatının değerini geriye döndürür 
+	// clientY	= Belge içerisindeki herhangi bir mouse (fare) event'i (olayı) gerçekleştiğinde browser penceresine göre mouse'un (farenin) dikey konum koordinatının değerini geriye döndürür 
+	
+	function deney(){
+		var degerX 	=  event.clientX;
+		var degerY 	=  event.clientY;
+		
+		document.getElementById("xdeger").innerHTML = degerX;
+		document.getElementById("ydeger").innerHTML = degerY;
+	}
+</script>	
+</body>
+</html>

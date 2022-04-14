@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<p class="ikinci">*----*</p>
+	<div class="birinci">Volkan Alakent</div>
+	<div class="ikinci">JavaScript</div>
+	<div class="ucuncu">PHP</div>
+	<div class="dorduncu">CSS</div>
+	<div class="besinci">HTML</div>
+	<div id="sonucalani"></div>
+	<br><br>
+	<button onClick="ornek()">İşlemi Gerçekleştir.</button><br>
+	<button onClick="ornek2()">DIV tagından ilkini büyüt</button><br>
+	<button onClick="ornek3()">DIV tagı ve classı uyanın ilkini büyüt</button><br>
+	<button onClick="ornek4()">ID ile uyanın ilkini göster</button><br>
+	<button onClick="ornek5()">DIV tagı ve ID ile uyanın ilkini göster</button><br>
+	<br><br>
+	
+<script type="text/javascript" language="javascript">
+	// querySelector()	= CSS (Cascading Style Sheet) (Basamaklı Stil Şablonları) seçiçileri ile belgedeki bir elemanın referansını elde etmek için kullanılır.
+	
+		// class'a adanmış şekilde
+
+	function ornek(){
+		document.querySelector(".ikinci").style.fontSize = "25px"; 
+		// taga bakılmadan ilk class değerine bakar.
+	}	
+	// DIV tagına adanmış şekilde
+	function ornek2(){
+		document.querySelector("DIV").style.fontSize = "25px";
+	}	
+	// DIV tagına adanmış ve class'lı şekilde
+	function ornek3(){
+		document.querySelector("DIV.ikinci").style.fontSize = "25px";
+	}	
+	// ID ile erişme
+	function ornek4(){
+		document.querySelector("#sonucalani").innerHTML = "JQuery"; // ID'leri # şeklinde yazılır.
+	}	
+	// Hem tag hemde ID ile erişme
+	function ornek5(){
+		document.querySelector("DIV#sonucalani").innerHTML = "JQuery"; // ID'leri # şeklinde yazılır.
+	}
+	
+	
+	
+</script>	
+</body>
+</html>

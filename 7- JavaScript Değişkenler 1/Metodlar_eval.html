@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+// eval metodu 	=  Kendisine parametre olarak verilen değerleri JavaScript 		kodlamasına çevirerek komut gibi çalıştırır. ve oluşan değeri geriye döndürür.
+	
+var deger1 		=	10;
+var deger2 		=	40;
+
+var sonuc1 		= "deger1 + deger2 <br>";
+document.write(sonuc1);	
+
+	/*eval() metodu gelince */
+	
+var sonuc1 		= eval("deger1 + deger2");
+document.write(sonuc1);	
+	
+		/*functionlarda eval() metodu gelince */
+
+function deneme(){
+	document.write("<br> Merhaba <br>");
+}
+var komut = eval("deneme()");
+
+</script>	
+</body>
+</html>

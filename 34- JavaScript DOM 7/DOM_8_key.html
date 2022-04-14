@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<input id="metin" type="text" onkeypress="ornek()">
+	<div id="sonuc">Klavyeden basılan tuş: <span id="tusdegeri"></span></div>
+	<div id="metindegerleri"></div>
+<script type="text/javascript" language="javascript">
+	// key 	=	Belge içerisindeki onkeypress, onkeydown veya onkeyup event'i (olayi) gerçekleştiğinde klavyeden basılan tuşun değerini geriye döndürür.
+	
+	function ornek(){
+		var basilantus = event.key;
+		document.getElementById("metindegerleri").innerHTML += basilantus;
+		document.getElementById("tusdegeri").innerHTML = "Basılan tuş: " + basilantus;
+	}
+	
+</script>	
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	// test() 	= Kendisine parametre olarak verilen düzenli ifadeyle aranan değer eşleşmesinin oluğ olmadığını kontrol ederek. Boolean (Mantıksal) veri tipinde sonucu geriye döndürür.
+	
+	var metin 	= "Volkan Alakent";
+	var metin2 	= "Volkan Alakent";
+	var ifade 	= new RegExp("Volkan");
+	var ifade2 	= /Volkan/;
+	var sonuc 	= metin.match(metin)
+	var sonuc2 	= metin.match(metin2)
+	
+	var kontrol = ifade.test(metin);
+	var kontrol2 = ifade2.test(metin2);
+	document.write(sonuc + " " + kontrol +"<br>");
+	document.write(sonuc2 + " " + kontrol2);
+	
+</script>	
+</body>
+</html>

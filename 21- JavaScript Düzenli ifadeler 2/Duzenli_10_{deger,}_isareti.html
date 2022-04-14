@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	// {deger,}	= Düzenli ifade dahilinde kontrol edilecek olan değişken içeriği karakter diziliminde bulunan değerin (deger) defa veya daha fazla tekrarlanmış olması gerektiğini belirtmek için kullanılır.
+	
+	var metin 	= "JavaScript eğitiiiIIiim seti";  //Büyük İ değerini yok sayıyor bu yüzden I kullanalım.
+	var ifade 	= new RegExp("i{3,}","i"); 
+	// new RegExp("i{3}","i"); 'den farkı 3 tanesinden daha büyük değerleri de tam olarak alır.
+	var sonuc 	= metin.match(ifade);
+	
+	document.write(sonuc + "<br>")
+	
+</script>	
+</body>
+</html>

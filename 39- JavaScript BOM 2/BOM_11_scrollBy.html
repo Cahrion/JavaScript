@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body style="margin:0;">
+	<button onClick="kaydir()" style="position: fixed">Kaydır</button><br>
+	<button onClick="kaydir2()" style="position: fixed">Ters Kaydır</button>
+	<br>
+	<div style="width:5000px; height: 5000px; background-color: #F1F1F1;text-align: center">
+		JavaScript Eğitim Seti
+	</div>
+<script type="text/javascript" language="javascript">
+	// scrollBy()	= Belge içeriğini belirtilen değere göre kaydırmak için kullanılır.
+	
+	function kaydir(){
+		window.scrollBy(100,100); // right,bottom (Belirtilen değer kadar belirtilen tarafa kayar.)
+	}	
+	function kaydir2(){
+		window.scrollBy(-100,-100); // (-) değerler left,top (Belirtilen değer kadar belirtilen tarafa kayar.)
+	}
+	
+</script>	
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	
+	var bilgiler 	= {
+		isim:"Volkan",
+		soyisim:"Alakent",
+		dogumtarihi:1980
+	};
+	
+	var isimdeğeri			= bilgiler.isim;
+	var soyisimdeğeri		= bilgiler.soyisim;
+	var dogumtarihideğeri	= bilgiler.dogumtarihi;
+	
+	document.write(isimdeğeri 			+ "<br>");
+	document.write(soyisimdeğeri 		+ "<br>");
+	document.write(dogumtarihideğeri 	+ "<br>");
+	
+	bilgiler.ekdetaylar		= function(){
+		alert("İşlem Tamamlandı. ");
+	}
+
+	bilgiler.meslegi		= "Yazılımcı";
+	var meslegideğeri		= bilgiler.meslegi;
+	document.write(meslegideğeri 	+ "<br>");
+	bilgiler.ekdetaylar();
+</script>	
+</body>
+</html>

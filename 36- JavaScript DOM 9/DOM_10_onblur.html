@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	İsim Soyisim : <input id="alanbir" type="text" onfocus="deneybir(this)" onblur="deneyiki(this)"><br>
+	E-Mail : <input id="alaniki" type="text" onfocus="deneybir(this)" onblur="deneyiki(this)">
+<script type="text/javascript" language="javascript">
+	// onblur	= Form içerisindeki bir elemanın odağından çıkıldığında belirtilecek olan fonksiyon çalışır.
+	
+	function deneybir(parametre){
+		parametre.style.backgroundColor = "#F1F1F1";
+		parametre.style.color = "blue";
+	}	
+	function deneyiki(parametre){
+		parametre.style.backgroundColor = "white";
+		parametre.style.color = "black";
+	}
+	
+</script>	
+</body>
+</html>

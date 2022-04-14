@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	// toJSON()		=	Kullanıldığı değişken içeriğine atanmış olan tarih ve saat bilgilerini JSON formatını kullanarak string (metin) veri türünde düz bir metne dönüştürerek. Oluşturduğu değeri geriye döndürür.
+	// JSON 		= 	JavaScript Object Notation 	= JavaScript nesne gösterimi
+	
+	var zaman =  new Date();
+	document.write(zaman + " ~ " + typeof zaman + "<br>");
+	
+	var sonuc = zaman.toJSON();
+	document.write(sonuc + " ~a " + typeof sonuc); // UTC veri tipinde çalışır.
+</script>	
+</body>
+</html>

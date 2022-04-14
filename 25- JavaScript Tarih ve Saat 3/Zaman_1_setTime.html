@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	//	setTime()	= Kendisine parametre olarak belirtilmiş değer doğrultusunda. Kullanıldığı değişken içeriğine zaman damgasına ait tarih bilgisini depolayarak depoladığı değeri geriye döndürür. 
+	// Zaman damgası başlangıc tarihi = (01:01:1970)
+	
+	var zaman 		= new Date();
+	document.write(zaman + "<br>");
+	var zaman2 		= zaman.setTime(-1611193110102); // (-) değerler geçmişe götürür. 1970'den
+	document.write(zaman + "<br>");
+	document.write(zaman2 + "<br>");
+</script>	
+</body>
+</html>

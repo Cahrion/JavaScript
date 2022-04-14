@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+/*
+continue 	= Döngünün o anki işlemini sonlandırarak döngünün başına döner ve işleme kaldığı yerden devam eder.
+*/
+			/* While Döngüsü */
+	
+	var deger 		= 1;
+	while(deger<=10){
+		if((deger>4) && (deger<8)){
+			deger++;
+			continue;
+		   }
+		document.write(deger + "<br>");
+		deger++;
+		  }
+	
+				/* Do While Döngüsü */
+				document.write("<br> <br>")
+				/* Do While Döngüsü */
+	
+	var deger2 		= 1;
+	do{
+		if((deger2>4) && (deger2<8)){
+			deger2++;
+			continue;
+		   }
+		document.write(deger2 + "<br>");
+		deger2++;
+		  }while(deger2<=10);
+	
+				/* For Döngüsü */
+				document.write("<br> <br>")
+				/* For Döngüsü */
+	
+	var deger3 		= 1;
+	for(deger3;deger3<=10;deger3++){
+		if((deger3>4) && (deger3<8)){
+			continue;
+		   }
+		document.write(deger3 + "<br>");
+		  }
+	
+				/* For Döngüsü */
+				document.write("<br> <br>")
+				/* For Döngüsü */
+	
+		var deger4 		= ["1","2","3","4","5","6","7","8","9","10"];
+		for(var a in deger4){
+				if((deger4[a]>4) && (deger4[a]<8)){
+					continue;
+				   }
+				document.write(deger4[a] + "<br>");
+			}
+	
+				/* Obje For Döngüsü */
+				document.write("<br> <br>")
+				/* Obje For Döngüsü */
+	
+		var deger5 		= {bir:"1",iki:"2",uc:"3",dort:"4",bes:"5",alti:"6",yedi:"7",sekiz:"8",dokuz:"9",on:"10"};
+	for(var a in deger5){
+
+			if((deger5[a]=="1") || (deger5[a]=="4")){
+				continue;
+			   }
+			document.write(deger5[a] + "<br>");
+		  }
+	
+
+	
+	
+	
+	
+	
+</script>	
+</body>
+</html> 

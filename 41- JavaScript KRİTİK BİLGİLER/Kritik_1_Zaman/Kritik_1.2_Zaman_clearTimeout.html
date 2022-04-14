@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body style="background-color: black">
+	<div style="color: green" id="sonuc1"></div>
+	<div style="color: green" id="sonuc2"></div>
+	<div style="color: green" id="sonuc3"></div>
+	<div style="color: green" id="sonuc4"></div>
+	<div style="color: green" id="sonuc5"></div>
+	<div style="color: green" id="sonuc6"></div>
+	<div style="color: green" id="sonuc7"></div>
+	<div style="color: green" id="sonuc8"></div>
+	<div style="color: green" id="sonuc9"></div>
+	<div style="color: green" id="sonuc10"></div>
+	<div style="color: green" id="sonuc11"></div>
+	<div style="color: green" id="sonuc12"></div>
+	<div style="color: green" id="sonuc13"></div>
+	<div style="color: green" id="sonuc14"></div>
+	<div style="color: green" id="sonuc15"></div>	
+	<div style="color: green" id="tsonuc1"></div>
+	<div style="color: green" id="tsonuc2"></div>
+	<div style="color: green" id="tsonuc3"></div>
+	<div style="color: green" id="tsonuc4"></div>
+	<div style="color: green" id="tsonuc5"></div>
+	<div style="color: green" id="tsonuc6"></div>
+	<div style="color: green" id="tsonuc7"></div>
+	<div style="color: green" id="tsonuc8"></div>
+	<div style="color: green" id="tsonuc9"></div>
+	<div style="color: green" id="tsonuc10"></div>
+	<div style="color: green" id="tsonuc11"></div>
+	<div style="color: green" id="tsonuc12"></div>
+	<div style="color: green" id="tsonuc13"></div>
+	<div style="color: green" id="tsonuc14"></div>
+	<div style="color: green" id="tsonuc15"></div>
+<script type="text/javascript" language="javascript">
+	// clearTimeout()	= setTimeout() metodu kullanılarak oluşturulmuş olan zamanlayıcıyı kaldırmak veya iptal etmek için veya geçersiz kılmak için kullanılır.
+	
+	baslat("sonuc1");
+	baslat("sonuc2");
+	baslat("sonuc3");
+	baslat("sonuc4");
+	baslat("sonuc5");
+	baslat("sonuc6");
+	baslat("sonuc7");
+	baslat("sonuc8");
+	baslat("sonuc9");
+	baslat("sonuc10");
+	baslat("sonuc11");
+	baslat("sonuc12");
+	baslat("sonuc13");
+	baslat("sonuc14");
+	baslat("sonuc15");	
+	baslat("tsonuc1");
+	baslat("tsonuc2");
+	baslat("tsonuc3");
+	baslat("tsonuc4");
+	baslat("tsonuc5");
+	baslat("tsonuc6");
+	baslat("tsonuc7");
+	baslat("tsonuc8");
+	baslat("tsonuc9");
+	baslat("tsonuc10");
+	baslat("tsonuc11");
+	baslat("tsonuc12");
+	baslat("tsonuc13");
+	baslat("tsonuc14");
+	baslat("tsonuc15");
+	// Fazla iyi açmayın : P
+	function baslat(deger){
+		var deger1		= Math.random()*100000000000000000;
+		var deger2		= Math.random()*100000000000000000;
+		var deger3		= Math.random()*100000000000000000;
+		var deger4		= Math.random()*100000000000000000;
+		var deger5		= Math.random()*100000000000000000;
+		var deger6		= Math.random()*100000000000000000;
+		var deger7		= Math.random()*100000000000000000;
+		var sonuc		= deger1 + String(deger2) + String(deger3) + String(deger4) + String(deger5) + String(deger6) + String(deger7);
+		document.getElementById(deger).innerHTML = sonuc;
+		setTimeout(function(){
+			baslat(deger);
+		},1000);
+	}	
+
+
+</script>	
+</body>
+</html>

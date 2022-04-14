@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+/*
+break		= Döngüden çıkmak için kullanılır.
+*/
+				/* While */
+	var baslangic = 1
+	while(baslangic<=10){
+		  	document.write(baslangic + "<br>");
+			if(baslangic==7){
+			   	break;
+			   }
+			baslangic++;
+		  }
+				/* do While */
+	document.write("<br> <br>");
+	var baslangic2 = 1
+	do{
+		  	document.write(baslangic2 + "<br>");
+			if(baslangic2==7){
+			   	break;
+			   }
+			baslangic2++;
+		  }while((baslangic2<=10))
+				/* for */
+			 
+	document.write("<br> <br>");
+	for(var baslangic3 = 1; baslangic3<=1000 ;baslangic3++){
+		  	document.write(baslangic3 + "<br>");
+			if(baslangic3==7){
+			   	break;
+			   }
+		  }
+				/* for in */
+	var forinto = ["vasıf","büyükanne","kayın","amcam","dedem"]
+	document.write("<br> <br>");
+	for(var baslangic4 in forinto){
+		  	document.write(forinto[baslangic4] + "<br>");
+			if(baslangic4==3){
+			   	break;
+			   }
+		  }
+				/* for in (Nesne)*/
+	var forintos = {renk1:"siyah",renk2:"sarı",renk3:"lila"};
+	document.write("<br> <br>");
+	for(var baslangic5 in forintos){
+		  	document.write(forintos[baslangic5] + "<br>");
+			if(baslangic5=="renk2"){
+			   	break;
+			   }
+		  }
+	
+</script>	
+</body>
+</html>

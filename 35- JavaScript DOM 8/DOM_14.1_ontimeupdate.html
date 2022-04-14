@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<audio src="Ses.mp3" ontimeupdate="deney()" controls></audio>
+	<div id="sonuc"></div>
+<script type="text/javascript" language="javascript">
+	// ontimeupdate		=	Medya elemanının yürütülme konumu tarayıcı tarafından / kullanıcı tarafından değiştirildiğinde belirtilecek olan fonksiyon çalışır.
+	
+	function deney(){
+		document.getElementById("sonuc").innerHTML += "Medya elemanının yürütme konumu hareket ettirildi. <br>";
+	}
+</script>	
+</body>
+</html>

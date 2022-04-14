@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<a id="birinci" href="https://www.google.com.tr/JavaScript-Egitim-seti">JavaScript Eğitim seti</a><br>
+	<a id="ikinci" href="https://www.google.com.tr/CSS-Egitim-seti">CSS Eğitim seti</a><br>
+	<a id="ucuncu" href="https://www.google.com.tr/PHP-Egitim-seti">PHP Eğitim seti</a><br>
+	Link sayısı 	= <span id="sonuc"></span><br>
+	Link degeri 	= <span id="sonuc2"></span><br>
+	Link değeri 2 = <span id="sonuc3"></span><br>
+	Link değeri (id) ile = <span id="sonuc4"></span><br>
+<script type="text/javascript" language="javascript">
+	// links	=	Belge içerisindeki tüm linklerin referansını elde etmek için kullanılır. Referanslar birden fazla ise her bir link referansı döngüyle elde edilebilir.
+	
+	var islem = document.links.length;
+	document.getElementById("sonuc").innerHTML = islem;
+	
+	/* Href'ini alma */
+	var islem = document.links[0].href;
+	document.getElementById("sonuc2").innerHTML = islem;	
+	
+	/* Href alma 2 */
+	var islem = document.links.item(1).href;
+	document.getElementById("sonuc3").innerHTML = islem;
+
+	/* ID kimliklerine göre alma */
+	var islem = document.links.namedItem("ikinci").href;
+	document.getElementById("sonuc4").innerHTML = islem;
+</script>	
+</body>
+</html>

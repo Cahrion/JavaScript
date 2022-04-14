@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<button onClick="deney()">Sayfayı Yazdır</button><br><br>
+	<div id="islemsonuc"></div>
+<script type="text/javascript" language="javascript">
+	// confirm()		= Kullanıcı işlemlerinde onay penceresi oluşturmak için kullanılır.
+	
+	function deney(){
+		var onay	= confirm("Sayfa Yazdırılacaktır. Devam Etmek istiyor musunuz ?");
+		if(onay){
+		   	window.print();
+			   document.getElementById("islemsonuc").innerHTML = "Yazdırma işlemi onaylandı.";
+		   }else{
+			   document.getElementById("islemsonuc").innerHTML = "Yazdırma işlemi iptal edildi.";
+		   }
+		
+	}
+	
+</script>	
+</body>
+</html>

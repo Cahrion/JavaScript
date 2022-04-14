@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	// plugins 	= Browser'daki (tarayıcıdaki) tüm eklentilerin referansını elde etmek için kullanılır. Eklenti referansları birden fazla ise her bir eklenti döngüyle elde edilebilr.
+	
+	var deger = navigator.plugins;
+	for(var baslangic=0;baslangic<deger.length;baslangic++){
+		var sonuc 	= deger[baslangic];
+		document.write("Plugin adı: " + sonuc.name + "<br>");
+		document.write("Plugin dosyanın adı: " + sonuc.filename + "<br>");
+		document.write("Plugin dosyanın açıklaması: " + sonuc.description + "<br>");
+		
+		var pluginuzunlugu 	= sonuc.length;
+		for(var say=0;say<pluginuzunlugu;say++){
+			var ikincideger 	= sonuc[say]
+			document.write("Mime Type: " + ikincideger.type + "<br>");
+			document.write("Plugin dosyanın açıklaması 2: " + ikincideger.description + "<br>");
+			document.write("Plugin Uzantısı: " + ikincideger.suffixes + "<br><br>");			
+		}
+	}	
+
+</script>	
+</body>
+</html>

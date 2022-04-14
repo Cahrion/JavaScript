@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<div style="background-color: #F1F1F1;border:1px solid black;margin:10px;padding: 10px;width:200px;height:250px" onmouseenter="ornek()"><span id="sonuc">Bu Alana Mouse ile geliniz</span></div>
+	
+<script type="text/javascript" language="javascript">
+	// onmouseenter		= Belge içerisindeki herhangi bir elemanın kapsama alnına giriş yapıldığında herhangi bir elemanın mouse (fare) ile kapsama alanına giriş yapıldığında belirtilecek olan fonksiyon çalışır.
+	
+	function ornek(){
+		document.getElementById("sonuc").innerHTML = "Bu Alana Mouse ile geldiniz.";
+	}
+	
+</script>	
+</body>
+</html>

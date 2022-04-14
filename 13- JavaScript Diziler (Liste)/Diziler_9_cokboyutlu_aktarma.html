@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	
+	var renkler		= ["Sarı","Beyaz","Yeşil"];
+	var isimler		= ["Volkan","Hakan","Levent","Serkan"];
+	
+	document.write(renkler + "<br>")
+	document.write(isimler + "<br>" + "<br>")
+	
+	
+	// var sonuc 		= [["Sarı","Beyaz","Yeşil"],["Volkan","Hakan","Levent","Serkan"]];
+	var sonuc 		= [renkler,isimler];
+	
+	document.write(sonuc + "<br>" + "<br>");
+	document.write(sonuc[0] + "<br>");
+	document.write(sonuc[0][0] + "<br>");
+	document.write(sonuc[0][1] + "<br>");
+	document.write(sonuc[0][2] + "<br>" + "<br>");
+	document.write(sonuc[1] + "<br>");
+	document.write(sonuc[1][0] + "<br>");
+	document.write(sonuc[1][1] + "<br>");
+	document.write(sonuc[1][2] + "<br>");
+	document.write(sonuc[1][3] + "<br>" + "<br>");
+	
+				/* New Array'li kısım */
+	// var sonuc 		= new Array(new Array("Sarı","Beyaz","Yeşil"),new Array("Volkan","Hakan","Levent","Serkan"));
+	var sonuc 		= new Array(renkler,isimler);
+	
+	document.write(sonuc + "<br>" + "<br>");
+	document.write(sonuc[0] + "<br>");
+	document.write(sonuc[0][0] + "<br>");
+	document.write(sonuc[0][1] + "<br>");
+	document.write(sonuc[0][2] + "<br>" + "<br>");
+	document.write(sonuc[1] + "<br>");
+	document.write(sonuc[1][0] + "<br>");
+	document.write(sonuc[1][1] + "<br>");
+	document.write(sonuc[1][2] + "<br>");
+	document.write(sonuc[1][3] + "<br>");
+	
+	
+	
+</script>	
+</body>
+</html>

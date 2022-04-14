@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	// toExponential()	= Kendisine parametre olarak belirlenen değer doğrultusunda değişken içeriğindeki sayının ondalık hanesinde kaç basamak olacağını belirleyerek kalan değeri üstsel hale getirerek. Yeni bir içerik oluşturur. Oluşturduğu içeriği geriye döndürür.
+	
+	var sayibir  = 10.558498440; // 1.05585e+1
+	var sayiiki  = 5.879844432;	 // 5.87984e+0
+	
+	var sonucbir = sayibir.toExponential(5);	// Yuvarlama yapar.
+	var sonuciki = sayiiki.toExponential(5);
+
+	document.write("Değer: " + sayibir  + "<br>"); 
+	document.write("Sonuc: " + sonucbir + "<br><br>"); 
+	document.write("Değer: " + sayiiki  + "<br>"); 
+	document.write("Sonuc: " + sonuciki + "<br><br>");  
+</script>	
+</body>
+</html>

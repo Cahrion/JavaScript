@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	// \xdeger(hexadecimal) 	= Düzenli ifade dahilinde kontrol edilecek olan değişken içeriği karakter diziliminde bulunan değerin, Hexadecimal numeric system tabanında ASCII karakter karşılığı olan karakteri ile eşleşmesi gerektiğini belirtmek için kullanılır.
+	//	Değer aralığı : \x00 - \xFF
+ 	
+	// Hexadecimal numeric system = on altılık sayı sistemi
+	// ASCII 	= American Standart Code for Information Interchange = Bilgi değişimi için amerikan standart kodlama sistemi.
+	
+	// icabi 	= \x69\x63\x61\x62\x69
+	var metin 	= "icabi";
+	var ifade 	= new RegExp("\\x69","g");//--> /\x69/g;
+	var sonuc 	= ifade.test(metin);
+	
+	document.write(sonuc + "<br>");
+	
+	var metin2 	= "\x69\x63\x61\x62\x69"; // terside geçerlilik sağlıcaktır.
+	var ifade2 	= new RegExp("i");//--> /n/g;
+	var sonuc2 	= metin2.match(ifade2);
+	
+	document.write(sonuc2);
+	
+	
+</script>	
+</body>
+</html>

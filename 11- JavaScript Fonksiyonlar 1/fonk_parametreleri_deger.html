@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	
+	function test(tutar, kdv=18){
+		var kdvtutari = (tutar / 100) * kdv;
+		var nettutar  = tutar + kdvtutari; 
+		document.write("Gelen tutar: "+ tutar + "<br>");
+		document.write("Gelen tutarın KDV'si: "+ kdvtutari + "<br>");
+		document.write("Toplam tutar: "+ nettutar + "<br>");
+	}
+	test(1000,9);
+</script>	
+</body>
+</html>

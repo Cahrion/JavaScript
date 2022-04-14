@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	Adınız Soyadınız: <input type="text" id="isim" oninput="deney(this)">
+	<div id="sonuc"></div>
+<script type="text/javascript" language="javascript">
+	// oninput	= Form içerisindeki bir elemanın değeri veya seçimi değiştirilirken belirtilecek olan fonksiyon çalışır.
+	
+	function deney(deger){
+		var sonuc	= deger.value;
+		document.getElementById("sonuc").innerHTML = sonuc;
+	}
+	
+</script>	
+</body>
+</html>

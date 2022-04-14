@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<div id="sonucalani"></div>
+<script type="text/javascript" language="javascript">
+	// implementation 	=	Belge ile ilgili Domimplementation arayüzünden türetilmiş bir DOMimplementation nesnesi referansını boolean (mantıksal) veri türünde elde etmek için kullanılır.
+	// implementation	= 	Uygulama
+	// Feature 			=	Özellik
+	
+	var islem 	= document.implementation;
+	document.getElementById("sonucalani").innerHTML = islem.hasFeature("HTML","1.0");
+	
+</script>	
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	//  every() 	= Kendisine parametre olarak verilen fonksiyon false değeri döndürene kadar dizi elemanları üzerinde gezinilmesini sağlar.
+	
+	// 1. Parametre = Her işlemde elde edilen dizi elemanı
+	// 2. Parametre = Her işlemde elde edilen dizi elemanının indis / index değeri
+	// 3. Parametre = Her tekrarlamada işlemin yapıldığı diziyi tutan değişkenin referansı
+	function deney(eleman,sira,referans){
+		sonuc = eleman;
+		return eleman % 5 == 0;
+	}
+	var sonuc = 0;
+	var sayilar 	= [5,10,20,30,50,140,380,420,343,220,700,400];
+	document.write(sayilar + "<br> <br>");
+	
+	var islemyap 	= sayilar.every(deney); // false döndürür.
+	document.write("İstenen bilgi : " + sonuc + "<br>");
+	document.write("Dönen bilgi : " + islemyap + "<br> <br>");
+
+	
+</script>	
+</body>
+</html>

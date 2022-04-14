@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	// getTimezoneOffset()			= Kullanıldığı değişken içeriğinde yerel zaman ile 0 zaman dilimi arasındaki zaman farkı bilgisine dakika olarak depolayarak depoladığı değeri geriye döndürür.
+	// GMT = Greenwich mean time	= Greenwich ortalama zaman
+	
+	var zaman 	= new Date();
+	var fark 	= zaman.getTimezoneOffset(); // 3saat fark vardır normalde.
+	
+	document.write(fark);
+	
+	
+</script>	
+</body>
+</html>

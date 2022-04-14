@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<div id="bir"> <span id="birbir">Volkan Alakent </span><span id="biriki">JavaScript</span><a class="deneme"> Eğitim Seti</a></div>
+	<div id="iki"> <span id="ikibir">Volkan Alakent </span><span id="ikiiki">CSS</span>Eğitim Seti</div>
+	<div class="bir">Volkan Alakent PHP 			Eğitim Seti</div>
+	<div class="iki">Volkan Alakent HTML 		Eğitim Seti</div>
+	<br><br>
+	<button onClick="ornek()">İşlemi Gerçekleştir.</button><br>
+
+	<br><br>
+	
+<script type="text/javascript" language="javascript">
+	// querySelector()	= CSS (Cascading Style Sheet) (Basamaklı Stil Şablonları) seçiçileri ile belgedeki bir elemanın referansını elde etmek için kullanılır.
+
+	function ornek(){
+		// Çoçuk seçiçi (>) ile gösterilir. | Alt bir katmana geçmek anlamına gelir 			   |
+		// Class seçiçi (.) ile gösterilir. | CSS veri tipindeki class2ları almak için kullanılır. |
+		// ID	 seçiçi (#) ile gösterilir. | ID tipindeki özel adları ele almak için kullanılır.  |
+		document.querySelector("div#bir>span#biriki").style.fontSize = "25px"; 
+		document.querySelector("div#bir>a.deneme").style.fontSize = "25px"; 
+		var sonuc = document.querySelector("div#bir>span#biriki").innerHTML; 
+		alert(sonuc);
+	}	
+
+</script>	
+</body>
+</html>

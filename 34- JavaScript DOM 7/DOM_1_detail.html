@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<button onClick="deney()">Tıkla</button>
+	<div id="sonuc"></div>
+<script type="text/javascript" language="javascript">
+	// detail	= 	Belge içerisindeki mouse (fare) ile tıklama event'i (olayı) gerkeçkleştiğinde mouse'a (fareye) kaç defa tıklandığı değerini geriye döndürür.
+	function deney(){
+		var sonuc = event.detail;
+		document.getElementById("sonuc").innerHTML = sonuc;
+	}
+</script>	
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	// global	= Düzenli ifade içerisinde g ayarının kullanılıp kullanılmadığını kontrol ederek. Boolean (Mantıksal) veri türünde sonucu geriye döndürür.
+	
+	var metin 	= "Volkan bey, Volkanın patladığını görünce Volkandan kaçmaya çalıştı. :)";
+	var ifade	= new RegExp("Volkan");
+	var ifade2	= new RegExp("Volkan","g");
+	var ifade3	= /Volkan/;
+	var ifade4	= /Volkan/g;
+	
+	var sonuc	= metin.match(ifade);
+	var sonuc2	= metin.match(ifade2);
+	var sonuc3	= metin.match(ifade3);
+	var sonuc4	= metin.match(ifade4);
+	
+	var kontrol = ifade.global;
+	var kontrol2 = ifade2.global;
+	var kontrol3= ifade3.global;
+	var kontrol4= ifade4.global;
+	
+	document.write(sonuc + " Global kullandımı: " + kontrol + "<br>");
+	document.write(sonuc2 + " Global kullandımı: " + kontrol2 + "<br>");
+	document.write(sonuc3 + " Global kullandımı: " + kontrol3 + "<br>");
+	document.write(sonuc4 + " Global kullandımı: " + kontrol4+ "<br>");
+</script>	
+</body>
+</html>

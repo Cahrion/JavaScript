@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	
+	<div id="ornek">Volkan Alakent</div>
+	<br>
+	<br>
+	<button onClick="deneme()">Buraya Tıklayınız</button>
+	
+<script type="text/javascript" language="javascript">
+	// getElementById()		=	Kendisine parametre olarak verilen değer doğrultusunda, belge içerisindeki belirtilen Id özelliğine / niteliğine sayip elemanın referansını elde etmek için kullanılır.
+	
+	function deneme(){
+		var sonuc = document.getElementById("ornek").innerHTML = "JavaScript Eğitim Seti";
+		alert(sonuc);
+	}
+</script>	
+</body>
+</html>

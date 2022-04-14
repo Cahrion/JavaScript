@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<h3>İDO ve Budo Seferleri iptal edildi işte o seferlerin tam listesi</h3>
+	<button onClick="deney()">Haberin Devamını Oku</button>
+	<br>
+	<div id="detay"></div>
+<script type="text/javascript" language="javascript">
+	
+	function deney(){
+		var Istek	= new XMLHttpRequest(); // Gönderim Request
+		Istek.onreadystatechange = function(){
+			if(this.readyState==4 && this.status == 200){	// Eğer 
+			   	document.getElementById("detay").innerHTML = this.responseText; // Alım response
+				// Unutma --> Not defteriyle yeniden kaydedip UTF-8 kodlamasıyla yap
+				// 672.ders
+
+			   }else{
+			   	document.getElementById("detay").innerHTML = "İstek veya Yanıt anında hata oluştu."; 
+		};
+		Istek.open("GET","Dokuman/Dosya.txt",true);
+		Istek.send();
+	}
+	
+</script>	
+</body>
+</html>

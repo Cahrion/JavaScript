@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<button onClick="ornek()">Ekle</button>
+	<ul id="liste1">
+		<li id="bir">JavaScript</li>
+		<li id="iki">PHP</li>
+		<li id="uc">CSS</li>
+		<li id="dort">Python</li>
+	</ul>	
+	<ul id="liste2">
+		<li id="bir1">JavaScript</li>
+		<li id="iki2">PHP</li>
+		<li id="uc3">CSS</li>
+		<li id="dort4">Python</li>
+	</ul>
+	
+	
+<script type="text/javascript" language="javascript">
+	// insertBefore()	= Bir node'u (düğümü) belge içerisindeki belirtilecek olan herhangi bir node'un (düğümün) önüne eklemek için kullanılır.
+	
+	function ornek(){
+		var yenieleman	= document.getElementById("liste2").lastElementChild;
+		var deger	 	= document.getElementById("liste1")
+		var yer		 	= deger.childNodes[0];
+		deger.insertBefore(yenieleman, yer);
+	}
+	
+	
+</script>	
+</body>
+</html>

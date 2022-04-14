@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	
+	function kisi(){
+		var isimsoyisim 	= "Volkan Alakent<br>";
+		return isimsoyisim
+	}
+	document.write(kisi());
+	
+				/* 2. Örnek *//* Tekli Parametre */
+	
+	var kisi2 = function(){
+		var isimsoyisim2 	= "Volkan Alakent <br>";
+		return {
+			isimgetir:function(){
+				return isimsoyisim2;
+			}
+		}
+	}
+	var sonuc = kisi2().isimgetir();
+	document.write(sonuc);
+	
+				/* 3. Örnek *//* Çoklu Parametre */
+	
+	var kisi3 = function(){
+		var isimsoyisim3 	= "Volkan Alakent";
+		return {
+			isimgetir:function(){
+				return isimsoyisim3;
+			},isimdegistir:function(yeniisim){
+				isimsoyisim3 = yeniisim;
+			}
+		}
+	}();
+	kisi3.isimdegistir("Hakan bey");
+	var sonuc = kisi3.isimgetir();
+	document.write(sonuc);
+	
+</script>	
+</body>
+</html>

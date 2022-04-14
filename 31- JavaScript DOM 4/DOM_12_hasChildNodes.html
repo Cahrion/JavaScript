@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<button onClick="deney()">Tıklayınız</button><br><br>
+	<div id="bir"></div>
+	<div id="iki"><div></div></div>
+	<div id="uc">Volkan Alakent</div>
+	<div id="dort"><div>JavaScript Eğitim Seti</div></div>
+	<br><br>	
+
+	<div id="sonucbir">	</div>
+	<div id="sonuciki">	</div>
+	<div id="sonucuc">	</div>
+	<div id="sonucdort"></div>
+<script type="text/javascript" language="javascript">
+	// hasChildNodes()	= Belge içerisindeki herhangi bir HTML elemanının alt node'larının (düğümlerinin) olup olmadığı kontrol ederek boolean (mantıksal) veri türünde sonucu geriye döndürür.
+	
+	function deney(){
+		var kontrolbir	= document.getElementById("bir").hasChildNodes();
+		if(kontrolbir){
+		   	document.getElementById("sonucbir").innerHTML = "HTML elemanının alt node'u (düğümü) vardır."
+		   }else{
+		   	document.getElementById("sonucbir").innerHTML = "HTML elemanının alt node'u (düğümü) yoktur.."
+		   }		
+		
+		var kontroliki	= document.getElementById("iki").hasChildNodes();
+		if(kontroliki){
+		   	document.getElementById("sonuciki").innerHTML = "HTML elemanının alt node'u (düğümü) vardır."
+		   }else{
+		   	document.getElementById("sonuciki").innerHTML = "HTML elemanının alt node'u (düğümü) yoktur.."
+		   }		
+		
+		var kontroluc	= document.getElementById("uc").hasChildNodes();
+		if(kontroluc){
+		   	document.getElementById("sonucuc").innerHTML = "HTML elemanının alt node'u (düğümü) vardır."
+		   }else{
+		   	document.getElementById("sonucuc").innerHTML = "HTML elemanının alt node'u (düğümü) yoktur.."
+		   }	
+		
+		var kontroldort	= document.getElementById("dort").hasChildNodes();
+		if(kontroldort){
+		   	document.getElementById("sonucdort").innerHTML = "HTML elemanının alt node'u (düğümü) vardır."
+		   }else{
+		   	document.getElementById("sonucdort").innerHTML = "HTML elemanının alt node'u (düğümü) yoktur.."
+		   }
+		
+	}
+	
+</script>	
+</body>
+</html>

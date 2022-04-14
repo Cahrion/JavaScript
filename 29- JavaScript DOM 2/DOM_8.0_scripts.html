@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+	<script  id="sıfırıncı"></script>
+</head>
+	<script id="birinci">
+		function dokuman(){
+				document.write("JavaScript");
+			}
+	</script>
+<body>
+	Döküman içerisindeki script tag'ı sayısı : <span id="sonuc"></span><br>
+	Döküman içerisindeki kodlamayı alma : <span id="sonuc2"></span><br>
+	Döküman içerisindeki kodlamayı alma 2 : <span id="sonuc3"></span><br>
+	Döküman içerisindeki kodlamayı alma (ID) ile  : <span id="sonuc4"></span><br>
+<script  id="ikinci" type="text/javascript" language="javascript">
+	// scripts	= Belge içerisindeki script tag'ına (etiketine) sahip tüm elemanların referansını elde etmek için kullanılır. Eleman referansları birden fazla ise her bir eleman döngü ile elde edilebilir.
+	var sonuc = document.scripts.length;
+	document.getElementById("sonuc").innerHTML = sonuc;
+	/* Kodlamayı alma */
+	var sonuc2 = document.scripts[1].text;
+	document.getElementById("sonuc2").innerHTML = sonuc2; 
+	/* Kodlamayı alma */
+	var sonuc3 = document.scripts.item(1).text;
+	document.getElementById("sonuc3").innerHTML = sonuc3; 		
+	/* ID ile Kodlamayı alma */
+	var sonuc4 = document.scripts.namedItem("birinci").text;
+	document.getElementById("sonuc4").innerHTML = sonuc4; 	
+	
+</script>	
+</body>
+</html>

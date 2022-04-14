@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<div>Pencere içerisindeki çerçeve sayısı: <span id="sonuc"></span></div>
+	<iframe src="Cerceveler/BOM_1_cercevesi.html"></iframe>
+	<iframe src="Cerceveler/BOM_2_cercevesi.html"></iframe>
+	<iframe src="Cerceveler/BOM_3_cercevesi.html"></iframe>
+	
+	
+<script type="text/javascript" language="javascript">
+	// length	= Pencere içerisindeki tüm çerçevelerin sayısını elde etmek için kullanılır.
+	
+	var sayi = window.length;
+	document.getElementById("sonuc").innerHTML = sayi;
+	
+</script>	
+</body>
+</html>

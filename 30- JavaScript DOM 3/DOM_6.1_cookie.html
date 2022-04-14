@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<div id="sonuc"></div>
+	
+<script type="text/javascript" language="javascript">
+	/*
+	Cookie'lerin (cerezlerin) yapısı :
+	1. Cookie (çerez) adı
+	2. Cookie (çerez) degeri
+	3. Cookie'nin (çerezin) yaşam süresi
+	4. Path (yol)
+	
+	
+	Cookie (çerez) adı = Cookie (çerez) degeri; Cookie'nin (çerezin) yaşam süresi;Path (yol)
+	*/
+	var zaman				= new Date();
+	zaman.setMonth(zaman.getMonth + 1);
+	
+	var cerezbiradi			= "isimsoyisim";
+	var cerezbirdegeri		= "Volkan Alakent";	
+	
+	var cerezikiadi			= "egitimseti";
+	var cerezikidegeri		= "JavaScript eğitim seti";
+	
+	document.cookie		= cerezbiradi + "=" + escape(cerezbirdegeri) + ";expires=" + zaman.toGMTString(); 
+																		// zaman belirtme cookiesi
+	document.cookie		= cerezikiadi + "=" + escape(cerezikidegeri) + ";expires=" + zaman.toGMTString();
+																		// zaman belirtme cookiesi
+	var cerezler		= document.cookie;
+	document.getElementById("sonuc").innerHTML = unescape(cerezler);
+</script>	
+</body>
+</html>

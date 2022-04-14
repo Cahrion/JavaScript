@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<a id="bir"  name="JavaScript" 	href="https://www.google.com.tr" target="_blank">JavaScript </a><br>
+	<a id="iki"  name="Html" 		href="https://www.google.com.tr" target="_blank">Html 		</a><br>
+	<a id="uc"   name="Css" 		href="https://www.google.com.tr" target="_blank">Css 		</a><br>
+	<a id="dort" name="Php" 		href="https://www.google.com.tr" target="_blank">Php 		</a><br>
+	<a id="bes"  name="JQuery" 		href="https://www.google.com.tr" target="_blank">JQuery 	</a><br>
+	<a id="alti" name="Python" 		href="https://www.google.com.tr" target="_blank">Python 	</a><br>
+	Çapa Sayısı : <span id="capalar"></span>
+	
+<script type="text/javascript" language="javascript">
+	// anchors	= Belge içerisindeki çapa tağ'ına (etiketine) sahip tüm elemanların referanslarını elde etmek için kullanılır. Elemanların referansları birden fazla ise her bir eleman döngüyle elde edilebilir.
+	var sonuc	= document.anchors[0].innerHTML;
+	var sonuc	= document.anchors["dort"].innerHTML; // id değeri de girilebilir
+	var sonuc	= document.anchors["JQuery"].innerHTML; // id =! name değeri olduğunda name girilebilir eğer id değeri ile name değeri aynı ise id değerindekini ilk olarak alır.
+	document.getElementById("capalar").innerHTML = sonuc;
+	
+</script>	
+</body>
+</html>

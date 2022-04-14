@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	// \	= Düzenli ifadelerde ardından gelecek olan karakterin özel bir karakter olup olmadığını belirtmek için kullanılır.
+	
+	var metin 	= "Javascript eğitim seti";
+	
+	var ifade 	= new RegExp("\\s","g");  
+	// --> Kaçırma eki olarak kullanılıyor ilk (\) verisi. (\\) iki tane olması gerekiyor.
+	var ifade2 	= /\s/g;  			
+	// --> Kaçırma eki olarak verilmiyor. (\s)boşluk anlamında.
+	
+	var sonuc 	= metin.match(ifade);
+	var sonuc2 	= metin.match(ifade2);
+	
+	document.write(sonuc + "<br>");
+	document.write(sonuc2);
+	
+</script>	
+</body>
+</html>

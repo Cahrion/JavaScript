@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	//   some() 	= Kendisine parametre olarak belirtilen bir fonksiyon true (Mantıksal) değeri döndürene kadar dizi elemanları üzerinde sıra ile gezinilmesini sağlar.
+	
+	// 1. Parametre	=	Her işlemde elde edilen dizi elemanı.
+	// 2. Parametre	=	Her işlemde elde edilen dizi elemanının indis / index değeri.
+	// 3. Parametre	=	Her tekrarlama işleminde diziyi tutan değişkenin referansı.
+	function islem(eleman,sira,referans){
+		sonuc  = sonuc +" " + eleman + "<br>";
+		return eleman == "Mavi"
+	}
+	
+	var sonuc		= "Sayı";
+	var renkler 	= ["Siyah","Gri","Beyaz","Sarı","Bej","Mavi","Kırmızı"];
+	document.write(renkler + "<br> <br>");
+	
+	renkler.some(islem);
+	document.write("Son durum: " + renkler + "<br>");
+	document.write(sonuc);
+
+	
+</script>	
+</body>
+</html>

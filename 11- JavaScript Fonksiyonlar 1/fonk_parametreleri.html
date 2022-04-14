@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+		
+	function text(isim){
+		document.write("Merhaba " + isim + ", Nasılsınız ? İyimisiniz ? <br>");
+	}
+	text("Aslı");
+				/* Diğer yöntem */
+	var test = function (isim){
+		document.write("Merhaba " + isim + ", Nasılsınız ? İyimisiniz ? <br>");
+	}
+	test("Aslı");
+				/* Fazla parametre */ 
+	function sayi(sayibir,sayiiki){
+		document.write("Sayiniz: " + (sayibir + sayiiki).toString());
+	}
+	sayi(10,50);
+</script>	
+</body>
+</html>

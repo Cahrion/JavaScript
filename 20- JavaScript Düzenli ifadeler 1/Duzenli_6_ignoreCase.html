@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	// ignoreCase	= Düzenli ifade içerisinde i ayarının kullanılıp kullanılmadığını kontrol ederek. Boolean (Mantıksal) veri türünde sonucu geriye döndürür.
+	
+	var metin 	= "volkan bey, volkanın patladığını görünce Volkandan kaçmaya çalıştı. :)";
+	var ifade	= new RegExp("Volkan");
+	var ifade2	= new RegExp("Volkan","i");
+	var ifade3	= /Volkan/;
+	var ifade4	= /Volkan/i;
+	
+	var sonuc	= metin.match(ifade);
+	var sonuc2	= metin.match(ifade2);
+	var sonuc3	= metin.match(ifade3);
+	var sonuc4	= metin.match(ifade4);
+	
+	var kontrol = ifade.ignoreCase;
+	var kontrol2 = ifade2.ignoreCase;
+	var kontrol3= ifade3.ignoreCase;
+	var kontrol4= ifade4.ignoreCase;
+	
+	document.write(sonuc +  " ignoreCase kullandımı: " + kontrol + "<br>");
+	document.write(sonuc2 + " ignoreCase kullandımı: " + kontrol2 + "<br>");
+	document.write(sonuc3 + " ignoreCase kullandımı: " + kontrol3 + "<br>");
+	document.write(sonuc4 + " ignoreCase kullandımı: " + kontrol4+ "<br>");
+	
+</script>	
+</body>
+</html>

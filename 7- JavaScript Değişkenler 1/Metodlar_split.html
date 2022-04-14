@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	// split() 	= kendsine parametre olarak tanımlanmış değer doğrultusunda değişken içeriğini bölümleyerek yeni bir dizi oluşturur.
+	var metin = "Volkan Alakent JavaScript Eğitim Seti";
+	document.write(typeof metin + "<br>");
+	document.write(metin + "<br>");
+	document.write(metin[1] + "<br>"); // Her string bileşenin de bir liste bulunmaktadır.
+	
+	var sonuc = metin.split(" ");
+	document.write(typeof sonuc + "<br>");
+	document.write(sonuc);
+	
+			/* Limit değer girilimi */
+		/* Düzenli verilerde de çalışır.*/
+	
+	var sonuc = metin.split(/a/i,3);
+	document.write(typeof sonuc + "<br>");
+	document.write(sonuc);
+	
+</script>	
+</body>
+</html>

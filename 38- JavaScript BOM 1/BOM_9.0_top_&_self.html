@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<div>JavaScript Eğitim Seti</div>
+	<iframe src="BOM_9.1_top_&_self.html" width="500" height="250"></iframe>
+	<div id="sonuc"></div>
+<script type="text/javascript" language="javascript">
+	// top 	& 	self	= İçinde bulunulan pencerenin en üst seviye pencere olup olmadığını kontrol ederek boolean (mantıksal) veri türünde sonucu geriye döndürür. 
+	
+	if(window.top == window.self){
+	   	document.getElementById("sonuc").innerHTML = "En üst seviye pencere";
+	   }else{
+	  	document.getElementById("sonuc").innerHTML = "İç pencere";
+	   }
+</script>	
+</body>
+</html>

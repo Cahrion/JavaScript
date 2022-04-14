@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<form action="" id="birinciform">
+		Adı Soyad: <input type="text" id="birincimetinkutusu" name="metinkutusubir" value="Volkan Alakent">
+		Sehir 	 : <input type="text" id="birincisehirkutusu" name="sehirkutusubir" value="istanbul">
+		<button>Kaydet</button>
+	</form>
+	
+	<br><br><br>
+	
+	<form action="" id="ikinciform">
+		Web Sitesi 	 : <input type="text" id="birinciwebkutusu" name="webkutusubir" value="https://www.extraegitim.com">
+		E-mail Adresi 	 : <input type="text" id="birinciemailkutusu" name="emailkutusubir" value="info@extraegitim.com">
+		<button>Kaydet</button>
+	</form>
+	
+	<br><br><br>
+	
+	<div id="sonucalani"></div>
+	<div id="idalani"></div>
+	<div id="idalani2"></div>
+
+<script type="text/javascript" language="javascript">
+	// forms	=	Belge içerisindeki form tag'ına (etiketine) sahip elemanların referansını elde etmek için kullanılır. Eleman referansları birden fazla ise her bir eleman döngüyle elde edilebilir.
+	
+	var sonuc = document.forms.length;
+	document.getElementById("sonucalani").innerHTML = "Form Sayısı: " + sonuc;
+	/* Belli birini seçme */
+	var sonuc = document.forms[0].id;
+	document.getElementById("idalani").innerHTML 	= "Form ID'si: " + sonuc;
+	/* Belli birini seçme 2 */
+	var sonuc = document.forms.item(0).id;
+	document.getElementById("idalani2").innerHTML 	= "Form ID'si: " + sonuc;
+	/* Belli birini seçme ID ile*/
+	var sonuc = document.forms.namedItem("birinciform").innerHTML;
+	document.getElementById("idalani2").innerHTML 	= "Kopya Form: <br>" + sonuc; 
+	
+</script>	
+</body>
+</html>

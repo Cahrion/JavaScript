@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<button onClick="Ornekbir()">Birinci Listeye Ekle</button>
+	<button onClick="Ornekiki()">İkinci Listeye Ekle</button>
+	<ul id="bir">
+		<li>JavaScript</li>
+		<li>HTML</li>
+		<li>CSS</li>
+		<li>PHP</li>
+	</ul>	
+	<br><br><br><br>
+	<ul id="iki">
+		<li>Photoshop</li>
+		<li>Corel</li>
+		<li>Paint</li>
+		<li>Paint.NET</li>
+	</ul>
+	
+	
+<script type="text/javascript" language="javascript">
+	// appendChild()	= Bir node'u (düğümü) belge içerisinde belirtilecek olan herhangi bir leemanın içerisinde en son da olmak üzere eklemek için kullanılır.
+	function Ornekbir(){
+		var elemanolustur 	= document.createElement("li");
+		var icerikolustur	= document.createTextNode("Python");
+		elemanolustur.appendChild(icerikolustur);
+		document.getElementById("bir").appendChild(elemanolustur);
+	}	
+	function Ornekiki(){
+		var elemanolustur 	= document.createElement("li");
+		var icerikolustur	= document.createTextNode("Paint3D");
+		elemanolustur.appendChild(icerikolustur);
+		document.getElementById("iki").appendChild(elemanolustur);
+	}
+</script>	
+</body>
+</html>

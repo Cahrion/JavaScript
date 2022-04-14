@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	// propertyIsEnumarable	=	Bir nesnenin parametrik olarak girilen özelliğinin kullanılıp kullanılmadığını numaralandırılıp numaralandırılmadığını kontrol ederek boolean (mantıksal) veri türünde sonucu geriye döndürür.
+	
+	var bilgiler	= {
+		isim	:"Volkan",
+		soyisim	:"Alakent",
+		yas		:36
+	};
+	
+	var isimyaz			= bilgiler.isim; 
+	var soyisimyaz		= bilgiler.soyisim;
+	var yasyaz			= bilgiler.yas;
+	var sehiryaz			= bilgiler.sehir;
+	
+	var isimkontrolet	= bilgiler.propertyIsEnumerable("isim")
+	var soyisimkontrolet= bilgiler.propertyIsEnumerable("soyisim")
+	var yaskontrolet	= bilgiler.propertyIsEnumerable("yas")
+	var sehirkontrolet	= bilgiler.propertyIsEnumerable("sehir")
+	
+	document.write(isimyaz 		+ " " + isimkontrolet 	+ "<br>");
+	document.write(soyisimyaz 	+ " " + soyisimkontrolet+ "<br>");
+	document.write(yasyaz 		+ " " + yaskontrolet	+ "<br>");
+	document.write(sehiryaz 	+ " " + sehirkontrolet	+ "<br>");
+</script>
+</body>
+</html>

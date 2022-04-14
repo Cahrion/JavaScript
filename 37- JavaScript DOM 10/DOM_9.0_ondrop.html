@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+	<style>
+	
+		.hedefalani {
+			background-color: #F1F1F1;
+			border: 1px solid black;
+			width: 250px;
+			height: 250px;
+		}
+	
+	</style>
+	
+	
+</head>
+
+<body>
+	<span draggable="true">JavaScript</span><br><br>
+	<div id="hedef" ondrop="bir()" ondragover="iki(event)" class="hedefalani"></div>
+	<div id="sonuc"></div>
+<script type="text/javascript" language="javascript">
+	// ondrop 	= Belge içerisindeki herhangi bir elemanının hedef kapsama alanı üzerine bırakıldığında belirtilecek olan fonksiyon çalışır.
+	
+	function bir(){
+		alert("Eleman hedef üzerinde bırakıldı.");
+	}	
+	function iki(event){
+		event.preventDefault();
+	}
+	
+</script>	
+</body>
+</html>

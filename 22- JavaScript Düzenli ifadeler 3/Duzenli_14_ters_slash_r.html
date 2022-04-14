@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<pre>
+<script type="text/javascript" language="javascript">
+	// \r	= Düzenli ifade dahilinde kontrol edilecek olan değişken içeriği karakter dizilimde bulunan değerin sadece parağraf sonu karakteriyle eşleşmesi gerektiğini belirtmek için kullanılır.
+	
+	// |  16 bitlik değeri (\r) =	\u000D  |
+	
+	var metin 	= "Volkan Alakent\rJavaScript eğitim\u000Dseti"; // Parağraf atlar.
+	var ifade 	= new RegExp("\\r","g");//-->/\r/g;
+	var sonuc 	= ifade.test(metin);
+	document.write(metin + "<br>");
+	document.write(sonuc);
+	
+</script>	
+</pre>
+</body>
+</html>

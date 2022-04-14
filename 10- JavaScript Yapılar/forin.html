@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+
+/*
+1. parametre 	: Değişken
+2. parametre 	: Dizi / Nesne
+
+for ((1. parametre) in (dizi / nesene adı)){
+	.....(Kodlar)
+}
+*/
+	var ornek = ["İcabi","Volkan","Demir","Aslan"];
+	var obje = {isim: "Volkan", soyisim:"Alakent", dogumtarihi:"1980"};
+	document.write(ornek + "<br>");
+	for(var a in ornek){
+		document.write(ornek[a] + "<br>");
+	}
+	for(var b in obje){
+		document.write(obje[b] + "<br>");
+	}
+	
+</script>	
+</body>
+</html>

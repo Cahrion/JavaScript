@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	function deney(isimdegeri, soyisimdegeri){
+		this.isim		= isimdegeri;
+		this.soyisim	= soyisimdegeri;
+	}
+	
+	var sonuc 	= new deney("VOLKAN","ALAKENT");
+	var sonuc2 	= new deney("volkan","alakent");
+	
+	var gelenisim		= sonuc.isim;
+	var gelensoyisim	= sonuc.soyisim;	
+	var gelenisim2		= sonuc2.isim;
+	var gelensoyisim2	= sonuc2.soyisim;
+
+	document.write(gelenisim + " " + gelensoyisim + "<br>");
+	document.write(gelenisim2 + " " + gelensoyisim2);
+</script>	
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<div id="metinalani" dir="ltr">JavaScript Eğitim Seti</div>
+	<div id="metinalani2" dir="rtl">JavaScript Eğitim Seti</div>
+	<div id="sonucalani"></div>
+	
+<script type="text/javascript" language="javascript">
+	// dir 		= Belge içerisindeki metinlerin yazılış yönü referansını elde etmek için kullanılır. Ayrıca belge içerisindeki metinlerin yazılış yönü atamasını ayarlamak için de kullanılır.
+	// ltr		= left to right	(soldan sağa)
+	// rtl		= right to left (sağdan sola)
+	
+	var islem 	= document.getElementById("metinalani2").dir;
+	document.getElementById("sonucalani").innerHTML = islem;
+	/*yön belirtme*/
+	document.getElementById("metinalani2").dir = "ltr";
+</script>	
+</body>
+</html>

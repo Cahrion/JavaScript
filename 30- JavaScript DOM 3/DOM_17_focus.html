@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<button onClick="ornek()">Odaklan Link</button><br><br>
+	<button onClick="ornek2()">Odaklan Div</button><br><br>
+	<a id="baglanti" href="https://www.google.com.tr" target="_blank">Google'a Git</a>
+	<div id="ikincialan" contenteditable="true">JavaScript Eğitim Seti</div>
+	
+<script type="text/javascript" language="javascript">
+	// focus()	= Belge içerisindeki herhangi bir HTML elemanına odaklanmak için kullanılır.
+	function ornek(){
+		document.getElementById("baglanti").focus();
+	}	
+	function ornek2(){
+		document.getElementById("ikincialan").focus();
+	}
+</script>	
+</body>
+</html>

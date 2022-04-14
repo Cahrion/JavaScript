@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	// toLocaleString() 	=	Nesnenin tarayıcı lokasyonuna / diline göre karakter dizesi olarak temsil edilen halinin değerini geriye döndürür. Nesne değeri üzerinden tarayıcı lokasyonuna / diline göre özellik işlemler yapabilir.
+	
+	var deger 	=	{isim:"Volkan"};
+	var deger2  =	15505 // Rakamsal değerde bir nesne olarak algılanabilir
+	var sonuc	= deger.toLocaleString();
+	var sonuc2	= deger2.toLocaleString(); // (.) ile ayrıldı
+	var sonuc3	= deger2.toLocaleString("en-US");	// diller yazılabilir ("en-US") - (,) ile ayrıldı
+	
+	var sonuc4	= deger2.toLocaleString("tr-TR", {style:"currency",currency:"TRY"});// Para birimi ekler (tr)
+	var sonuc5	= deger2.toLocaleString("en-US", {style:"currency",currency:"USD"});// Para birimi ekler (en)
+	var sonuc6	= deger2.toLocaleString("ja-JP", {style:"currency",currency:"JPY"});// Para birimi ekler (jp)
+
+	
+	
+	var sonuc7	= deger2.toLocaleString("tr-TR", {style:"currency",currency:"JPY",maximumSignificantDigits:2});
+	// Maxsimum kaç karaktere dokunmayıp yuvarlama yapsın. En yüksek değer (21) 'dir 
+	
+	var sonuc8	= deger2.toLocaleString("tr-TR", {style:"currency",currency:"JPY",minimumSignificantDigits:2});
+	// Minimum kaç karaktere dokunmayıp yuvarlama yapsın. Bunda da en yüksek değer (21) 'dir 
+	
+	document.write(sonuc + "<br>");
+	document.write(sonuc2 + "<br>");
+	document.write(sonuc3 + "<br>");
+	document.write(sonuc4 + "<br>");
+	document.write(sonuc5 + "<br>");
+	document.write(sonuc6 + "<br>");
+	document.write(sonuc7 + "<br>");
+
+
+	
+</script>	
+</body>
+</html>

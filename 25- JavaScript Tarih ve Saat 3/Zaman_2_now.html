@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	// now() 	= Kullanıldığı değişken içeriğine evrensel zaman dilimine (UTC) ait tarihin zaman damgası bilgisini depolayarak depoladığı değeri geriye döndürür.
+	// Zaman damgası başlangıç tarihi 	= 01.01.1970
+	// UTC				= Coordinated universal time 	: Eş güdümlü evrensel zaman
+	
+	var zaman 	= Date.now() // Zaman damgası direkt olarak geldi (1613193420722)
+	document.write(zaman + "<br>");
+	
+	var zaman 	= new Date()
+	var zamandamgasi = zaman.getTime(); // her yerde aynı zaman damgası (İngiltere - Türkiye (aynı))
+	document.write(zamandamgasi);
+	
+</script>	
+</body>
+</html>

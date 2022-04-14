@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<div id="birincikimlik" name="birinciism" style="background-color: #FF0004" class="deneme">Volkan Alakent</div><br>
+	<div id="sonucalani"></div>
+
+	
+	
+<script type="text/javascript" language="javascript">
+	// name	= Belge içerisindeki HTML elemanına eklenmiş olan özellik adı referansını elde etmek için kullanılır. HTML elemanının içerisindeki özellik sayısı 1'den fazla ise her bir özellik adı referansı döngüyle elde edilebilir.
+	var islem	= document.getElementById("birincikimlik").attributes;
+	var dizi	= [];
+	for(var baslangic=0;baslangic<islem.length;baslangic++){
+		 var deger 			= islem[baslangic].name
+		 dizi[baslangic] 	= deger;
+	}
+	document.getElementById("sonucalani").innerHTML = dizi;
+
+</script>	
+</body>
+</html>

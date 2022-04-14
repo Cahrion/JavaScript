@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	(function test(parametrebir, parametreiki){
+		document.write(parametrebir + " TEST " + parametreiki)
+	})("Merhaba","Nasılsın");
+				
+				/* Bir diğeri */
+	
+	var text = function(parametrebir, parametreiki){
+		document.write("<br>" + parametrebir + " TEST " + parametreiki)
+	}("Merhaba","Nasılsın");
+	
+			/* Dışardan da alınabilir */
+	var merhaba = "Merhaba";
+	var Nasılsın = "Nasılsın";
+	
+	var textt = function(parametrebir, parametreiki){
+		document.write("<br>" + parametrebir + " TEST " + parametreiki)
+	}(merhaba,Nasılsın);	
+	
+</script>	
+</body>
+</html>

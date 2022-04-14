@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	// copyWithin()	= Kendisine verilecek olan parametreler ile tanımlanmış dizi aralığında bulunan değerleri kodlayarak parametreler doğrultusunda dizinin elemanlarını değiştirir ve dizinin değerini geriye döndürür.
+	
+	var renkler 	= ["Siyah","Gri","Beyaz","Sarı","Bej","Mavi","Kırmızı","Lila","Turkuaz","Mor"];
+	document.write("Düzgün dizi: " + renkler + "<br> <br>");
+	
+	// 1. Parametre = Hedef  
+	// 2. Parametre = Başlangıç
+	// 3. Parametre = Bitiş
+	var islemyap 	= renkler.copyWithin(7,2); // (7)Lila renginden başladı (2)Beyazdan başladı ekledi.  
+	document.write("Durum: " + renkler + "<br> <br>");
+
+	var renkler 	= ["Siyah","Gri","Beyaz","Sarı","Bej","Mavi","Kırmızı","Lila","Turkuaz","Mor"];
+	document.write("Düzgün dizi: " + renkler + "<br> <br>");
+	
+	var islemyap 	= renkler.copyWithin(7,2,4); // (5)Mavi rengine kadar devam eder ve sonra eski halinde devam eder.
+	document.write("Durum: " + renkler + "<br>");
+	
+</script>	
+</body>
+</html>

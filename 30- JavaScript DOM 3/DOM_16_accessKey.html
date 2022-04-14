@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<a id="baglantibir" href="https://www.google.com.tr" target="_blank" accesskey="1">Google'a git</a> <span id="bir"></span><br>
+	<a id="baglantiiki" href="https://www.yandex.com.tr" target="_blank" accesskey="2">Yandex'e git</a> <span id="iki"></span><br>
+	
+<script type="text/javascript" language="javascript">
+	// accessKey	= Belge içerisindeki herhangi bir HTML elemanına atanmış olan accessKey değerini elde etmek için kullanılır.
+	var degerbir = document.getElementById("baglantibir").accessKey = "g";
+	var degeriki = document.getElementById("baglantiiki").accessKey = "y";
+	
+	document.getElementById("bir").innerHTML = "Kısayol Tuşu: " + degerbir;
+	document.getElementById("iki").innerHTML = "Kısayol Tuşu: " + degeriki;
+</script>	
+</body>
+</html>

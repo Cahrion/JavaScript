@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	// Date() 	= Kullanıldığı değişken içerisine tarih ve saat bilgilerini depolayarak depoladığı değeri geiyo döndürür. Tarihe etki edilebilir.
+	
+	var zaman 	 	= new Date(90, 8, 15, 20,15,44);// yıl,ay,gün,saat,dakika,saniye
+	var donustur 	= String(zaman);
+	var parcala   	= donustur.split(" ");
+		document.write(parcala + "<br>");
+	
+	var kisagun 	= parcala[0];
+		document.write(kisagun + "<br>");	
+	var kisaay 		= parcala[1];
+		var ayaditr;
+		if(kisaay=="Sep"){
+			var kisaay  	= "aralık";
+		}
+		document.write(kisaay + "<br>" );
+
+	
+	var gun 		= parcala[2];
+		document.write(gun + "<br>");		
+	var yil 		= parcala[3];
+		document.write(yil + "<br>");		
+	
+	var tamsaat 	= parcala[4].split(":");
+		var saat 		= tamsaat[0];
+			document.write(saat + "<br>")
+		var dakika		= tamsaat[1];
+			document.write(dakika + "<br>")
+		var saniye		= tamsaat[2];
+			document.write(saniye + "<br>")
+	
+	var zamandilimi	= parcala[5];
+		document.write(zamandilimi + "<br>");
+</script>	
+</body>
+</html>

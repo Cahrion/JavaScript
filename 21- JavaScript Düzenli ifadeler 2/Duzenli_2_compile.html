@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	// compile() 	=	Önceden oluşturulmuş düzenli ifade içerisindeki desenin değiştirilmesini sağlar.
+	
+	var metin 		=	"Merhaba volkan ve merhaba hakan";
+	var ifade		= new RegExp("Volkan","i");
+	var sonuc 		= metin.match(ifade);
+	
+	document.write(sonuc + "<br>");
+	
+	ifade.compile("hAKaN","i");
+	var sonuc2 		= metin.match(ifade);
+	document.write(sonuc2 + "<br>");
+	
+</script>	
+</body>
+</html>

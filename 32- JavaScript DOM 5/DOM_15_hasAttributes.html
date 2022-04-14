@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<div id="name">JavaScript Eğitim Seti</div>
+	<br><br>
+	<div id="sonucalani"></div>
+	
+<script type="text/javascript" language="javascript">
+	// 	hasAttributes()	 = Belge içerisindeki herhangi bir html elemanının herhangi bir özelliğe sahip olup olmadığını kontrol ederek boolean (mantıksal) veri türünde sonucu geriye döndürür.
+	
+	var kontrol 	= document.getElementsByTagName("DIV")[0].hasAttributes();
+	document.getElementById("sonucalani").innerHTML = kontrol;
+	if(kontrol=true){
+	   	document.getElementById("sonucalani").innerHTML = "İlgili HTML elemanının global bir özeliği vardır.";
+	}else{
+		document.getElementById("sonucalani").innerHTML = "İlgili HTML elemanının global bir özeliği yoktur..";
+	}
+	
+</script>	
+</body>
+</html>

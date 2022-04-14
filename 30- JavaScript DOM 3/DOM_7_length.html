@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	
+	<button id="birincitag" name="" style="" class="" onClick="ornek()">Buton</button>
+	<br><br>
+	<div id="sonucalani"></div>
+<script type="text/javascript" language="javascript">
+	// length	= Belge içerisindeki HTML elemanına eklenmiş olan özelliklerini sayısını elde etmek için kullanılır.
+	function ornek(){
+			var islem = document.getElementsByTagName("BUTTON")[0].attributes.length;
+			document.getElementById("sonucalani").innerHTML = islem;
+		}
+</script>	
+</body>
+</html>

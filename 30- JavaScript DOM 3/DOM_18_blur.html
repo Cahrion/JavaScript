@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<button onClick="odaklama()">Odaklan</button>
+	<button onClick="dagıtma()">Odaktan çık</button><br><br>
+	
+	<div id="baglanti" contenteditable="true" target="_blank">JavaScript Eğitim seti</div>
+	
+<script type="text/javascript" language="javascript">
+	// blur()	= Belge içerisinde odaklanılmış herhangi bir HTML elemanının odağından çıkmak için kullanılır. 
+	
+	function odaklama(){
+		document.getElementById("baglanti").focus();
+	}	
+	function dagıtma(){
+		document.getElementById("baglanti").blur();
+	}
+</script>	
+</body>
+</html>

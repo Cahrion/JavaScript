@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<div id="kimlikbir" name="isimbir">	JavaScript Eğitim Seti</div>
+	<div id="kimlikiki" name="isimiki"  style="margin:5px;">	JavaScript Eğitim Seti</div>
+	<div id="kimlikuc" 	name="isimuc">	JavaScript Eğitim Seti</div>
+	<div id="sonucalani"></div>
+<script type="text/javascript" language="javascript">
+	// style 	= Belge içerisindeki HTML elemanına veya elemanlarına CSS (Cascading Style Sheets)(Basamaklı Sitil şablonları) özellikleri ve değerleri eklemek veya referansını elde etmek için kullanılır.
+	
+	document.getElementById("kimlikbir").style.backgroundColor 	= "red";
+	document.getElementById("kimlikbir").style.color 			= "white";
+	document.getElementById("kimlikbir").style.border 			= "5px double blue";
+	document.getElementById("kimlikbir").style.padding 			= "5px";
+	var referans = document.getElementById("kimlikiki").style.margin;
+	document.write(referans);
+</script>	
+</body>
+</html>

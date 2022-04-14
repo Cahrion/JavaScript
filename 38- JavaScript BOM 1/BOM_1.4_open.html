@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<button onclick="PencereAc()">Pencere Aç</button>
+<script type="text/javascript" language="javascript">
+	// open()	=	Yeni browser (tarayıcı) penceresi açmak için kullanılır.
+	/*
+	
+	1.Parametre	= 	URL (Pencerenin adresi)
+	2.Parametre	= 	Pencerenin adı
+	3.Parametre	= 	Pencerenin özellikleri
+	4.Parametre	= 	Pencerenin geçmiş bilgisi
+	
+	*/
+	
+	/*
+	width		=	Açılacak pencerenin genişliğini ayarlamak için kullanılır.						
+	height		=	Açılacak pencerenin yüksekliğini ayarlamak için kullanılır.
+	left		=	Açılacak pencerenin yatay konumunu ayarlamak için kullanılır.
+	top			=	Açılacak pencerenin dikey konumunu ayarlamak için kullanılır.
+	
+	BU AYARLAR TARAYICILARDA FARKLI ÇALIŞABİLİR
+	
+	fullscreen 	=	Açılacak pencerenin tam ekran boyutunda gösterilip gösterilmeyeceğini ayarlamak için kullanılır. 	 (yes & no)
+	location	=	Açılacak pencerede adres çubuğunun gösterilip gösterilmeyeceğini ayarlamak için kullanılır. 		 (yes & no)
+	menubar		=	Açılacak pencerede menu çubuğunun gösterilip gösterilmeyeceğini ayarlamak için kullanılır. 			 (yes & no)
+	scrollbars	=	Açılacak pencerede kaydırma çubuğunun gösterilip gösterilmeyeceğini ayarlamak için kullanılır. 		 (yes & no)
+	status		=	Açılacak pencerede durum çubuğunun gösterilip gösterilmeyeceğini ayarlamak için kullanılır. 		 (yes & no)
+	toolbar		=	Açılacak pencerede navigasyon araç çubuğunun gösterilip gösterilmeyeceğini ayarlamak için kullanılır.(yes & no)
+	titlebar	= 	Açılacak pencerede başlık çubuğunun gösterilip gösterilmeyeceğini ayarlamak için kullanılır. 		 (yes & no)
+	resizable	=	Açılacak pencerenin boyutlanabilir olup olmadığını ayarlamak için kullanılır. 						 (yes & no)
+	*/
+	
+	function PencereAc(){
+		var pencere 	=	window.open("","Yeni Pencere","status=yes,toolbar=yes,titlebar=yes,resizable=no"); 
+		// statusbar 	= Sadece İnternet Explorer'da çalışır.
+		// toolbar 		= Sadece toolbarı olanlarda  çalışır.
+		// titlebar 	= Sadece titlebar olanlarda  çalışır.
+		// resizable 	= Sadece belli tarayıcılarda çalışır.
+	}
+	
+</script>	
+</body>
+</html>

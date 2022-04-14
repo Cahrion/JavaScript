@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+	
+	<style>
+		.deneme{color:blue;}
+	</style>
+</head>
+
+<body>
+	<div>Volkan Alakent</div><br>
+	<div>Volkan Alakent 2</div>
+	
+<script type="text/javascript" language="javascript">
+	// setNamedItem()	=	Belge içerisindeki HTML elemanına özellik node'u (düğümü) ve değeri eklemek için kullanılır.
+	
+	var islem	= document.getElementsByTagName("DIV")[0];
+	var islem2	= document.getElementsByTagName("DIV")[1];
+	var ekle	= document.createAttribute("style");
+	var ekle2	= document.createAttribute("class");
+	ekle.value = "color:red";
+	ekle2.value = "deneme";
+	islem.attributes.setNamedItem(ekle);
+	islem2.attributes.setNamedItem(ekle2);
+</script>	
+</body>
+</html>

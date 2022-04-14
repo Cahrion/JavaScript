@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/*
+		radial-gradient() 	= HTML elementinin dairesel renk geçişi özelliklerini belirler. 
+		Parametreler 		= Shape (Şekil) | Size(Boyut) | Direction (Yön) | Colors (Renkler)
+		Değerler 			= Ellipse (elips) & Cricle (Daire) |farthest-corner (En uzak koşe) & closest-corner & farthest-side (En uzak taraf) & closest-side (En yakın taraf) | Başlangıç noktası & açı - derece |Başlangıç rengi - bitiş rengi 
+	*/
+	div{
+		width: 100px;
+		height: 100px;
+		border: 1px solid red;
+		background-color: yellow;
+		-webkit-transition: width 3s, height 3s;
+		-moz-transition: width 3s, height 3s;
+		-o-transition: width 3s, height 3s;
+		-ms-transition: width 3s, height 3s;
+		transition: width 3s, height 3s;
+	}
+	button{
+		width: 100px;
+		height: 50px;
+		border: thin solid gray;
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+
+	<button onClick="buyut()">Tıkla</button>
+	<br><br>
+	<div id="bla">Tıkla anismasyon başlasın</div>
+<script type="text/javascript" language="javascript">
+	function buyut(){
+		document.getElementById("bla").style.width = 1000 + "px";
+		document.getElementById("bla").style.height = 500 + "px";
+	}
+	
+</script>
+	
+</body>
+</html>

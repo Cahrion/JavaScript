@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	// \xdeger(16'bitlik) 	= Düzenli ifade dahilinde kontrol edilecek olan değişken içeriği karakter diziliminde bulunan değerin, 16 bitlik unicode formatıyla karşılığı olan karakteriyle eşleşmesi gerektiğini belirtmek için kullanılır.
+	
+	//	Değer aralığı : \u000  - \uFFFF
+	
+	// icabi 	= \u0069\u0063\u0061\u0062\u0069
+	var metin 	= "icabi";
+	var ifade 	= new RegExp("\\u0069","g");//--> /\u0069/g;
+	var sonuc 	= ifade.test(metin);
+	
+	document.write(sonuc + "<br>");
+	
+	var metin2 	= "\u0069\u0063\u0061\u0062\u0069"; // terside geçerlilik sağlıcaktır.
+	var ifade2 	= new RegExp("icab");//--> /n/g;
+	var sonuc2 	= metin2.match(ifade2);
+	
+	document.write(sonuc2);
+</script>	
+</body>
+</html>
+	

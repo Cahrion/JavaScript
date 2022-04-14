@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+	<style>
+		.bir{
+			background-color: #yellow;
+			width: 800px;
+			height: 600px;
+			overflow:auto;
+		}		
+		.iki{
+			width: 5000px;
+			height: 4000px;
+			border: 5px solid black;
+			padding-top: 15px;
+			padding-left: 10px;
+			padding-right: 20px;
+			padding-bottom: 25px;
+			background-color: #F1F1F1;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="kapsayici" class="bir">
+		<div id="alan" class="iki">
+			JavaScript Eğitim Seti
+		</div>
+	</div>
+	<div id="sonuc"></div><br>
+	<div id="sonuc2"></div>
+<script type="text/javascript" language="javascript">
+	// scrollWidth	= Belge içerisindeki herhangi bir HTML elemanının toplam yatay kaydırma genişliği değerini elde etmek için kullanılır.
+	// scrollHeight	= Belge içerisindeki herhangi bir HTML elemanının toplam dikey kaydırma yükseklik değerini elde etmek için kullanılır.
+	/*
+	Hesaplama :
+	Genişlikte		= padding-left + genişlik  + padding-right
+	Yükseklikte		= padding-top  + yükseklik + padding-bottom
+	*/
+	
+	var hesapbir 		= document.getElementById("kapsayici").scrollWidth;
+	var hesapiki 		= document.getElementById("kapsayici").scrollHeight;
+	document.getElementById("sonuc").innerHTML = "HTML elemanının toplam kaydırılabilir yatay genişlik değeri: " + hesapbir + "px <br>" ;
+	document.getElementById("sonuc2").innerHTML = "HTML elemanının toplam kaydırılabilir dikey yükseklik değeri: " + hesapiki + "px";
+	
+	
+	
+</script>	
+</body>
+</html>

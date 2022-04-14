@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<button onClick="deney()">Sil</button>
+	<ol id="liste">
+		<li id="bir">JavaScript</li>
+		<li id="iki">PHP</li>
+		<li id="uc">XML</li>
+		<li id="dort">CSS</li>
+		<li id="bes">HTML</li>
+	</ol>
+	
+	<div id="sonuc"></div>
+	
+	
+<script type="text/javascript" language="javascript">
+	// removeChild()	=	Belge içerisindeki herhangi bir HTML elemanının içerdiği node'u (düğümü) kaldırmak / silmek içni kullanılır.	
+	
+	function deney(){
+		var islem	= document.getElementById("liste");
+		islem.removeChild(islem.childNodes[0]);
+	}
+	
+	
+</script>	
+</body>
+</html>

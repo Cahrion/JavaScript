@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+	<style>
+		body{
+			padding: 0;
+			margin: 0;
+		}
+		.mousealani{
+			background-color: #f1F1F1;
+			margin: 0;
+			padding: 0;
+			width: 100%;
+			height: 500px;
+			border:1px dotted black;
+			text-align: center;
+		}
+		.sonucalani{
+			background-color: #f1F1F1;
+			margin: 0;
+			margin-top: 5px;
+			padding: 5px;
+			height: 20px;
+			width: 100%;
+			border:1px dotted black;
+			text-align: center;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="mousealani" onMouseMove="deney()">Mouse'u (fareyi) bu alan içerisinde gezdiriniz</div>
+	<div id="sonuc" class="sonucalani">Mouse'un Koordinatı (X): <span id="xdegeri"></span> (Y): <span id="ydegeri"></span></div>
+<script type="text/javascript" language="javascript">
+	// pageX	= Belge içerisindeki herhangi bir mouse (fare) event'ı (olayı) gerçekleştiğinde browser (tarayıcı) penceresine / sayfasına göre mouse'un (farenin) yatay konum koordinatının değerini geriye döndürür.
+	// pageY	= Belge içerisindeki herhangi bir mouse (fare) event'ı (olayı) gerçekleştiğinde browser (tarayıcı) penceresine / sayfasına göre mouse'un (farenin) dikey konum koordinatının değerini geriye döndürür.
+	
+	function deney(){
+		var degerX = event.pageX
+		var degerY = event.pageY
+		document.getElementById("xdegeri").innerHTML = degerX;
+		document.getElementById("ydegeri").innerHTML = degerY;
+		// Bilgisayar monitörüne göre konum hesabı yapar.
+	}
+	
+</script>	
+</body>
+</html>

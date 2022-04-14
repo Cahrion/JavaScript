@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	// valueOf()	= Üzerindeki değişken değerinin tam anlamıla aktarımını sağlayarak yeni bir içerik oluşturur. Oluşturduğu değeri geriye döndürür.
+	
+	var sayibir 	= "10";
+	var sayiiki		= true;
+	var sayiuc		= false;
+	var sayidort	= new Date();
+	var sayibes		= "5.50";
+	var sayialti	= "10 - Lale";
+	
+	var veriturubir		= typeof sayibir;
+	var verituruiki		= typeof sayiiki;
+	var verituruuc		= typeof sayiuc;
+	var veriturudort	= typeof sayidort;
+	var veriturubes		= typeof sayibes;
+	var veriturualti	= typeof sayialti;
+	
+	document.write("Değer: " + sayibir   + " ( " + veriturubir  + " ) " + "<br>");
+	document.write("Değer: " + sayiiki   + " ( " + verituruiki  + " ) " + "<br>");	
+	document.write("Değer: " + sayiuc    + " ( " + verituruuc   + " ) " + "<br>");	
+	document.write("Değer: " + sayidort  + " ( " + veriturudort + " ) " + "<br>");
+	document.write("Değer: " + sayibes   + " ( " + veriturubes  + " ) " + "<br>");
+	document.write("Değer: " + sayialti  + " ( " + veriturualti + " ) " + "<br> <br>");
+	
+	var sonucbir		= sayibir.valueOf();
+	var sonuciki		= sayiiki.valueOf();
+	var sonucuc			= sayiuc.valueOf();
+	var sonucdort		= sayidort.valueOf();
+	var sonucbes		= sayibes.valueOf();
+	var sonucalti		= sayialti.valueOf();
+	
+	var sveriturubir	= typeof sonucbir;
+	var sverituruiki	= typeof sonuciki;
+	var sverituruuc		= typeof sonucuc;
+	var sveriturudort	= typeof sonucdort;
+	var sveriturubes	= typeof sonucbes;
+	var sveriturualti	= typeof sonucalti;
+	
+	document.write("Sonuç: " + sonucbir  + "( "+ sveriturubir  +	" )" 	+"<br>");
+	document.write("Sonuç: " + sonuciki  + "( "+ sverituruiki  +	" )"  	+"<br>");
+	document.write("Sonuç: " + sonucuc   + "(" + sverituruuc   + 	" ) " 	+"<br>");	
+	document.write("Sonuç: " + sonucdort + "(" + sveriturudort +	" ) "	+"<br>");
+	document.write("Sonuç: " + sonucbes  + "(" + sveriturubes  + 	" ) " 	+"<br>");	
+	document.write("Sonuç: " + sonucalti + "(" + sveriturualti +	" ) "	+"<br>");
+	
+</script>	
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+	<style>
+		.hedefalani{
+			border:1px solid black;
+			width:250px;
+			height: 50px;
+		}
+	</style>
+</head>
+
+<body>
+	<span draggable="true">JavaScript Eğitim Seti</span><br><br><br>
+	<div id="hedef" ondragenter="deney()" class="hedefalani"></div>
+	<div id="yazi"></div>
+<script type="text/javascript" language="javascript">
+	// ondragenter	= Belge içerisindeki herhangi bir elemanının hedef kapsama alanı üzerine giriş yaptığında belirtilecek olan fonksiyon çalışır.
+	function deney(){
+		document.getElementById("hedef").style.borderColor = "red";
+		document.getElementById("hedef").style.backgroundColor = "#F1F1F1";
+		document.getElementById("yazialani").innerHTML = "Sürüklenen Nesne Hedefe Giriş Yaptı.";
+	}
+	
+</script>	
+</body>
+</html>

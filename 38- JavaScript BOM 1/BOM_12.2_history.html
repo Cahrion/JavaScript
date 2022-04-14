@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<div>Burası Üçüncü Sayfamız</div><br><br>
+	<a href="BOM_12.0_history.html">Birinci Sayfaya Git</a> - 
+	<a href="BOM_12.1_history.html">İkinci Sayfaya Git</a> - 
+	<a href="BOM_12.2_history.html">ucuncu Sayfaya Git</a><br><br><br>
+	<button onClick="gerigit()">Geri Git</button>
+	<button onClick="ilerigit()">İleri Git</button>
+	<button onClick="ikigerigit()">2 Sayfa Geri Git</button>
+	<button onClick="ikiilerigit()">2 Sayfa İleri Git</button><br><br>
+	<div>Geçmiş Kaydı Uzunluğu: <span id="uzunluk"></span></div>
+	
+<script type="text/javascript" language="javascript">
+	// history		=  	Pencerenin geçmiş nesnesine erişim için kullanılır. Özellikleri sayesinde geçmiş işlemleri yapılabilir.
+	// length		= 	Sayfa geçmişi sayısını bulur.
+	// back()		=	Sayfa geçmişinde 1 geri gider.
+	// forward()	=	Sayfa geçmişinde 1 ileri gider.
+	// go()			=	Sayfa geçmişinde belirtilen değer kadar ileri veya geri gider.
+	
+	var deger	= window.history.length;
+	document.getElementById("uzunluk").innerHTML = deger;
+	
+	function gerigit(){
+		window.history.back();
+	}	
+	function ilerigit(){
+		window.history.forward();
+	}	
+	function ikigerigit(){
+		window.history.go(-2); // 0 Medium olarak alınır (-)'ler geri git demektir.
+	}	
+	function ikiilerigit(){
+		window.history.go(2);	// 0 Medium olarak alınır (+)'lar geri git demektir.
+	}
+	
+</script>	
+</body>
+</html>

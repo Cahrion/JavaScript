@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	
+	var metin 	=	"JavaScript internet üzerinde kullanılan en yaygın script dilidir.";
+	document.write(metin + "<br>" + "<br>");
+	
+	for(var sonuc in metin){
+		if(metin[sonuc]=="a"){
+			continue;
+		}
+		document.write(metin[sonuc]);
+	}
+	document.write("<br> <br>");
+	for(var sonuc2 in metin){
+		document.write(metin[sonuc2] + "<br>");
+	}
+</script>	
+</body>
+</html>

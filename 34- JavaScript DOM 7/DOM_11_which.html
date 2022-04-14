@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<input type="text" onKeyPress="deney()">
+	<div id="sonuc"></div>
+<script type="text/javascript" language="javascript">
+	// which 	= 	Belge içerisindeki onkeypress, onkeydown veya onkeyup event'ı (olayı) gerçekleştiğinde klavyeden basılan tuşun UNİCODE (Evrensel kod) kodlamasına dönüştürerek oluşturduğu değeri geriye döndürür.
+	
+	function deney(){
+		var deger 	= event.which;
+		document.getElementById("sonuc").innerHTML += deger + " ";
+	}
+</script>	
+</body>
+</html>

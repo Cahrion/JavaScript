@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<div id="kimlik" style="background-color: #E5E3E3;width: 280px;height: 100px; border:1px solid red; padding: 10px; margin: 10px;text-align: center; padding-top: 70px" onMouseMove="deneme()">0</div>
+	
+<script type="text/javascript" language="javascript">
+	// onmousemove	= Belge içerisindeki herhangi bir elemanın mouse (fare) ile kapsama alanında gezindiğinde belirtilecek olan fonksiyon çalışır.
+	var sayi = 0;
+	function deneme(){
+		document.getElementById("kimlik").innerHTML = sayi;
+		sayi +=1;
+	}
+</script>	
+</body>
+</html>

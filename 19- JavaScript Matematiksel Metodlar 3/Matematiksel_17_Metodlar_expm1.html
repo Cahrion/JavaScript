@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	// expm1()	= Kendisine parametre olarak verilen herhangi bir sayı değerinin euler(e) sayısı üssünü bulup 1 eksilterek bulduğu değeri geriye döndürür.
+	
+	var sayibir 	= "180";
+	var sayiiki		= true;
+	var sayiuc		= false;
+	var sayidort	= Math.E; // Euler  
+	var sayibes		= -10; 
+	var sayialti	= "10 - Lale"; 
+	
+	document.write("Değer: " + sayibir  + "<br>");
+	document.write("Değer: " + sayiiki  + "<br>");	
+	document.write("Değer: " + sayiuc   + "<br>");	
+	document.write("Değer: " + sayidort + "<br>");
+	document.write("Değer: " + sayibes  + "<br>");
+	document.write("Değer: " + sayialti + "<br> <br>");
+	
+	var sonucbir		= Math.expm1(sayibir);
+	var sonuciki		= Math.expm1(sayiiki);
+	var sonucuc			= Math.expm1(sayiuc);
+	var sonucdort		= Math.expm1(sayidort);
+	var sonucbes		= Math.expm1(sayibes);
+	var sonucalti		= Math.expm1(sayialti);
+
+	document.write("Sonuç: " + sonucbir  +"<br>");
+	document.write("Sonuç: " + sonuciki  +"<br>");
+	document.write("Sonuç: " + sonucuc   +"<br>");	
+	document.write("Sonuç: " + sonucdort +"<br>");
+	document.write("Sonuç: " + sonucbes  +"<br>");	
+	document.write("Sonuç: " + sonucalti +"<br>");
+	
+</script>	
+</body>
+</html>

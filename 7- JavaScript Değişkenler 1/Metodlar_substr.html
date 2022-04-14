@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	// substr()		=	Kendisine verilecek olan parametreler ile tanımlanmış değişken aralığında bulunan değerleri kopyalayarak yeni bir içerik oluşturur ve oluşturduğu içeriği geriye döndürür.
+	// 1. Parametre = 	Başlangıç parametresi
+	// 2. Parametre = 	Kaç karakter alınacaksa o kadar karakter alıyor.
+	
+	var metin		= "JavaScript dünya üzerinde kullanılan en yaygın script dilidir.";
+	document.write(metin + "<br>");
+		/* 1. Parametre */
+	var sonuc = metin.substr(11); 	// Başlangıç parametresi olarak alınır (11)
+	document.write(sonuc + "<br>");
+		/* 2. Parametre */
+	var sonuc = metin.substr(11,15); // Kaç parametre alınacaksa onu seçer (15)
+	document.write(sonuc + "<br>");
+		/* 2. Parametre (-)'sayılar */
+	var sonuc = metin.substr(-15,6); // Parametreler (-) parametrelerde alabilir.
+	document.write(sonuc + "<br>");
+</script>	
+</body>
+</html>

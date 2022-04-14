@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+	
+	<style>
+		body { 
+			color:green;
+			font-size: 25px;
+		}
+		p { 
+			color:blue;
+		}
+		div {
+			color:black;
+		}
+	</style>	
+	<style>
+		body {
+			font-weight: bold;
+		}
+	</style>
+	
+</head>
+<body>
+	
+	Volkan Alakent JavaScript Eğitim Seti
+	<div id="sonucalani"></div>
+
+	
+<script type="text/javascript" language="javascript">
+	// styleSheets	= Belge üzerinde etkisi olan tüm stil sayfalarının nesne referansını elde etmek için kullanılır. Eğer ki stil sayfaları referansları birden fazla ise her stil sayfası referansı döngü ile elde edilebilir.
+	
+	var islem 	= document.styleSheets[0].cssRules;
+	var dizi	= []
+	for(var baslangic=0;baslangic<islem.length;baslangic++){
+		var deger	= islem[baslangic].cssText;
+		dizi[baslangic] = deger;
+	}
+	document.getElementById("sonucalani").innerHTML = dizi;
+</script>	
+</body>
+</html>

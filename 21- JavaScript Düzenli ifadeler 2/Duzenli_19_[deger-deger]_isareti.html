@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	// [deger(x)-deger(y)]	=	Düzenli ifade dahilinde kontrol edilecek olan değişken içeriği karakter diziliminde bulunan değerin, belirtilen karakter aralığından herhangi birisiyle. Eşleşmesi gerektiğini belirtmek için kullanılır.
+	
+	var metin 	= "Volkan AlakentDoğumludur.";
+	
+	var ifade1	= new RegExp("[0-9]","gi"); // [0123456789]
+	var ifade2	= new RegExp("[a-z]","g"); // [abc.........xyz] // türkçe kelimeleri almaz.
+	var ifade3	= new RegExp("[A-Z]","g"); // [abc.........xyz]
+	
+	var sonuc1	= metin.match(ifade1);
+	var sonuc2	= metin.match(ifade2);
+	var sonuc3	= metin.match(ifade3);
+	
+	document.write(sonuc1  + "<br>");
+	document.write(sonuc2 + "<br>");
+	document.write(sonuc3 + "<br>");
+	
+</script>	
+</body>
+</html>

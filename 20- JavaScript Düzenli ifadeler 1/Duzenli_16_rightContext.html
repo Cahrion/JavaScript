@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	// rightContext	= Değişken içeriğinde düzenli ifade ile aranılan değerin eşleşmesi durumunda eşleşmeyi sağlayan değişken içerinin değerinin sağında kalan tüm değerleri geri döndürür.
+	
+	var metin 		= "Dünya da ve Türkiye'de script dili olarak en yaygın kullanılan dil JavaScript'tir.";
+	var ifade		= /script/gi;
+	ifade.test(metin);
+	var sonuc 		= RegExp.rightContext;
+	document.write(sonuc);
+</script>	
+</body>
+</html>

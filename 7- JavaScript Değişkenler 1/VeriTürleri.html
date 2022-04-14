@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+// typeof 		= Değişkenin veri türüne bakar
+	
+	var isim 		= "Volkan"; 			//String
+	var sayı 		= 8; 					//Number
+	var mantiksal 	= true;					//Boolean
+	var isimler 	= ["Ahmet","Hakan"]; 	//Object Array
+	var nesneler 	= new Object();			//Object
+	var tanimsiz 							//undefined
+	var bos			= "";					//String
+	
+	var depo = typeof(isim);				//String
+document.write(depo + "<br>");
+	var depo = typeof(sayı);				//Number
+document.write(depo + "<br>");		
+	var depo = typeof(mantiksal);			//Boolean
+document.write(depo + "<br>");	
+	var depo = typeof(isimler);				//Object Array
+document.write(depo + "<br>");	
+	var depo = typeof(nesneler);			//Object
+document.write(depo + "<br>");	
+	var depo = typeof(tanimsiz);			//undefined
+document.write(depo + "<br>");	
+	var depo = typeof(bos);					//undefined
+document.write(depo + "<br>");	
+
+// typeof sayi 	= gibi de kullanılabilir.
+	
+document.writeln(typeof isim);
+	
+// typeof (veri) de yazılabilir
+	
+document.write(typeof 10);
+	
+	
+</script>	
+</body>
+</html>

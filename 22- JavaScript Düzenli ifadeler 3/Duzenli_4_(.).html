@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	// .	=	Düzenli ifade dahilinde kontrol edilecek olan değişken içeriği karakter diziliminde bulunan değerin yeni satır karakteri haric herhangi birisiyle eşleşmesi gerektiğini belirtmek için kullanılır.
+	
+	var metin 	= "JavaScridaptW rastpor";
+	var ifade 	= new RegExp("r...p","g"); //--> /r...p/g  --> Aynısıdır.
+	// orta bölümün bilinemesi durumunda kullanılır. Kaç tane (.) varsa o kadar veri arasında yapar.
+	var ifade2 	= new RegExp("J.+W","g"); //--> /J.+W/g --> Aynısıdır.
+	
+	var sonuc 	= metin.match(ifade);
+	var sonuc2 	= metin.match(ifade2);
+	
+	document.write(sonuc + "<br>");
+	document.write(sonuc2);
+	
+</script>	
+</body>
+</html>

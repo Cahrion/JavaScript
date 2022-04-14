@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<div id="alan">
+		<p>Volkan Alakent</p>
+		<p>JavaScript</p>
+		<p>HTML</p>
+	</div>
+	<div id="sonuc"></div>
+	<div id="sonuc2"></div>
+	<div id="sonuc3"></div>
+<script type="text/javascript" language="javascript">
+	// firstChild		= Belge içerisindeki herhangi bir HTML elemanının içerdiği ilk alt node'u (düğümü) elde etmek için kullanılır.
+	
+	var deger	= document.getElementById("alan").firstChild;
+	document.getElementById("sonuc").innerHTML = deger;
+	var deger	= document.getElementById("alan").firstChild.nodeName;
+	document.getElementById("sonuc2").innerHTML = deger;	
+	var deger	= document.getElementById("alan").firstChild.innerHTML;
+	document.getElementById("sonuc3").innerHTML = deger;
+	
+</script>	
+</body>
+</html>

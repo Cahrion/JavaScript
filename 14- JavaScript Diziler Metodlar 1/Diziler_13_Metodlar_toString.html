@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	// toString()	= Dizideki tüm elemanları içeren String veri türünde düz bir metin oluşturur. Oluşturduğu değeri geriye döndürür.
+	
+	var renkler 	= ["Siyah","Gri","Beyaz","Sarı","Bej","Mavi","Kırmızı"];
+	document.write(renkler + "<br> <br>");
+	
+	var islemyap 	= renkler.toString();
+	document.write("İlk Durum : " + renkler + "<br> Türü: " + typeof renkler + "<br>");
+	document.write("Son Durum : " + islemyap + "<br> Türü: " + typeof islemyap + "<br>");
+
+							/* Çok boyutlu dizi*/
+	
+	var renkler 	= ["Siyah","Gri","Beyaz","Sarı",
+					   ["Lila","Bordo",["Siyam ","Lacivert"],"Turkuaz"]
+					   ,"Bej","Mavi","Kırmızı"];
+	document.write(renkler + "<br> <br>");
+	
+	var islemyap 	= renkler.toString();
+	document.write("İlk Durum : " + renkler + "<br> Türü: " + typeof renkler + "<br>");
+	document.write("Son Durum : " + islemyap + "<br> Türü: " + typeof islemyap + "<br>");
+	
+</script>	
+</body>
+</html>

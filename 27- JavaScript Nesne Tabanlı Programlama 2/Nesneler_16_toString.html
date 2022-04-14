@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	// toString()	= 	Nesnenin karakter dizisi olarak temsil edilen halini değerini geriye döndürür. Nesne prototip özelliği kullanılarak değer ataması yapılabilir.
+	
+	var bilgiler	= {
+		isim	:"Volkan",
+		soyisim	:"Alakent"
+	};
+	
+	var sonuc = bilgiler.toString(); // object object
+	document.write(sonuc + "<br>");
+	
+					/* Functionlu nesne */
+	
+	function islem(){
+		this.isim		= "Volkan";
+		this.soyisim	= "Alakent";
+		document.write(this.isim);
+	}
+	var bilgiler2 	= new islem();
+	var sonuc2		= bilgiler2.toString();
+	document.write(sonuc2 + "<br>"); // ilk çalıştırır ve ondan sonra veriyi yollar.
+	
+						/* Functionlu nesne (prototype) */
+	
+	function islem2(){
+		this.isim		= "Volkan";
+	}
+	
+	islem2.prototype.toString  = function(){
+		document.write(this.isim);
+	}
+	
+	var bilgiler3 	= new islem();
+	var sonuc3		= bilgiler3.toString();
+
+</script>	
+</body>
+</html>

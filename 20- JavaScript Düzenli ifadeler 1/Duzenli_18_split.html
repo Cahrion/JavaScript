@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	// split()	 =	Kendisine parametre olarak verilen düzenli ifadeli değer doğrultusunda değişken içeriğini kontrol eder ve aranan değerin eşleşmesi durumunda eşleşmeyi sağlayan değişken içeriği değerlerinibölümleyerek yeni bir dizi oluşturur. Oluşturduğu dizi değerini geriye döndürür.
+	
+	var metin 	 = "JavaScript Python PHP HTML CSS XML";
+	document.write(metin + "<br>");
+	var ifade	 = / /g; //--> new RegExp(" ","g"); aynısı
+	var sonuc 	 = metin.split(ifade);
+	document.write(sonuc);
+	
+				/* Daha gelişmişi (Belirleyiciler.) */
+	var metin2 	 = "JavaScript Python PHP HTML CSS XML";
+	document.write("<br>" + metin2 + "<br>");
+	var ifade2	 = /\W/g; //--> new RegExp("\\W","g"); aynısı
+	var sonuc2 	 = metin2.split(ifade2);
+	document.write(sonuc2);
+</script>	
+</body>
+</html>

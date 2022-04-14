@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<button onClick="deney()">Tıklayınız</button><br><br>
+	<div id="kimlik"><span>JavaScript</span> Eğitim Seti <span>Volkan Alakent</span></div><br><br>
+	<div id="sonuc"></div>
+	
+<script type="text/javascript" language="javascript">
+	// childElementCount	=	Belge içerisindeki herhangi bir HTML elemanının içerdiği alt elemanların sayısını elde etmek için kullanılır.
+	function deney(){
+		var islemyap	= document.getElementById("kimlik").childElementCount;
+		document.getElementById("sonuc").innerHTML = "İlgili HTML elemanının içerisinde " + islemyap + " adet alt eleman bulunmakta.";
+	}
+</script>	
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	// .search()		= Kendisine parametre olarak verilen değer doğrultusunda değişken içeriğini arayarak ilk eşleşmeyi sağlayan değişken içeriğinin indis değerini geriye döndürür.
+	// i 				= Düzenli harf alırsa büyük harf / küçük almasına bakmaz 
+	
+	var metin 		= "JavaScript dünya üzerinde en yaygın olarak kullanılan bir script dilidir."
+	document.write(metin + "<br>");
+	
+	var isim 		= metin.search("Script");
+	document.write(isim + "<br>");
+	
+	var isim 		= metin.search(/script/i);
+	document.write(isim + "<br>");
+</script>	
+</body>
+</html>

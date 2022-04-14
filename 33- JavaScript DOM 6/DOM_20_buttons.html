@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<div onmousedown="ornek()">Bu alan üzerindeyken mouse'unuzun herhangi bir tuşuna veya tuşlarına basınız</div>
+	<div id="sonuc"></div>
+<script type="text/javascript" language="javascript">
+	// buttons	= Belge içerisinde mouse (fare) ile tıklama event'ı (olayı) gerçekleştirildiğinde mouse'un (farenin) hangi tuşuna veya hangi tuşlarına basıldığı değerini geriye döndürür.
+	/*
+	1			= Sol Tuş
+	2			= Sağ Tuş
+	3			= Sol Tuş ve Sağ Tuş
+	4			= Orta Tuş & Tekerlek
+	5			= Sol Tuş ve Aynı Anda Orta Tuş & Tekerlek
+	6			= Sağ Tuş ve Aynı Anda Orta Tuş & Tekerlek
+	8			= dördüncü Tuş (geri tuşu)
+	16			= beşinci Tuş (ileri tuşu)
+	*/
+	function ornek(){
+		var sonuc	= event.buttons;
+		if(sonuc==1){
+			document.getElementById("sonuc").innerHTML = "Mouse'un sol tuşuna basıldı.";
+		}else if(sonuc==2){
+			document.getElementById("sonuc").innerHTML = "Mouse'un sag tuşuna basıldı.";
+		}else if(sonuc==3){
+			document.getElementById("sonuc").innerHTML = "Mouse'un sol tuşuna ve aynı anda sag tuşuna basıldı.";
+		}else if(sonuc==4){
+			document.getElementById("sonuc").innerHTML = "Mouse'un Orta & Tekerlek tuşuna basıldı.";
+		}else if(sonuc==5){
+			document.getElementById("sonuc").innerHTML = "Mouse'un sol tuşuna ve aynı anda orta & Tekerlek tuşuna basıldı.";
+		}else if(sonuc==6){
+			document.getElementById("sonuc").innerHTML = "Mouse'un sağ tuşuna ve aynı anda orta & Tekerlek tuşuna basıldı.";
+		}else if(sonuc==8){
+			document.getElementById("sonuc").innerHTML = "Mouse'un dördüncü Tuşuna (geri tuşuna) basıldı.";
+		}else if(sonuc==16){
+			document.getElementById("sonuc").innerHTML = "Mouse'un beşinci Tuşuna (ileri tuşuna) basıldı.";
+		}else{
+			document.getElementById("sonuc").innerHTML = sonuc; 
+			// En fazla 31 görüldü. (Bütün tuşlar. Aynı anda)
+
+		}
+	}
+</script>	
+</body>
+</html>

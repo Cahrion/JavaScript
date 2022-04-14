@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+									/* Konum belirleyici*/
+	// ^ 	=	Düzenli ifade dahilinde kontrol edilecek olan değişken içeriği karakter diziliminin başlangıcı ile düzenli ifade arasında eşleşme aramak için kullanılır.
+	
+	var metin 		= "JavaScript Eğitim seyi by Volkan Alakent JavaScript eğitim seti";
+	var ifade		= new RegExp("^JavaScript"); // (^) eğer varsa başta olmak zorunludur.
+	var ifade2		= new RegExp("^Eğitim","gim"); // (Ayarlar) işe yaramaz.
+	var ifade3		= new RegExp("^Eğitim"); // (
+	var sonuc 		= ifade.test(metin);
+	var sonuc2 		= ifade2.test(metin);
+	var sonuc3		= ifade3.test(metin);
+	document.write(sonuc + "<br>");
+	document.write(sonuc2 + "<br>");
+	document.write(sonuc3);
+</script>	
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<button onClick="pencerem()">Pencere Ac</button>
+	<button onClick="boyutlandirma()">Boyut artır</button>
+	<button onClick="boyutlandirma2()">Boyut azalt</button>
+<script type="text/javascript" language="javascript">
+	// resizeBy()	=	Pencere mevcut genişlik ve yükseklik değerini belirtilen piksellere göre yeniden boyutlandırmak için kullanılır.
+	var pencere;
+	function pencerem(){
+		pencere = window.open("","Yeni Pencerem","width=1000,height=750",true); 
+	}	
+	function boyutlandirma(){
+		pencere.resizeBy(200,200);	
+		// Belirtilen değerin üzerine eklenerek devam eder.
+		// Eğer sınıra ulaşırsa devam etmez.
+	}	
+	function boyutlandirma2(){
+		pencere.resizeBy(-200,-200);	
+		// Belirtilen değerin üzerinden çıkartılarak devam eder.
+		// Eğer sınıra ulaşırsa devam etmez.
+	}
+	
+</script>	
+</body>
+</html>

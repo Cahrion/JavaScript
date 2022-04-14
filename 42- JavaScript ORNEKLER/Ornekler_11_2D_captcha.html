@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body onLoad="ornek()">
+	<div>Güvenlik Kodu: </div>
+	<br>
+	<canvas id="guvenlikkodualani" width="150" height="50"></canvas>
+	<br><br>
+	<button onClick="degistir()">Kodu Degiştir</button>
+<script type="text/javascript" language="javascript">
+	
+	var islem;
+	function ornek(){
+		islem	= document.getElementById("guvenlikkodualani").getContext("2d");
+		islem.fillStyle 	= "#F1F1F1";
+		degistir();
+	}
+	function degistir(){
+		var metin	= "";
+		for(var baslangic = 0;baslangic <6;baslangic++){
+			var rastgeledeger	= Math.random();
+			if(Math.round(rastgeledeger) == 0){
+			   metin 	+=	String.fromCharCode(48+9 * Math.random());
+			}else{
+			   metin 	+=	String.fromCharCode(65+25 * Math.random());
+			}
+		}
+		islem.clearRect(0,0,150,50);
+		islem.fillRect(0,0,150,50);
+		islem.font	= "30px calibri";
+		islem.strokeText(metin,24,34);
+	}
+	
+</script>	
+</body>
+</html>

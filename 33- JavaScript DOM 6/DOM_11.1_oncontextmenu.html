@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<div oncontextmenu="ornek()" contextmenu="menumuz">Buraya Sağ Tıklayınız</div>
+	<!-- 2020 Çalışmadı. (contextmenu)-->
+	<menu id="menumuz" type="context">
+		<menuitem label="YENİLE - Icabi Kırgız" onClick="window.location.reload()"></menuitem>
+	</menu>
+	
+	<div id="sonuc"></div>
+<script type="text/javascript" language="javascript">
+	// oncontextmenu	= Belge içerisindeki herhangi bir elemana mouse (fare) ile sağ tıklandığında belirtilecek olan fonksiyon çalışır.
+	
+	function ornek(){
+		document.getElementById("sonuc").innerHTML = "Sağ tıklama oldu. Context menü açıldı.";
+	}
+	
+</script>	
+</body>
+</html>

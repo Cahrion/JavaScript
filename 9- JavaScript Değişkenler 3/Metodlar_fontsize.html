@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	// fontsize() 	= Kendisine parametre olarak belirtilen değer doğrultusunda değişken içerisindeki metnin font boyutunu değiştirerek değeri geriye döndürür.
+	
+	var metin = "Volkan Alakent JavaScript Eğitim Seti";
+	document.write(metin + "<br>");
+	
+	var sonuc = metin.fontsize(10); // fontun boyutunu ayarlama parametresi girilir (10);
+	document.write(sonuc + "<br>");
+
+	var sonuc = metin.fontsize(7); // fontsize parametresi en fazla max(7)'ye kadar büyültme sağlar.
+	document.write(sonuc + "<br>");
+	
+	var sonuc = metin.fontsize(6); 
+	document.write(sonuc + "<br>");	
+	
+	var sonuc = metin.fontsize(4); 
+	document.write(sonuc + "<br>");	
+</script>	
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	// decodeURI 	=	Değişken içerisindeki metnin özel karakterlerinin UTF-8 (UNICODE dönüşüm formatı) kodlamasına dönüştürülmüş karakterlerini çözerek değeri geriye döndürür.
+	/*
+	Kodlamaya dahil edilmeyen karakterler:
+	0 1 2 3 4 5 6 7 8 9 = Sayılar
+	a b c d e f g h i j k l m n o p q r s t u v w x y z
+	A B C D E F G H İ J K L M N O P Q R S T U V W X Y Z 
+	; : / ? @ & = + $ , # - _ . ! ~ * ' ( )
+	*/
+						/* Normal yazı */
+	var deger = "http://www.extraegitim.com?e%C4%9Fitimsetiad%C4%B1=JavaScript&E%C4%9Fitmen=Volkan%20Alakent";
+	document.write(deger + "<br>");
+	
+	var sonuc = decodeURI(deger);
+	document.write(sonuc);
+	
+
+	
+
+</script>	
+</body>
+</html>

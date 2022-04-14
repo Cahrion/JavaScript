@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<div id="bir">JavaScript Eğitim Seti</div>
+	<div>JavaScript Eğitim Seti</div>
+	<br><br>
+	<div id="sonuc"></div>
+	<div id="sonuc2"></div>
+	
+<script type="text/javascript" language="javascript">
+	// id	= Belge içerisindeki herhangi bir HTML elemanının id değerini elde etmek veya ayarlamak için kullanılır.
+	
+	var islemyap	= document.getElementsByTagName("DIV")[0].id;
+	document.getElementById("sonuc").innerHTML = "ID değeri: " + islemyap;	
+	
+	
+	var islemyap	= document.getElementsByTagName("DIV")[1].id = "iki";
+	document.getElementById("sonuc2").innerHTML = "ID değeri: " + islemyap;
+	
+</script>	
+</body>
+</html>

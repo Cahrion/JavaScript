@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<button onClick="deney()">Koordinatı Güncelle</button>
+	<div id="bir"></div>
+	<div id="iki"></div>
+	
+<script type="text/javascript" language="javascript">
+	// screenleft 	=	Pencerenin bilgisayar ekranına göre yatay konum koordinatının değerini geriye döndürür.
+	// screentop	=	Pencerenin bilgisayar ekranına göre dikey konum koordinatının değerini geriye döndürür.
+	function deney(){
+		var yatay 		= window.screenLeft 
+		var dikey 		= window.screenTop
+		document.getElementById("bir").innerHTML = "Yatay Koordinat: " + yatay;
+		document.getElementById("iki").innerHTML = "Dikey Koordinat: " + dikey;	
+	}
+</script>	
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<div id="ornek">JavaScript Eğitim seti</div>
+	<br> <br>
+	<div id="sonucalani"></div>
+<script type="text/javascript" language="javascript">
+	// 	hasAttribute()	 = Belge içerisindeki herhangi bir html elemanının belirtilen özelliğe sahip olup olmadığını kontrol ederek boolean (mantıksal) veri türünde sonucu geriye döndürür.
+
+	var kontrolet =	document.getElementById("ornek").hasAttribute("name"); 
+	document.getElementById("sonucalani").innerHTML = kontrolet;
+	if(kontrolet){
+		document.getElementById("sonucalani").innerHTML = "Belirtilen özellik ilgili HTML elemanınında bulunmaktadır.";
+	}else{
+		document.getElementById("sonucalani").innerHTML = "Belirtilen özellik ilgili HTML elemanınında yoktur.";
+	}
+	
+</script>	
+</body>
+</html>

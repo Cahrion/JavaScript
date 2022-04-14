@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	
+	<div>Volkan <span>Alakent</span></div>
+	<div>Alakent</div>
+	<p>JavaScript Eğitim Seti</p>
+	<ul>
+		<li>HTML</li>
+		<li>JavaScript</li>
+		<li>CSS</li>
+		<li>PHP</li>
+		<li>XML</li>
+	</ul>
+	<br>
+	<div id="sonuc"></div>
+	
+<script type="text/javascript" language="javascript">
+	// getElementsByTagName()	 =	Kendisine parametre olarak verilen değer doğrultusunda, belge içerisindeki belirtilen tağ (etiketi) adına sahip tüm elemanların referanslarını elde etmek için kullanılır. Eğer elemanların referansı birden fazla ise her referans döngü ile elde edilebilir
+	
+	var islem 	= document.getElementsByTagName("DIV"); // Büyük harf yapısı kullanılır.
+	var islem 	= document.getElementsByTagName("DIV")[0].innerHTML; 
+	// Sırayı belirtmemiz gerekirse en baştan (0) ile başlar.
+	document.getElementById("sonuc").innerHTML = islem; // iç tağlar da dahil edilir.
+	/*<ul>*/
+	var islem 	= document.getElementsByTagName("UL")[0].innerHTML; 
+	document.getElementById("sonuc").innerHTML = islem; // iç tağlar da dahil edilir.
+
+</script>	
+</body>
+</html>

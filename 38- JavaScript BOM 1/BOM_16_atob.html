@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<button onClick="kodla()">Dönüştür</button>
+	<button onClick="coz()">Çöz</button><br><br>
+
+	<div id="icerik">Icabi Kırgız</div>
+	<!-- Türkçe karakterler geçersiz varsayılır. -->
+	<!-- Kodlamayı encodeURIComponent gibi faktörlerle değiştirilip istenilen karakterlere ulaşılabilir. -->
+	<div id="sonuckodlu"></div>
+	<div id="sonuccozulu"></div>
+<script type="text/javascript" language="javascript">
+	// atob()		=	Pencere içerisindeki herhangi bir metnin base64 kodlamasına dönüştürülmüş karakterlerini çözerek değeri geriye döndürür.
+	
+	function kodla(){
+		var deger	= document.getElementById("icerik").innerHTML;
+		var sonuc	= window.btoa(encodeURIComponent(deger));
+		document.getElementById("sonuckodlu").innerHTML = sonuc;
+	}	
+	function coz(){
+		var deger	= document.getElementById("sonuckodlu").innerHTML;
+		var sonuc	= decodeURIComponent(window.atob(deger));
+		document.getElementById("sonuccozulu").innerHTML = sonuc;
+	}
+	
+</script>	
+</body>
+</html>

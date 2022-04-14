@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+	<style>
+		.deger {
+			width: 5000px;
+			height: 5000px;
+			background-color: #F1F1F1;
+			text-align: center;
+		}
+	</style>
+</head>
+
+<body style="margin:0;">
+	<button style="position: fixed" onClick="deney()">Kaydır</button><br>
+	<button style="position: fixed" onClick="deney2()">En küçük değere Kaydır</button><br>
+	<div class="deger">JavaScript Eğitim Seti</div>
+<script type="text/javascript" language="javascript">
+	// scrollTo()	= Belge içeriğini belirtilen değerlere göre kaydırmak için kullanılır.
+	
+	function deney(){
+		window.scrollTo(2300,0); // left,top | Sabit bir değer girilir ve orada kalır.
+	}
+	function deney2(){
+		window.scrollTo(-100,-100); // (-) değerler en küçük değeri döndürür (Sol - Üst)
+	}
+	
+</script>	
+</body>
+</html>

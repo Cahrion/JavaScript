@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<audio src="Ses.mp3" onseeking="deney()" controls></audio>
+	<div id="sonuc"></div>
+<script type="text/javascript" language="javascript">
+	// onseeking		=	Medya elemanının yürütme konumu kullanıcı tarafından hareket ettirildiğinde belirtilecek olan fonksiyon çalışır.
+	// onseeking		= 	onseeked'den farkı daha ince ayar çalışır. Her hareketi algılar
+	function deney(){
+		document.getElementById("sonuc").innerHTML += "Medya elemanının yürütme konumu hareket ettirildi. <br>"
+	}
+</script>	
+</body>
+</html>

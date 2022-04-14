@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<button onclick="deney()">Değiştir.</button><br><br>
+	<button onclick="deney2()">Mynet'i Aç.</button><br><br>
+	<iframe src="Cerceveler/BOM_1_cercevesi.html" width="800" height="500"></iframe>
+	<iframe src="Cerceveler/BOM_2_cercevesi.html"></iframe>
+	<div id="sonuc"></div>
+<script type="text/javascript" language="javascript">
+	// frames		 = Pencere içerisindeki tüm çerçevelerin nesne referanslarını elde etmek veya ayarlamak için kullanılır.
+	function deney(){
+		window.frames[0].location = "Cerceveler/BOM_3_cercevesi.html";
+		window.frames[1].location = "Cerceveler/BOM_4_cercevesi.html";
+	}	
+	function deney2(){
+		window.frames[0].location = "https://www.mynet.com";
+	}
+</script>	
+</body>
+</html>

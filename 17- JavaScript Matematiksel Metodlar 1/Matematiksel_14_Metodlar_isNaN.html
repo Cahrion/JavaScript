@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	// isNaN()	= Kendisine parametrik olarak verilen değişken içeriğinin NaN değerinde olup olmadığını kontrol ederek boolean (Mantıksal) veri türünde sonucu geriye döndürür.
+	
+	var sayi1 		= 10;
+	var sayi2 		= "on";
+	var sayi3 		= 10.10;
+	var sayi4 		= NaN;
+
+	var sonucbir 	= Number.isNaN(sayi1);			// NaN ise sonuç true değer gönderir.
+	var sonuciki 	= Number.isNaN(sayi2);			// NaN ise sonuç true değer gönderir.
+	var sonucuc 	= Number.isNaN(sayi3);			// NaN ise sonuç true değer gönderir.
+	var sonucdort 	= Number.isNaN(sayi4);			// NaN ise sonuç true değer gönderir.
+
+	var sonucbir 	= isNaN(sayi1);			// Number olmayanlar şeylere de (true) gönderir.
+	var sonuciki 	= isNaN(sayi2);			// Number olmayanlar şeylere de (true) gönderir.
+	var sonucuc 	= isNaN(sayi3);			// Number olmayanlar şeylere de (true) gönderir.
+	var sonucdort 	= isNaN(sayi4);			// Number olmayanlar şeylere de (true) gönderir.
+	
+	
+	document.write("Değer: " + sayi1 + "<br>");
+	document.write("Sonuc: " + sonucbir + "<br> <br>");	
+	
+	document.write("Değer: " + sayi2 + "<br>");
+	document.write("Sonuc: " + sonuciki + "<br> <br>");	
+	
+	document.write("Değer: " + sayi3 + "<br>");
+	document.write("Sonuc: " + sonucuc + "<br> <br>");	
+	
+	document.write("Değer: " + sayi4 + "<br>");
+	document.write("Sonuc: " + sonucdort + "<br> <br>");
+	
+</script>	
+</body>
+</html>

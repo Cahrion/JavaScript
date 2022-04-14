@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	//  splice() 	= Diziden eleman veya elemanlar silinebilmesini sağlar ve sildiği eleman veya elemanlarının değerini geri döndürür. Diziye eleman veya elemanlar eklenebilmesini sağlar.
+	
+	// 1. Parametre	= (1) Belirtilen sayı indeksinden başlar.
+	// 2. Parametre = (3) Başlangıçtaki değerinden ne kadar ileri gideceğini belirleriz.
+	
+	var renkler 	= ["Siyah","Gri","Beyaz","Sarı","Bej","Mavi","Kırmızı"];
+	document.write(renkler + "<br> <br>");
+	
+	var islemyap 	= renkler.splice(1, 3); // (3) İkinci parametre girilmezse önündeki verilerin hepsini siler.
+	document.write("Kalan elamanlar :" + renkler + "<br>");
+	document.write("Silinen eleman :" + islemyap + "<br> <br>");
+
+					/* Ad Değiştirme */
+		document.write("<br> <br>");
+					/* Ad Değiştirme */
+	// 3. Parametre =  Seçilen parametrenin önüne gelicek parametreyi seçilir ve önüne koyulur.
+	
+	
+	var renkler 	= ["Siyah","Gri","Beyaz","Sarı","Bej","Mavi","Kırmızı"];
+	document.write(renkler + "<br> <br>");
+	
+	var islemyap 	= renkler.splice(1, 3,"Turkuaz","Lavivert","Bordo");
+	document.write("Kalan elamanlar :" + renkler + "<br>");
+	document.write("Silinen eleman :" + islemyap + "<br> <br>");
+</script>	
+</body>
+</html>

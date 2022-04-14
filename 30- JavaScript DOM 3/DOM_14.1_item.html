@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+	
+	<style>
+		.ornek {
+			color:black;
+			border:1px solid red;
+			background-color: yellow;
+		}		
+		.demo {
+			color:blue;
+			border:1px solid blue;
+			background-color: green;
+		}
+	</style>
+	
+</head>
+
+<body>
+	<p id="kimlik" name="isim" class="ornek">Volkan Alakent JavaScript Eğitim Seti</p>
+	<div id="sonuc"></div>
+<script type="text/javascript" language="javascript">
+	// item()	=	Belge içerisindeki HTML elemanına eklenmiş olan özellik node'u (düğümü)  referansını elde etmek veya ayarlamak için kullanılır. HTML elemanı içerisinde özellik sayısı birden fazla ise her bir özellik node'u (düğümü) referansı döngüyle elde edilebilir.
+	
+	var islem	= document.getElementById("kimlik");
+	var metin	= "";
+	for(var baslangic=0;baslangic<islem.attributes.length;baslangic++){
+		var sonucadi	= islem.attributes.item(baslangic).name;
+		var sonucdegeri	= islem.attributes.item(baslangic).value;
+		
+		metin	   	   += sonucadi + " |--| " + sonucdegeri + "<br>";
+	}
+	document.getElementById("sonuc").innerHTML = metin;
+</script>	
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	//(?:deger)	= Düzenli ifadelerle alt grup oluşturmak için kullanılır.
+	
+	var metin  	= "JavaScript";
+	var ifade 	= new RegExp("(?:Sc)"); // tek bir defa dönüyor.
+	var sonuc 	= metin.match(ifade);
+	document.write(sonuc);
+</script>	
+</body>
+</html>

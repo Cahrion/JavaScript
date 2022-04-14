@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	// match() 	= Kendisine parametre olarak verilen değer doğrultusun da değişken içeriğini kontrol eder ve eşleşen değer varsa içeriğin eşleşen kısmından yeni bir içerik oluşturur. Oluşturduğu içeriği geriye döndürür. (Düzenli ifade alabilir.)
+	
+	// g 		= İçeriğin tamamı üzerinde çalışmasını sağlar. (Düzenli ifade)
+	// i 		= İçeriğin büyük harf küçük harf olmasına bakılmaz (Düzenli ifade)
+	
+	var metin = "Volkan Alakent javaScript Eğitim Seti - JavaScript A'dan Z'ye - JavaScript";
+	document.write(metin + "<br>");
+	
+	var sonuc = metin.match("JavaScript"); // eşleşirse değeri eşleşmezse NULL döndürür.
+	document.write(sonuc + "<br>");
+	
+	var sonuc = metin.match(/JavaScript/g); // Bütün değerlere bakar
+	document.write(sonuc + "<br>");	
+	
+	var sonuc = metin.match(/JavaScript/i); // Büyük küçüğe bakmaz bütün verileri alır.
+	document.write(sonuc);
+</script>	
+</body>
+</html>

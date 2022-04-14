@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+	<script  id="sıfırıncı"></script>
+</head>
+	<script id="birinci">
+		function dokuman(){
+				document.write("JavaScript");
+			}
+	</script>
+<body>
+	Scripts Id'leri:<br> <span id="sonuc"></span>
+<script  id="ikinci" type="text/javascript" language="javascript">
+	// scripts	= Belge içerisindeki script tag'ına (etiketine) sahip tüm elemanların referansını elde etmek için kullanılır. Eleman referansları birden fazla ise her bir eleman döngü ile elde edilebilir.
+
+	var sonuc = document.scripts;
+	for(var baslangic = 0;baslangic<sonuc.length;baslangic++){
+		var islemsonuc	= sonuc[baslangic].id;
+		document.write(islemsonuc + "<br>")
+	}
+</script>	
+</body>
+</html>

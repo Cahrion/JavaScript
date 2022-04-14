@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<button onClick="deney()">Tıkla</button>
+	<div onClick="deney()">Tıkla</div>
+	<span onClick="deney()">Tıkla</span>
+	<input type="text" onClick="deney()">
+	<br>
+	<br>
+	<div id="sonuc"></div>
+<script type="text/javascript" language="javascript">
+	// onClick()	=	Belge içerisindeki herhangi bir elemana mouse (fare) ile sol tıklandığında belirtilecek olan fonksiyon çalışır.
+	
+	function deney(){
+		document.getElementById("sonuc").innerHTML = "TIKLAMA İŞLEMİ GERÇEKLEŞMİŞTİR";
+	}
+</script>	
+</body>
+</html>

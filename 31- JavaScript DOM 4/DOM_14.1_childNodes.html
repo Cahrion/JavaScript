@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<div id="alanimiz">
+		<div>JavaScript</div>
+		<div>Java</div>
+		<div>HTML</div>
+		<div>CSS</div>
+		<div>PHP</div>
+	</div>
+	<br><br>
+	<div id="sonuc"></div>
+	<div id="sonuc2"></div>
+<script type="text/javascript" language="javascript">
+	// childNodes	= Belge içerisindeki herhangi bir HTML elemanının içerdiği alt node'ları (düğümleri) elde etmek için kullanılır.
+	
+	var islemyap	= document.getElementById("alanimiz").childNodes;
+	var metin		= "";
+	for(var baslangic=0;baslangic<islemyap.length;baslangic++){
+		metin		= metin + islemyap[baslangic].nodeName + "<br>";
+	}
+	document.getElementById("sonuc").innerHTML = metin;	
+	
+</script>	
+</body>
+</html>

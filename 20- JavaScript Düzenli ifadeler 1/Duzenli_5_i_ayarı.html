@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	// i ayarı 	= Düzenli ifade dahilinde kontrol edilecek olan değişken içeriğinin büyük harf / küçük harf ayrımı olmaksızın kontrol edilmesini sağlar.
+	
+	var deger 	= "Merhaba volkan Nasılsın? Senin ismin volkan değilmiydi? ";
+	var ifade 	= new RegExp("Volkan","i");
+	var ifade2 	= /Volkan/i;
+	var ifade3 	= new RegExp("Volkan","ig");	// g' ile
+	var ifade4 	= /Volkan/gi;// Sırası önemli değildir.
+	var ifade5 	= /Volkan/ig;// Sırası önemli değildir.
+	var sonuc 	= deger.match(ifade);
+	var sonuc2 	= deger.match(ifade2);
+	var sonuc3	= deger.match(ifade3);
+	var sonuc4	= deger.match(ifade4);
+	var sonuc5	= deger.match(ifade5);
+	
+	document.write(sonuc + "<br>");
+	document.write(sonuc2 + "<br>");
+	document.write(sonuc3 + "<br>");
+	document.write(sonuc4 + "<br>");
+	document.write(sonuc5 + "<br>");
+	
+</script>	
+</body>
+</html>

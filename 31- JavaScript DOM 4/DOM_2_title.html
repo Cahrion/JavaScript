@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<div id="ornek" title="Volkan Alakent">JavaScript Eğitim Seti</div>
+	<div id="deger"></div>
+<script type="text/javascript" language="javascript">
+ // title	= Belge içerisindeki herhangi bir HTML elemanının title değerini elde etmek veya ayarlamak için kullanılır.	
+	
+	var sonuc	= document.getElementById("ornek").title = "Volkan bey";
+	document.getElementById("deger").innerHTML = "HTML elemanının title değeri: " +sonuc;
+	
+</script>	
+</body>
+</html>

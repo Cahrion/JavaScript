@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	
+	<div>Volkan Alakent</div>
+	<p>JavaScript Eğitim Seti</p>
+	<ul>
+		<li>HTML</li>
+		<li>JavaScript</li>
+		<li>CSS</li>
+		<li>PHP</li>
+		<li>XML</li>
+	</ul>
+	<br>
+	<div id="sonuc"></div>
+	
+<script type="text/javascript" language="javascript">
+	// getElementsByTagName()	 =	Kendisine parametre olarak verilen değer doğrultusunda, belge içerisindeki belirtilen tağ (etiketi) adına sahip tüm elemanların referanslarını elde etmek için kullanılır. Eğer elemanların referansı birden fazla ise her referans döngü ile elde edilebilir
+	
+	var deger 	= document.getElementsByTagName("*");  // hepsini alır. | Üstten aşağıya doğru olarak.
+	document.getElementById("sonuc").innerHTML = deger[0].innerHTML; // <html>
+	document.getElementById("sonuc").innerHTML = deger[1].innerHTML; // <head>
+	document.getElementById("sonuc").innerHTML = deger[2].innerHTML; // <meta>
+	document.getElementById("sonuc").innerHTML = deger[3].innerHTML; // <title>
+	document.getElementById("sonuc").innerHTML = deger[4].innerHTML; // <body>
+	document.getElementById("sonuc").innerHTML = deger[5].innerHTML; // <div>
+	document.getElementById("sonuc").innerHTML = deger[6].innerHTML; // <p>
+	document.getElementById("sonuc").innerHTML = deger[7].innerHTML; // <ul>
+
+</script>	
+</body>
+</html>

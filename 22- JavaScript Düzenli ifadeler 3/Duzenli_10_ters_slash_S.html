@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	// \S	= Düzenli ifade dahilinde kontrol edilecek olan değişken içeriği karakter diziliminde bulunan değerin, boşluk karakteri dışındaki karakterlerden herhangi birisiyle eşleşmesi gerektiğini belirtmek için kullanılır.
+	
+	var metin 	= "JavaScript Eğitim seti: Volkan Bey";
+	var ifade 	= new RegExp("\\S","g"); //--> /\S/g;
+	var sonuc 	= metin.match(ifade);
+	document.write(sonuc);
+</script>	
+</body>
+</html>

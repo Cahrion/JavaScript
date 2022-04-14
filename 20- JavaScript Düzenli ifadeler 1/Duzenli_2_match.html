@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	// match()	= Kendisine parametre olarak verilen düzenli ifade değer doğrultusunda değişken içeriğini kontrol eder. Aranan değerlerin eşleşmesi durumunda eşleşmeyi sağlayan değişken içeriği değerinden yeni bir dizi oluşturarak. Oluşturduğu dizi değerini geriye döndürür.
+	
+	var metin 	=	"Merhaba Volkan nasılsın? ";
+	var ifade	=	new RegExp("Volkan"); // veya
+	var ifade2	=	/Volkan/; // veya
+	// Büyük küçük uyumu var.
+	var sonuc	=	metin.match(ifade);
+	var sonuc2	=	metin.match(ifade2);
+	document.write(sonuc  +" "+ typeof sonuc +  "<br>");
+	document.write(sonuc2 +" "+ typeof sonuc2);
+	
+</script>	
+</body>
+</html>

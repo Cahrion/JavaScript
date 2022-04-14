@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	// setUTCDate() 	= Kendisine parametre belirtilmiş değer doğrultusunda kullanıldığı değişken içeriğine evrensel zaman dilimine ait gün bilgisini 1 ila 31 arasında olmak üzere rakamsal olarak ayarlayarak depolar. Depoladığı değeri geriye döndürür. 
+	// UTC				= Coordinated universal time 	: Eş güdümlü evrensel zaman
+	
+	var zaman = new Date();
+	zaman.setUTCDate(18); // Kısa gün verisi de ona göre ayarlanır.
+
+	document.write(zaman);
+</script>	
+</body>
+</html>

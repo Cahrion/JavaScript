@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<audio src="Ses.mp3" ondurationchange="deney()" controls></audio>
+	<div id="sonuc"></div>
+<script type="text/javascript" language="javascript">
+	// ondurationchange	= Medya elemanının nesnesinin süresi değiştirildiğinde belirtilecek olan fonksiyon çalışır.
+	
+	function deney(){
+		document.getElementById("sonuc").innerHTML += "Medya Dosyası Nesnesi Süresi Değiştirildi." + "<br>";
+	}
+	// Data'da kalan süreyle aynı olmadığından dolayı değiştirilmeyi anlar ve oradan değiştirildi diye bir mesaj gönderir.
+</script>	
+</body>
+</html>

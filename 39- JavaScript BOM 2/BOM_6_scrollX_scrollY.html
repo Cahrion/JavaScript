@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<button onclick="ornek()" style="position:fixed">Tıkla</button>
+	<br><br>
+	<div style="background-color: #F1F1F1;width: 3000px;height: 3000px;"></div>
+<script type="text/javascript" language="javascript">
+	// scrollX		=	Belge içeriğin yatay kaydırma değerini elde etmek için kullanılır.
+	// scrollY		=	Belge içeriğin dikey kaydırma değerini elde etmek için kullanılır.
+	
+	function ornek(){
+		var degerX	= window.scrollX;
+		var degerY	= window.scrollY;
+		var sonuc	= "Yatay Kaydırma: " + degerX +  "\nDikey Kaydırma: " + degerY;
+		alert(sonuc);
+	}
+	
+</script>	
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<button onClick="bir()">Pencere Aç</button>
+	<button onClick="iki()">Boyutlandır</button>
+	<button onClick="uc()">En küçük deger</button>
+<script type="text/javascript" language="javascript">
+	// resizeTo() =	Pencerenin mevcut genişlik ve yükseklik değerini belirtilen piksellere göre yeniden boyutlandırmak için kullanılır.
+	
+	var pencere;
+	
+	function bir(){
+		pencere = window.open("","Yeni Pencerem","width=1000,height=750,left=400,top=600",true);
+	}	
+	function iki(){
+		pencere.resizeTo(1000,200); // width,height
+	}	
+	function uc(){
+		pencere.resizeTo(-100,-200); // Eğer (-) değer verilirse en küçük değer döner.
+	}
+	
+</script>	
+</body>
+</html>

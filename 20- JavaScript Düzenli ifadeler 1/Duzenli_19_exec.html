@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	// exec() 	=	Kendisine parametre olarak verilen değişken içeriğinde düzenli ifade ile aranan değerin eşleşmesi durumunda eşleşmeyi sağlayan değişken içeriği değerinden yeni bir dizi oluşturarak oluşturdupu dizi değerini geriye döndürür.
+	
+	// g ayarı kullanılcak olur ise exec metodu her çağrıldığında lastIndex değeri otomatik olarak eşleşen değerden bir sonraki değeri alacaktır.
+	var metin 	= "volkan Volkan VOLKAN";
+	var ifade	= new RegExp("volkan","gi");
+	var sonuc 	= ifade.exec(metin); // lastIndex = 0  // g olmazsa her zaman 0 olur
+	document.write(sonuc + "<br>");
+	var sonuc2 	= ifade.exec(metin); // lastIndex = 7  // g olmazsa her zaman 0 olur
+	document.write(sonuc2 + "<br>");
+	var sonuc3 	= ifade.exec(metin); // lastIndex = 13 // g olmazsa her zaman 0 olur
+	document.write(sonuc3 + "<br>"); 
+</script>	
+</body>
+</html>

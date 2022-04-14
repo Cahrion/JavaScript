@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	// filter()		= Kendisine parametre olarak verilen fonksiyonu dizideki her eleman üzerine çalıştırır. Fonksiyonun geriye true değerini döndüren tüm elemanlarını kopyalayarak yeni bir dizi oluşturur. Oluşturduğu dizinin değerini geriye döndürür.
+	
+	// 1. Parametre =	Her işlem çalıştıgında dizinin elemanı 
+	// 2. Parametre =	Her işlem çalıştıgında dizinin elemanının indis / index değeri
+	// 3. Parametre =	Tekrarlama işlemindeki diziyi tutan değişkenin referansı
+	function deney(eleman,sira,referans){
+		return eleman.length < 5 ;
+	}
+		 
+
+	var renkler 	= ["Siyah","Gri","Beyaz","Sarı","Bej","Mavi","Kırmızı","Turkuaz","Yeşil","Siyam","Mor","Pembe","Lila"];
+	document.write(renkler + "<br> <br>");
+	
+	var islemyap 	= renkler.filter(deney);
+	document.write("Bütün Elemanlar : " + renkler + "<br>" + typeof renkler + "<br>");
+	document.write("İstenen elemanlar : " + islemyap + "<br>" + typeof islemyap + " <br>");
+
+	
+</script>	
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+ 	<div onMouseDown="deney()">JavaScript Eğitim Seti</div>
+	<input onKeyDown="deney2()">
+<script type="text/javascript" language="javascript">
+	// metaKey		=	Belge içerisindeki herhangi bir event (olay) tetiklenirken pencere tuşuna (Windows) veya emir tuşuna (Apple) basılıp basılmadığını kontrol ederek boolean (mantıksal) veri türünde sonucu geriye döndürür.
+
+	function deney(){
+		var deger = event.metaKey;
+		if(deger){
+			alert("metakey Tuşuna basıldı ? (Mouse)");
+		}else{
+			alert("metakey Tuşuna basılmadı ? (Mouse)");
+		}
+	}	
+	function deney2(){
+		var deger = event.metaKey;
+		if(deger){
+			alert("metakey Tuşuna basıldı ? (text)");
+		}else{
+			alert("metakey Tuşuna basılmadı ? (text)");
+		}
+	}
+</script>	
+</body>
+</html>

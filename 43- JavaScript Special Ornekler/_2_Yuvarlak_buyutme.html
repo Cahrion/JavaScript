@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/*
+		radial-gradient() 	= HTML elementinin dairesel renk geçişi özelliklerini belirler. 
+		Parametreler 		= Shape (Şekil) | Size(Boyut) | Direction (Yön) | Colors (Renkler)
+		Değerler 			= Ellipse (elips) & Cricle (Daire) |farthest-corner (En uzak koşe) & closest-corner & farthest-side (En uzak taraf) & closest-side (En yakın taraf) | Başlangıç noktası & açı - derece |Başlangıç rengi - bitiş rengi 
+	*/
+	button#yuvarlak{
+		width: 100px;
+		height: 50px;
+		border: thin solid gray;
+		background: -webkit-radial-gradient(circle,black,black 0%, white 0%, white);
+		background: -moz-radial-gradient(circle,black,black 0%, white 0%, white);
+		background: -o-radial-gradient(circle,black,black 0%, white 0%, white);
+		background: -ms-radial-gradient(circle,black,black 0%, white 0%, white);
+		background: radial-gradient(circle,black,black 0%, white 0%, white);
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+
+	<button id="yuvarlak" onMouseOver="yuvarlat_basla()" onMouseOut="yuvarlat_gerial()">Tıkla</button>
+	<div id="degerlik"></div>
+<script type="text/javascript" language="javascript">
+	//----------------------------------------------
+	var nokta	= document.getElementById("yuvarlak");
+	var izin_giris    = 1;
+	var izin_cikis    = 1;
+	var degerilk = 0;
+	var tamdeger;
+	function yuvarlat_basla(){
+		tamdeger = 0;
+		if(izin_giris == 1){
+			izin_giris = 0;
+			if(degerilk == 1){
+			    var baslangic = baslangic_hesap();
+			}else{
+				var baslangic = 0;
+				degerilk = 1;
+			}
+			var zaman_ileri	= setInterval(function(){
+				if(tamdeger == 1){
+				    clearInterval(zaman_ileri);
+				 	izin_giris = 1;
+				}
+				nokta.style.background= "radial-gradient(circle,black,black " + baslangic + "%, white " + baslangic + "%, white)";
+
+				baslangic = baslangic + 1;
+				if(baslangic >= 40){
+					nokta.style.color = "white";
+				}
+				if(baslangic>100){
+					clearInterval(zaman_ileri);
+					izin_giris = 1;
+				}
+			},1);
+		}
+	}	
+	function yuvarlat_gerial(){
+		tamdeger = 1;
+		if(izin_cikis == 1){
+			izin_cikis = 0;
+			var baslangic = baslangic_hesap();
+			var zaman_geri	= setInterval(function(){
+				if(tamdeger == 0){
+				    clearInterval(zaman_geri);
+				 	izin_cikis = 1;
+				}
+				nokta.style.background= "radial-gradient(circle,black,black " + baslangic + "%, white " + baslangic + "%, white)";
+				baslangic = baslangic - 1;
+				if(baslangic <= 40){
+					nokta.style.color = "black";
+				}
+				if(baslangic<0){
+					clearInterval(zaman_geri);
+					izin_cikis = 1;
+				}
+			},1);
+		}
+	}
+	function baslangic_hesap(){
+		var param = nokta.style.background;
+		var deger = param.search("%");
+		var baslangic_sayisi = String(param[deger-2]) + String(param[deger-1]);
+		if(baslangic_sayisi == "00"){
+			var sayi = 100;
+		}else if(baslangic_sayisi == " 0"){
+			var sayi = 0;
+		}
+		else{
+			var sayi = parseInt(baslangic_sayisi);
+		}
+		return sayi;
+	}
+</script>
+	
+</body>
+</html>

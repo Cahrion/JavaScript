@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	// toPrecision()	= Kendisine parametre olarak verilen değer doğrultusunda değişken içeriğindeki sayının kaç basamak olacağını belirleyerek yeni bir içerik oluşturur. ve oluşturduğu içeriği geriye döndürür. (Nokta hariç)
+	
+	var sayibir 		= 10.156970;
+	var sayiiki 		= 55;
+	
+	var sonucbir		= sayibir.toPrecision(4); // Sayı yuvarlama yapar.
+	var sonuciki		= sayiiki.toPrecision(4); // Eğer boşluk varsa eklemeler yapar.
+
+	document.write("Değer : " + sayibir + "<br>"); 
+	document.write("Sonuç : " + sonucbir + "<br><br>"); 
+	document.write("Değer : " + sayiiki + "<br>"); 
+	document.write("Sonuç : " + sonuciki + "<br> <br>"); 
+	
+</script>	
+</body>
+</html>

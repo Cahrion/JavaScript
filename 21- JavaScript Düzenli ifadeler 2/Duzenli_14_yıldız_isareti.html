@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	// *	= Düzenli ifade dahilinde kontrol edilebilecek olan değişken içeriği karakter diziliminde bulunan değerin 0 defa veya daha fazla tekrarlanmış olması gerektiğini tanımlar.
+	
+	var metin 	= "JavaScript dilinin dosya uzantısı J j s js jsssjssssasjsjsjs jsjs şeklindedir.";
+	var ifade 	= new RegExp("js*","g");// s'nin kaç adet olduğu önemsiz sayılır
+	var sonuc 	= metin.match(ifade);
+	
+	document.write(sonuc);
+	
+</script>	
+</body>
+</html>

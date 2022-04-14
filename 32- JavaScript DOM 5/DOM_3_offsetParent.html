@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<div id="deneme"><span><b id="kalinlastir">Java</b>Script</span> Eğitim Seti</div>
+	<br><br>
+	<div id="sonuc"></div>
+	
+<script type="text/javascript" language="javascript">
+	// offsetParent		= Belge içerisindeki herhangi bir HTML elemanının içerisinde mutlak olarak konumlandırıldığı ilk elemanın referans nesnesinielde etmek için kullanılır. 
+	var bul 	= document.getElementById("deden").offsetParent;
+	document.getElementById("sonuc").innerHTML = bul; // her tülü body'i döndürür.
+	
+</script>	
+</body>
+</html>

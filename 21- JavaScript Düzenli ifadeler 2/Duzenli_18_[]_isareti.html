@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	// [abc]	=	Düzenli ifade dahilinde kontrol edilecek olan değişken içeriği karakter diziliminde bulunan değerin, belirtilen karakterlerden herhangi birisiyle eşleşmesi gerektiğini belirtmek için kullanılır.
+	
+	var metin	 	= "Volkan Alakent JavaScript eğitim seti.";
+	var ifade 		= new RegExp("[JavaScript]","g"); // --> /[JavaScript]/g --> Aynısı.
+	// Bütün içeridekileri yazıları tek tek alır ve dizi şeklinde döndürür.
+	var sonuc 		= metin.match(ifade);
+	
+	document.write(sonuc);
+	
+</script>	
+</body>
+</html>

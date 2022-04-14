@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<a href="javascript:deney('https://www.google.com.tr',1000,650)" >Google'a Git</a>
+<script type="text/javascript" language="javascript">
+	
+	function deney(adres,genislik,uzunluk){
+		var solhesap	= parseInt((screen.availWidth/2)  - (genislik/2))
+		var usthesap	= parseInt((screen.availHeight/2) - (uzunluk/2))
+		
+		var ozellikler	= "width=" + genislik + ",height=" + uzunluk + ",left=" + solhesap + ",top=" + usthesap;
+			
+		window.open(adres,"Google",ozellikler,true);
+	}
+	
+</script>	
+</body>
+</html>

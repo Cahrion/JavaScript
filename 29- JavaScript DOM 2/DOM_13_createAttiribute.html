@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+	<style>
+		.demo{ color:red; }
+	</style>
+</head>
+
+<body>
+	<h1>JavaScript Eğitim Seti</h1>
+	<span id="anlatan">anlatan</span> <a id="alan">Volkan Alakent</a><br><br>
+	<button onClick="Tikla()">Renk Uygula</button>
+	<button onClick="Tiklacapa()">Çapa uygula</button>
+	<button onClick="Tiklatitle()">Title uygula</button>
+	
+<script type="text/javascript" language="javascript">
+	// createAttiribute() 	= Belge içerisindeki istenilen bir elemana yeni bir özellik \ nitelik node'u  (dügümü) oluşturur ve oluşturduğu bu node'u (dügümü) bir node object (dügüm nesnesi) olarak geriye döndürür.
+	// setAttributeNode		= createAttribute() metodu ile oluşturulan özellik node'unu (dügümünü), node object'ine (dügüm nesnesine) uygular.
+	
+	function Tikla(){
+		var deger		= document.getElementsByTagName("h1")[0];
+		var ozellik		= document.createAttribute("class");
+		ozellik.value 	= "demo";
+		deger.setAttributeNode(ozellik);
+	}
+	function Tiklacapa(){
+		var deger		= document.getElementById("alan");
+		var ozellik		= document.createAttribute("href");
+		ozellik.value 	= "https://www.google.com";
+		deger.setAttributeNode(ozellik);
+	}
+	function Tiklatitle(){
+		var deger		= document.getElementById("anlatan");
+		var ozellik		= document.createAttribute("title");
+		ozellik.value 	= "Eğitmen";
+		deger.setAttributeNode(ozellik);
+	}
+	
+</script>	
+</body>
+</html>

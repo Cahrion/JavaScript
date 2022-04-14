@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<a id="baglanti" href="https://www.google.com.tr" target="_top">Google'a Git</a>
+	<br><br>
+	<div id="sonuc"></div>
+<script type="text/javascript" language="javascript">
+	// getAttributeNode()	=	Belge içerisindeki herhangi bir HTML elemanının belirtilen özellik node'unun (düğümünün) değerini elde etmek veya ayarlamak için kullanılır.
+	
+	var degerbul	= document.getElementById("baglanti").getAttributeNode("target");
+	document.getElementById("sonuc").innerHTML = degerbul.value = "_blank";
+	
+</script>	
+</body>
+</html>

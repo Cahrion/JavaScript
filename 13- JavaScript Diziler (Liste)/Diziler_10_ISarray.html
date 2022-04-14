@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	// Array.isArray()  	= Bir değişkenin içeriğinin dizi olup olmadığını kontrol eder. Boolean türünde sonuç döndürür.(True, False)
+	
+	var ornek1 	= "JavaScript Eğitim Seti";
+	var ornek2 	= ["JavaScript","CSS","PHP"];
+	var ornek3 	= new Array("JavaScript","CSS","PHP");
+	var ornek4 	= [];
+	var ornek5 	= new Array();
+	var ornek6 	= {};
+	
+	
+	var sonuc1  = Array.isArray(ornek1);
+	var sonuc2  = Array.isArray(ornek2);
+	var sonuc3  = Array.isArray(ornek3);
+	var sonuc4  = Array.isArray(ornek4);
+	var sonuc5  = Array.isArray(ornek5);
+	var sonuc6  = Array.isArray(sonuc6);
+	
+	document.write("1.Değişkenin içeriği Dizimi:" + sonuc1 + "<br>");
+	document.write("2.Değişkenin içeriği Dizimi:" + sonuc2 + "<br>");
+	document.write("3.Değişkenin içeriği Dizimi:" + sonuc3 + "<br>");
+	document.write("4.Değişkenin içeriği Dizimi:" + sonuc4 + "<br>");
+	document.write("5.Değişkenin içeriği Dizimi:" + sonuc5 + "<br>");
+	document.write("6.Değişkenin içeriği Dizimi:" + sonuc6 + "<br>");
+	
+	
+</script>	
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	// multiline	= Düzenli ifade içerisinde m ayarının kullanılıp kullanılmadığını kontrol ederek. Boolean (Mantıksal) veri türünde sonucu geriye döndürür.
+	
+	var metin	= "\nVolkan\nvolkan\nVOLKAN\nVolkan" 
+	
+	var ifade	= new RegExp("^Volkan");
+	var ifade2	= new RegExp("^Volkan","m");
+	var ifade3	= /^Volkan/;
+	var ifade4	= /^Volkan/m;
+	
+	var sonuc	= metin.match(ifade);
+	var sonuc2	= metin.match(ifade2);
+	var sonuc3	= metin.match(ifade3);
+	var sonuc4	= metin.match(ifade4);
+	
+	var kontrol = ifade.multiline;
+	var kontrol2 = ifade2.multiline;
+	var kontrol3= ifade3.multiline;
+	var kontrol4= ifade4.multiline;
+	
+	document.write(sonuc +  " multiline kullandımı: " + kontrol + "<br>");
+	document.write(sonuc2 + " multiline kullandımı: " + kontrol2 + "<br>");
+	document.write(sonuc3 + " multiline kullandımı: " + kontrol3 + "<br>");
+	document.write(sonuc4 + " multiline kullandımı: " + kontrol4+ "<br>");
+	
+	
+</script>	
+</body>
+</html>

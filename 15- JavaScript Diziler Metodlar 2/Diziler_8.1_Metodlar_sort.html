@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	//  sort()		= Dizi içeriğinin sıralanmasını sağlar. Metot UNİCODE(Evrensel kod) olarak çalışır
+	
+						/* Alttaki fonksiyon çok önemli bir fonksiyondur. (Sayilar için)*/
+	
+	function sirala(sayi1,sayi2){
+		return sayi1-sayi2; // sayi2 - sayi1 yazarsak büyükten küçüğe sıralar.
+	}
+	
+	var renkler 	= [2,12,100,44,53,8.55,75,10.12];
+	document.write(renkler + "<br> <br>");
+	
+	renkler.sort(sirala);
+	document.write("Son durum: " + renkler + "<br>");
+
+
+	
+</script>	
+</body>
+</html>

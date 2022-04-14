@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	// setUTCSeconds() 	= Kendisine parametre belirtilmiş değer doğrultusunda kullanıldığı değişken içeriğine evrensel zaman dilimine ait milisaniye bilgisini 0 ila 999 arasında olmak üzere rakamsal olarak ayarlayarak depolar. Depoladığı değeri geriye döndürür.
+	// UTC				= Coordinated universal time 	: Eş güdümlü evrensel zaman
+		
+	var zaman = new Date();
+	zaman.setUTCMilliseconds(154); // Milisaniye verisi (154) verilebilir.
+	var Milizaman = zaman.getUTCMilliseconds();
+	document.write(zaman + "<br>");
+	document.write(Milizaman);	
+</script>	
+</body>
+</html>

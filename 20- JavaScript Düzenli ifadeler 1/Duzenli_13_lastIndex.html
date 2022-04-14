@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	// lastIndex 	= Değişken içeriğinde düzenli ifade ile aranan değerin eşleşmesi durumunda ilk eşleşmeyi sağlayan değişken içeriğinin bir sonraki indis değerini geriye döndürür.
+	
+	var metin 		= "Dünyada ve Türkiye'de en yaygın olarak kullanılan script dili Javascript'tir";
+	var ifade 		= new RegExp("a","g");
+	
+	while(ifade.test(metin)){
+		  	var sonuc 		= ifade.lastIndex;
+			document.write(sonuc + "<br>");
+		  }
+
+</script>	
+</body>
+</html>

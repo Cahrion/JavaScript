@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+	<style>
+		div{
+			border-bottom-width: 1px;
+			border-bottom-style: dotted;
+			border-bottom-color: blue;			
+			border-top-width: 1px;
+			border-top-style: dotted;
+			border-top-color: blue;			
+
+			width: 0px;
+			height: 98px;
+			position: absolute;
+			bottom: 0px;
+		}
+		#Alan{
+			width: 100px;
+			height: 100px;
+			border: 2px solid red;
+			position: relative
+		}
+	</style>
+</head>
+
+<body>
+	
+	K = <input type="text" id="Kdegeri"><br>
+	r = <input type="text" id="uzunluk"> metre<br> 
+	Kütle 1 = <input type="text" id="Q1degeri"><br>
+	Kütle 2 = <input type="text" id="Q2degeri"><br>
+	G = <input type="text" id="Gdegeri"><br>
+	Gravitasyonel m1 = <input type="text" id="G1degeri"><br>
+	Gravitasyonel m2 = <input type="text" id="G2degeri"><br>
+	<button onclick="hesaplama()">Sonuc</button><br>
+	Elektriksel Kuvvet : <span id="sonuc"></span><br>
+	Gravitasyonel Kuvvet : <span id="sonuc2"></span>
+<script type="text/javascript" language="javascript">
+	function hesaplama(){
+		var k = eval(document.getElementById("Kdegeri").value);
+		var q1 = eval(document.getElementById("Q1degeri").value);
+		var q2 =eval( document.getElementById("Q2degeri").value);
+		var r = eval(document.getElementById("uzunluk").value);
+		var f = (k * q1 * q2) / r**2;
+		document.getElementById("sonuc").innerHTML = f;
+		var g = eval(document.getElementById("Gdegeri").value);
+		var G1 = eval(document.getElementById("G1degeri").value);
+		var G2 = eval(document.getElementById("G2degeri").value);
+		var gravitas = (g * G1 * G2) / r**2;
+		document.getElementById("sonuc2").innerHTML = f / gravitas;
+	}
+</script>
+</body>
+</html>

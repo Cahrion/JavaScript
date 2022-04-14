@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	// toISOString() 	= Kullanıldığı değişken içeriğine atanmış olan tarih ve saat bilgilerini ISO standartlarına göre string (metin) veri türünde düz bir metne dönüştürerek oluşturduğu değeri geriye döndürür.
+	// ISO 	= international Standarts organization = Uluslararası standartlar organizasyonu
+	
+	var zaman = new Date();
+	document.write(zaman + " ~ " + typeof zaman + "<br>");
+	var sonuc = zaman.toISOString();
+	document.write(sonuc + " ~ " + typeof sonuc);	
+</script>	
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	// round()	= Kendisine parametre olarak verilen herhangi bir ondalıklı sayı değerini kendisine en yakın tam sayıyı kontrol ederek. Aşağı veya yukarı yuvarlama yaparak. Sonucu geriye döndürür.
+	
+	// 1,2,3 ve 4 değerlerini aşağı yuvarlar
+	// 5,6,7,8 ve 9 değerlerini yukarı yuvarlar.
+	var sayibir 	= "10";
+	var sayiiki		= Number(true) + 1.99;
+	var sayiuc		= 10.499;
+	var sayidort	= new Date(); // Number'a da çevirir.
+	var sayibes		= "5.50";
+	var sayialti	= "10.4";
+
+	document.write("Değer: " + sayibir  + "<br>");
+	document.write("Değer: " + sayiiki  + "<br>");	
+	document.write("Değer: " + sayiuc   + "<br>");	
+	document.write("Değer: " + sayidort + "<br>");
+	document.write("Değer: " + sayibes  + "<br>");
+	document.write("Değer: " + sayialti + "<br> <br>");
+	
+	var sonucbir		= Math.round(sayibir);
+	var sonuciki		= Math.round(sayiiki);
+	var sonucuc			= Math.round(sayiuc);
+	var sonucdort		= Math.round(sayidort);
+	var sonucbes		= Math.round(sayibes);
+	var sonucalti		= Math.round(sayialti);
+
+	document.write("Sonuç: " + sonucbir  	+"<br>");
+	document.write("Sonuç: " + sonuciki 	+"<br>");
+	document.write("Sonuç: " + sonucuc  	+"<br>");	
+	document.write("Sonuç: " + sonucdort 	+"<br>");
+	document.write("Sonuç: " + sonucbes   	+"<br>");	
+	document.write("Sonuç: " + sonucalti 	+"<br>");
+	
+	
+</script>	
+</body>
+</html>

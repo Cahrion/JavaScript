@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<select  onchange="ornek(this.value)">
+		<option></option>
+		<option value="1">Volkan Alakent</option>
+		<option value="2">Hakan Alakent</option>
+		<option value="3">Ümit Okudan</option>
+		<option value="4">Onur Tanket</option>
+	</select><br>
+	<div id="sonuc"></div>
+<script type="text/javascript" language="javascript">
+	function ornek(gelendeger){
+		var istek	= new XMLHttpRequest();
+		istek.onreadystatechange = function(){
+			if(this.readyState == 4 && this.status =200){
+				document.getElementById("sonuc").innerHTML = this.responseText;
+			}else{
+				document.getElementById("sonuc").innerHTML = "Belirlenemeyen bir sorunla karşılaşıldı.";
+			}
+		};
+		istek.open("GET","kaynak.php?deger=" + gelendeger,true);
+		istek.send();
+	}
+	
+</script>	
+</body>
+</html>

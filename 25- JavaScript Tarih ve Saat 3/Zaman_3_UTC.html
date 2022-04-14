@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	// UTC()	= Kendisine parametre olarak verilmiş değer doğrultusunda kullanıldığı değişken içeriğine evrensel zaman dilimine ait tarihin zaman bilgisini depolayarak depoladığı değeri geriye döndürür.
+	// Zaman damgası başlangıç tarihi 	= 01.01.1970
+	// UTC				= Coordinated universal time 	: Eş güdümlü evrensel zaman
+	
+	var zaman = Date.UTC(2018); // Yıl bilgisi girilmelidir.(2018)
+	var zaman = Date.UTC(2018,10); // Ay bilgisi girilmelidir.(10)
+	var zaman = Date.UTC(2018,10,7); // Gün bilgisi girilmelidir.(7)
+	var zaman = Date.UTC(2018,10,7,14); // Saat bilgisi girilebilir zorunlu değildir.(14)
+	var zaman = Date.UTC(2018,10,7,14,30); // dakika bilgisi girilebilir zorunlu değildir.(30)
+	var zaman = Date.UTC(2018,10,7,14,30,58); // saniye bilgisi girilebilir zorunlu değildir.(58)
+	var zaman = Date.UTC(2018,10,7,14,30,58,784); // milisaniye bilgisi girilebilir zorunlu değildir.(784)
+	document.write(zaman); // Belirtilen günün zaman damgası verilir.
+	
+</script>	
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	// \deger(octal) 	= Düzenli ifade dahilinde kontrol edilecek olan değişken içeriği karakter diziliminde bulunan değerin, octal numeric system tabanında ASCII karakter karşılığı olan karakteri ile eşleşmesi gerektiğini belirtmek için kullanılır.
+	//	Değer aralığı : \000 - \377 
+ 	
+	// octal numeric system = Sekizlik sayı sistemi
+	// ASCII 	= American Standart Code for Information Interchange = Bilgi değişimi için amerikan standart kodlama sistemi.
+	
+	// volkan 	= UTF-8 bytlik = 166-157-154-153-141-156
+	var metin 	= "icabi";
+	var ifade 	= new RegExp("\\141","g");//--> /\141/g;
+	var sonuc 	= ifade.test(metin);
+	
+	document.write(sonuc + "<br>");
+	
+	var metin2 	= "\166\157\154\153\141\156"; // terside geçerlilik sağlıcaktır.
+	var ifade2 	= new RegExp("n","g");//--> /n/g;
+	var sonuc2 	= ifade2.test(metin2);
+	
+	document.write(sonuc2);
+	
+</script>	
+</body>
+</html>

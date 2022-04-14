@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<p class="ikinci">*----*</p>
+	<div class="deneme">Volkan Alakent <span class="deneme">JavaScript</span> Eğitim seti</div>
+	<div class="deneme">Volkan Alakent <span class="deneme">PHP</span> Eğitim seti</div>
+	<div class="deneme">Volkan Alakent <span class="deneme"> HTML</span> Eğitim seti</div>
+	<div class="deneme">Volkan Alakent <span class="deneme">CSS</span> Eğitim seti</div>
+	<p 	 class="deneme">Volkan Alakent  JQuery Eğitim seti</p>
+	<p 	 class="deneme">Volkan Alakent  MySql  Eğitim seti</p>
+	<br><br>
+	<br><br>
+	<button onClick="ornek()">Renklendir.</button><br>
+	<br><br>
+	
+<script type="text/javascript" language="javascript">
+	// querySelector()	= CSS (Cascading Style Sheet) (Basamaklı Stil Şablonları) seçiçileri ile belgedeki eleman veya elemanların referansını elde etmek için kullanılır. Eleman referansları birden fazla ise her bir eleman döngüyle elde edilebilir.
+	
+	function ornek(){
+		var sayi  = document.querySelectorAll("DIV.deneme").length;
+		for(var baslangic=0;baslangic<sayi;baslangic++){
+			document.querySelectorAll("DIV.deneme")[baslangic].style.backgroundColor	= "yellow";
+		}
+	}		
+</script>	
+</body>
+</html>

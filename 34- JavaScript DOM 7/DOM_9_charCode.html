@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<input type="text" onKeyPress="ornek()">
+	<div id="sonuc"></div>
+<script type="text/javascript" language="javascript">
+	// charCode	=	Belge içerisindeki onkeypress event'ı (olayı) gerçekleştiğinde klavyeden basılan tuşun unicode (evrensel kod) kodlamasına dönüştürerek oluşturduğu değeri geriye döndürür.
+	
+	function ornek(){
+		var deger = event.charCode;
+		document.getElementById("sonuc").innerHTML += deger + " ";
+	}
+</script>	
+</body>
+</html>

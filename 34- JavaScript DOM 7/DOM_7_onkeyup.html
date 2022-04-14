@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<div>Şifrenizi giriniz.</div>
+	<input onkeyup="deney()">
+	<div id="sonuc" style="color:red;"></div>
+	
+<script type="text/javascript" language="javascript">
+	// onkeyup 	= Belge içerisindeki herhangi bir eleman üzerinde klavyeden basılı duran bir tuşa bırakıldığında belirtilecek olan fonksiyon çalıştırılır.
+	function deney(){
+		var deger = document.getElementsByTagName("INPUT")[0].value;
+		var isim = document.getElementById("sonuc")
+		if(deger.length>=10){
+			if(deger.length<=20){
+				ifade = /[0-9]/g;
+				ifade2 = /[A-Z]/ig;
+				if(ifade.test(deger)== false){
+					isim.innerHTML = "Sayısal karakterler bulunmak zorundadır."
+					isim.style.color = "red";
+				}else if(ifade2.test(deger)== false){
+					isim.innerHTML = "Metinsel karakterler bulunmak zorundadır."	
+					isim.style.color = "red";
+				}else{	 
+					isim.innerHTML = "Şifre uyumlu";
+					isim.style.color = "green";
+				}
+
+			}else{
+				isim.innerHTML = "Şifre uzunluğu 20 karakterden fazla olamaz";
+				isim.style.color = "red";
+			}
+		}else{
+			isim.innerHTML = "Şifre uzunluğu 10 karakteri aşmalıdır";
+			isim.style.color = "red";
+		}
+	}	
+</script>	
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+	
+	<style>
+		.deneme{
+			text-decoration:none;
+			color:#FF9900;
+			font-weight: bold;
+			font-size:25px;
+		}
+	</style>
+	
+</head>
+
+<body>
+	<button onClick="ornek()">İşlem yap</button>
+	<br><br>
+	<a id="ornek" href="https://www.google.com.tr" target="_blank" class="deneme">Google</a>
+	
+	
+<script type="text/javascript" language="javascript">
+	// removeAttribute()	= Belge içerisindeki herhangi bir HTML elemanının belirtilen özelliğini kladırmak / silmek için kullanılır.
+	
+	function ornek(){
+		document.getElementById("ornek").removeAttribute("href");
+		document.getElementById("ornek").removeAttribute("class");
+	}
+	
+</script>	
+</body>
+</html>

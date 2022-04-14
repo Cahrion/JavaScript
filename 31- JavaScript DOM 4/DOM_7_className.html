@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+	<style>
+		.bir{
+			color:red;
+		}
+		.iki{
+			color:blue;
+		}
+		.uc{
+			background-color:yellow;
+			border:4px double black;
+			width:300px;
+			height:23px;
+			color:blue;
+			text-align: center;
+			font-weight: bold;
+			padding-top: 3px;
+		}
+	</style>
+</head>
+
+<body>
+	<button onClick="ornek()">Kırmızı Yap</button>
+	<button onClick="ornek2()">Mavi Yap</button>
+	<button onClick="ornek3()">Farklı bir yapı oluştur.</button><br><br>
+	<div id="bir">JavaScript Eğitim Seti</div>
+	<div id="sonuc"></div>
+<script type="text/javascript" language="javascript">
+	// className	=  Belge içerisindeki herhangi bir HTML elemanının class adını elde etmek veya ayarlamak için kullanılır.
+	function ornek(){
+			var bul	= document.getElementById("bir").className = "bir";
+			document.getElementById("sonuc").innerHTML = bul;
+	}	
+	function ornek2(){
+			var bul	= document.getElementById("bir").className = "iki";
+			document.getElementById("sonuc").innerHTML = bul;
+	}	
+	function ornek3(){
+			var bul	= document.getElementById("bir").className = "uc";
+			document.getElementById("sonuc").innerHTML = bul;
+	}
+
+	
+</script>	
+</body>
+</html>

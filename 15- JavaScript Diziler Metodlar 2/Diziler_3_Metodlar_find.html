@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	//   find() 	= Kendisine parametre olarak verilen fonksiyonu dizideki her eleman üzerine tek tek olmak üzere çalıştırır ve dizi içerisinde parametrik olarak verilen değeri arar. İlk eşleşme sağlayan dizi elemanının değerini döndürür.
+	// 1. Parametre = Her işlemde elde edilen dizi elemanı
+	// 2. Parametre = Her işlemde elde edilen dizi elemanının indis / index değeri
+	// 3. Parametre = Her tekrar işleminde diziyi tutan değişkenin referansı.
+	
+	
+	function deneme (eleman,sira, referans){
+		document.write(eleman + " ~ " + referans + "<br>"); // referans = Alınan liste anlamına gelri
+		return sira == 4;									// sira 	= indexsi belirler her seferinde
+	}														// eleman 	= O anki indexteki elemanı alır.
+	
+	var renkler 	= ["Siyah","Gri","Beyaz","Sarı","Bej","Mavi","Kırmızı"];
+	document.write(renkler + "<br> <br>");
+	
+	var islemyap 	= renkler.find(deneme);
+	document.write("<br>" + "Normal Dizi :" + renkler + "<br>");
+	document.write("Seçilen eleman :" + islemyap + "<br> <br>");
+
+	
+</script>	
+</body>
+</html>

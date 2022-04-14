@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<pre>
+<script type="text/javascript" language="javascript">
+// Değişken 	: İçerisinde her türlü bilgiyi / veriyi depolamak için kullanılan alanlara verilen isimlerdir.
+	
+// var			: Standart değişken tanımlamakta kullanılır.
+// let			: Blok kapsamlı yerel değişken tanımlamakta kullanılır
+// const		: Sabit değişkenler kullanılmakta kullanılır.
+	
+//var
+	var a 		= "icabi Kırgız";
+	document.writeln(a);
+//let
+	let b 		= "icabi Kırgız";
+	document.writeln(b);
+//const
+	const c 	= "icabi Kırgız";
+	document.writeln(c);
+	
+/*
+	Değişkenlerin İsimlendirme kuralları:
+	1. Değişken isimleri her zaman anlamlı olarak kullanılmalıdır
+	2. Değişken isimleri harfler ile başlayabilir(Türkçe karakter kullanılamaz.)
+	3. Değişken isimleri _ (Alt çizgi) işareti ile başlayabilir.
+	4. Değişken isimleri $ (Dolar) işareti ile başlayabilir.
+	5. Değişken isimleri hiçbir zaman bir rakam ile başlayamaz. Fakat rakamlar değişken isimlerinde ilk karakterden sonra kullanılabilir.
+	6. Değişken isimleri büyük harf / küçük harf duyarlıdır.
+	7. Aynı değişken isimleri kullanılacaksa değişkenin değeri her zaman son yazılan değişkenin depoladığı veri olacaktır.
+	8. Değişken isimleri JavaScript tarafından rezerve edilmiş kelimeler olamaz.
+	9. Aynı değişken adı değişken ifadelerinde kullanılamaz.
+*/
+
+// Var ile yapılınca bütün global şekilde değişim sağlar.
+	var global 		= "NotGlobal";
+
+	if(true){
+		var global 		= "Global";
+		document.writeln(global);
+	}
+
+	document.writeln(global);
+
+// const ile yapılınca bütün global şekilde değişim sağlamaz.
+	const notglobal 		= "NotGlobal";
+
+	if(true){
+		const notglobal 		= "Global";
+		document.writeln(notglobal);
+	}
+
+	document.writeln(notglobal);
+
+// let ile yapılınca block kapsamından çıkar ve dıştakini alır ama en son sorulduğunda onu ele alır.
+
+	let alwaysglobal 			= "alwaysglobal";
+
+	if(true){
+		let alwaysglobal 		= "Global";
+		document.writeln(alwaysglobal);
+	}
+
+	document.writeln(alwaysglobal);
+
+
+// Bilgi var yeniden oluşturma olmadığı için iki kere yazılabilirken let ve const yazılamaz hata verir.
+
+var durum = "Volkan";
+var durum = "Volkanizma";
+document.writeln(durum);
+
+// Let
+
+let durumlet = "Volkan";
+// let durumlet = "Volkanizma"; // Bu parametrede çalışmaz 
+durumlet = "VolkanizmaTR";  // Bunda çalışırken
+document.writeln(durumlet);
+
+// const
+
+let durumconst = "Volkan";
+// let durumconst = "Volkanizma"; // Bu parametrede çalışmaz
+// durumlet = "VolkanizmaTR";  // Bu parametrede de çalışmaz çünkü kalıp değiştirilemez
+document.writeln(durumlet);
+
+</script>	
+</pre>
+</body>
+</html>

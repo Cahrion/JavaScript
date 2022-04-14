@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+	<style>
+		.sarirenk {
+			background-color:#FFFD00;
+		}
+	</style>
+	
+</head>
+
+<body>
+	<div id="birincikimlik" name="birinciisim" style="border:1px solid red; margin: 5px; padding: 5px;" class="sarirenk">
+		Volkan Alakent JavaScript Eğitim seti
+	</div>
+	<div id="sonucalani"></div><br>
+
+	
+<script type="text/javascript" language="javascript">
+	// value	= Belge içerisindeki HTML elemanına eklenmiş olan özellik değerinin referansını elde etmek için kullanılır. HTML elemanı içerisindeki özellik sayısı 1'den fazla ise her bir özellik değeri referansı döngüyle elde edilebilir.
+	
+	var deger	= document.getElementById("birincikimlik").attributes;
+	var metin	= "";
+	for(var baslangic=0;baslangic<deger.length;baslangic++){
+		var sonuc	= deger[baslangic].value;
+		metin	   += sonuc + " <br> ";
+	}
+	document.getElementById("sonucalani").innerHTML = metin;
+
+
+</script>	
+</body>
+</html>

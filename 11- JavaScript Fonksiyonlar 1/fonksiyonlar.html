@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	/*
+	function fonksiyon(Parametre / Parametreler){
+		.....(Kodlar)
+	}
+	
+	Fonksiyon isimlendirme kuralları: 
+	1 - Fonksiyon isimleri her zaman anlamlı olarak kullanılmalıdır. (yazi)
+	2 - Fonksiyon isimleri harfler ile başlayabilir.
+	3 - Fonksiyon isimleri _ (alt çizği) işareti ile başlayabilir. (_durus)
+	4 - Fonksiyon isimleri $ (Dolar) işareti ile başlayabilir. ($durus)
+	5 - Fonksiyon isimleri hiçbir zaman rakam ile başlayamaz. (ilk karakterden sonra kullanılabilir.) (i17durus)
+	6 - Fonksiyon isimleri JavaScript tarafından rezerve kelimeleri içeremez. (if);
+	7 - Fonksiyon isimleri Hiçbir zaman birden fazla kullanılmaz ;
+	8 - Fonksiyon isimleri küçük harf/ büyük harf duyarlıdır.
+	*/
+							/* 1-2.Kural  */
+	function yazi(){
+		document.write("Burası ilk fonksiyonun değeri <br>");
+	}
+	yazi();
+							/* 3.Kural  */
+	function _durus(){
+		document.write("Burası ilk fonksiyonun değeri <br>");
+	}
+	_durus();
+							/* 4.Kural  */
+	function $durus(){
+		document.write("Burası ilk fonksiyonun değeri <br>");
+	}
+	$durus();	
+							/* 5.Kural  */
+	function i17durus(){
+		document.write("Burası ilk fonksiyonun değeri <br>");
+	}
+	i17durus();		
+							/* 6.Kural  */
+	
+	/*
+	function if(){
+		document.write("Burası ilk fonksiyonun değeri <br>");  // İf rezerve kelime
+	}
+	if();
+	*/
+							/* 7.Kural  */
+	function durus(){
+		document.write("Burası ilk fonksiyonun değeri <br>");
+	}	
+	function durus(){
+		document.write("Burası ilk fonksiyonun değeri <br>");
+	}
+	durus();	// en sonuncuyu alır.
+	
+						/* 8. Kural */
+	
+	function Durus(){
+		document.write("Burası ilk fonksiyonun değeri en büyüğü <br>");
+	}
+	Durus();
+</script>	
+</body>
+</html>

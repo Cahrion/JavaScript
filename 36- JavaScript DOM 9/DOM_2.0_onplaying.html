@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<video controls onplaying="deney()">
+		<source src="Video.mp4" type="video/mp4">
+		<source src="Video.webm" type="video/webm">
+		<source src="Video.ogg" type="video/ogg">
+	</video>
+	<div id="sonuc"></div>
+<script type="text/javascript" language="javascript">
+	// onplaying	= Medya elemanının yürütülmeye başlandığında ve yürütme işlemi ara belleğe yükleme vs gibi işlemler için durup başlayınca belirtilecek fonksiyon çalışır.
+	
+	function deney(){
+		document.getElementById("sonuc").innerHTML += "Medya verisi tekrar oynatıldı. <br>";
+	}
+</script>	
+</body>
+</html>

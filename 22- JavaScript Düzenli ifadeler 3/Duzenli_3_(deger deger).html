@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	// (deger(x)|deger(y))		= Düzenli ifade dahilinde kontrol edilecek olan değişken içeriği karakter diziliminde bulunan değerin belirtilen x yada y karakterlerinden herhangi birisiyle eşleşmesi gerektiğini belirtmek için kullanılır.
+	
+	var metin 	= "Merhabalar Volkan ve n'aber Hakan bey kan aldınız mı ?";
+	var ifade	= new RegExp("(Vol|Ha)kan","g");  //--> /(Vol|Ha)kan/g; --> Aynısı... 
+	var sonuc 	= metin.match(ifade);
+	
+	document.write(sonuc);
+	
+</script>	
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	
+	ilgi Alanlarınız :<br>
+	Alışveriş <input type="checkbox"	name="ilgialanlari" value="Alişveriş">
+	Eğlence <input 	 type="checkbox" 	name="ilgialanlari" value="Eğlence">
+	Sinema <input 	 type="checkbox" 	name="ilgialanlari" value="Sinema">
+	Tiyatro <input 	 type="checkbox"	name="ilgialanlari" value="Tiyatro">
+	Gezi <input 	 type="checkbox"	name="ilgialanlari" value="Gezi">
+	İnternet <input  type="checkbox" 	name="ilgialanlari" value="İnternet">
+	Yüzme <input  type="checkbox" 	name="ilgialanlari" value="Yüzme"><br>
+	<button onClick="secmeislemi()">Hepsini seç</button>
+	<button onClick="kaldirmaislemi()">Hepsini kaldır</button>
+	
+	
+<script type="text/javascript" language="javascript">
+	// getElementsByName()	=	Kendisine parametre olarak verilen değer doğrultusunda, belge içerisinde belirtilen name özelliğine / niteliğine sahip tüm elemanların referansını elde etmek için kullanılır. Eleman referansları birden fazla ise her bir eleman döngüyle elde edilebilir.
+	
+	function secmeislemi(){
+		var deger 	= document.getElementsByName("ilgialanlari");
+		for(var baslangic=0;baslangic <deger.length;baslangic++){
+			deger[baslangic].checked	= true;
+		}
+		alert("İşaretlendi");
+	}
+	function kaldirmaislemi(){
+		var deger 	= document.getElementsByName("ilgialanlari");
+		for(var baslangic=0;baslangic <deger.length;baslangic++){
+			deger[baslangic].checked	= false;
+		}
+		alert("İşaretleme kaldırıldı.");
+	}
+
+</script>	
+</body>
+</html>

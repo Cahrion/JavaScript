@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	
+	<img id="bir" src="Images - embeds/Javascript_Resmi.jpg" alt="">
+	<img id="iki" src="Images - embeds/HTML_Resmi.jpg" alt="">
+	<img id="uc" src="Images - embeds/CSS_Resmi.jpg" alt="">
+	<div id="sonuc"></div>
+	<div id="sonuc2"></div>
+	<div id="sonuc3"></div>
+	<div id="sonuc4"></div>
+<script type="text/javascript" language="javascript">
+	// images	= Belge içerisindeki img tag'ına (etiketine) sahip tüm elemanların referansını elde etmek için kullanılır. Eleman referansları birden fazla ise her bir referans döngüyle elde edilebilir.
+	
+	var islem = document.images.length;
+	document.getElementById("sonuc").innerHTML = "Resim Sayısı: " + islem;
+	/* Src' bulma */
+	var islem = document.images[0].src;
+	document.getElementById("sonuc2").innerHTML = "Resim Dosyası: " + islem;	
+	/* Bir değişik Src'ı bulma */
+	var islem = document.images.item(1).src;
+	document.getElementById("sonuc3").innerHTML = "Resim Dosyası 2: " + islem;		
+	/* ID ile Src'ı bulma */
+	var islem = document.images.namedItem("bir").src;
+	document.getElementById("sonuc4").innerHTML = "Resim Dosyası ID): " + islem;
+	/* Boyut değiştirme */
+	document.images[1].width 	= 150;
+	document.images[1].height 	= 150;
+</script>	
+</body>
+</html>

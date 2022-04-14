@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	//  slice() 	= Kendisine verilecek olan parametreler ile tanımlanmış dizi aralığında bulunan değerleri kopyalayarak yeni bir dizi oluşturur ve oluşturduğu dizinin değerini geriye gönderir.
+	
+	var renkler 	= ["Siyah","Gri","Beyaz","Sarı","Bej","Mavi","Kırmızı"];
+	document.write(renkler + "<br> <br>");
+	
+	// 1. Parametre =  Başlangıç değeri
+	// 2. Parametre =  E'kadar (dahil değil)
+	var islemyap 	= renkler.slice(1,3);
+	document.write("Kalan elamanlar :" + renkler + "<br>");
+	document.write("Kopyalanan eleman :" + islemyap + "<br> <br>");
+
+			/* (-) parametreler alınabilir. */
+	document.write("<br> <br>");
+			/* (-) parametreler alınabilir. */
+	
+		// NOT = (-) alan parametreler -1'den başlar.
+	// 1. Parametre = (-) değer alırsa arkadan başlayıp öne doğru gider burda Gri'den başladı.
+	// 2. Parametre = (-) değer alırsa arka sıralardan başlayıp oraya kadar alır yani burada Kırmızı'ya kadar diyoruz.
+	var islemyap 	= renkler.slice(-6,-1);
+	document.write("Kalan elamanlar :" + renkler + "<br>");
+	document.write("Kopyalanan eleman :" + islemyap + "<br> <br>");
+	
+</script>	
+</body>
+</html>

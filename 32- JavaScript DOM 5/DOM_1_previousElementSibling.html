@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	
+	<div>
+		<div id="aaa">JavaScript</div>
+		<p id="bbb">PHP</p>
+		<div id="ccc">HTML</div>
+		<p id="ddd">CSS</p>
+		<div id="eee">JQuery</div>
+		<p id="fff">XML</p>
+		<div id="ggg">Python</div>
+		
+	</div>
+	<br><br>
+	<div id="sonuc"></div>
+	<div id="sonuc2"></div>
+	<div id="sonuc3"></div>
+	<div id="sonuc4"></div>
+	
+	
+<script type="text/javascript" language="javascript">
+	// previousElementSibling	= Belge içerisindeki herhangi bir HTML elemanının içerisindeki aynı seviyede yani aynı seviyede olan elemanlardan, belirtilecek olan elemandan önce gelen ilk eleman kullanılır.
+	
+	var sonuc	= document.getElementById("ccc").previousElementSibling;
+	document.getElementById("sonuc").innerHTML = sonuc;
+	document.getElementById("sonuc2").innerHTML = sonuc.tagName;
+	document.getElementById("sonuc3").innerHTML = sonuc.innerHTML;
+	document.getElementById("sonuc4").innerHTML = sonuc.id;
+	document.getElementById("sonuc4").innerHTML = sonuc.style.backgroundColor = "grey";
+	
+</script>	
+</body>
+</html>

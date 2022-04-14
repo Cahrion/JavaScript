@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	// setHours()	 = Kendisine parametre olarak belirtilmiş değer doğrultusunda kullanıldığı değişken içeriğine saat bilgisini 0 ila 23 arasında rakamsal olarak depolar. Depoladığı veriyi geriye döndürür.  Ek olarak da çoklu ayarlama işlemi yapılabilir.
+	
+	var zaman = new Date();
+	zaman.setHours(11); // Saat verisi (11) verilebilir.
+	zaman.setHours(11,10); // Dakika verisi (10) verilebilir.
+	zaman.setHours(11,10,9); // saniye verisi (9) verilebilir.
+	zaman.setHours(11,10,9,100); // milisaniye verisi (100) verilebilir.
+	var Milizaman = zaman.getMilliseconds();
+	document.write(zaman + "<br>");
+	document.write(Milizaman);
+</script>	
+</body>
+</html>

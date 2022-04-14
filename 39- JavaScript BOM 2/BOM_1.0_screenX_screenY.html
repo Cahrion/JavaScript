@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<div>Yatay Koordinat: <span id="yatay"></span></div>
+	<div>Dikey Koordinat: <span id="dikey"></span></div>
+<script type="text/javascript" language="javascript">
+	// screenX	= Pencerenin bilgisayar ekranına göre yatay konum koordinatının değerini geriye döndürür.
+	// screenY	= Pencerenin bilgisayar ekranına göre dikey konum koordinatının değerini geriye döndürür.
+	
+	function deney(){
+		var yataykoordinat	= window.screenX;
+		var dikeykoordinat	= window.screenY;
+		document.getElementById("yatay").innerHTML = yataykoordinat;
+		document.getElementById("dikey").innerHTML = dikeykoordinat;
+	}
+
+</script>	
+</body>
+</html>

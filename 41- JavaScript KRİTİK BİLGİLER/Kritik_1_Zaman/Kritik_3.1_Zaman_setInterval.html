@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+	<style>
+		.orneksinif{
+			width: 500px;
+			height: 20px;
+			margin: 0;
+			padding: 10px;
+			text-align: center;
+			border: 1px solid #000000;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="sonuc" class="orneksinif">JavaScript Eğitim Seti</div>
+	
+<script type="text/javascript" language="javascript">
+	// setInterval()		=	Belge içerisinde tanımlanan herhangi bir kodlamayı belirtilen süre aralıklarında tekrar tekrar çalıştırmak için kullanılır. (Ms)
+
+	setInterval(renklendir,2000);
+	
+	function renklendir(){
+		var alan	= document.getElementById("sonuc");
+		var sayi	= Math.round(Math.random()*10);
+		
+		if(sayi==1){
+			alan.style.backgroundColor	= "#FF0000";
+		}else if(sayi==2){
+			alan.style.backgroundColor	= "#FF9900";			
+		}else if(sayi==3){
+			alan.style.backgroundColor	= "#00FF00";	
+		}else if(sayi==4){
+			alan.style.backgroundColor	= "#FF0000";	
+		}else if(sayi==5){
+			alan.style.backgroundColor	= "#0000FF";	
+		}else if(sayi==6){
+			alan.style.backgroundColor	= "#FFFF00";	
+		}else if(sayi==7){
+			alan.style.backgroundColor	= "#FFFFCC";	
+		}else if(sayi==8){
+			alan.style.backgroundColor	= "#CCFFCC";	
+		}else if(sayi==9){
+			alan.style.backgroundColor	= "#CCDDCC";	
+		}else if(sayi==10){
+			alan.style.backgroundColor	= "#C9CD0C";	
+		}else{
+			alan.style.backgroundColor	= "#FFFFFF";	
+		}
+	}
+
+</script>	
+</body>
+</html>

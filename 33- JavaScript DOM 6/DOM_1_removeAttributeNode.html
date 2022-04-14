@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+	
+	<style>
+		.deneme{
+			padding:20px;
+			width:300px;
+			height:20px;
+			background-color:yellow;
+			border:1px solid black;
+			text-align: center;
+		}
+	</style>
+	
+</head>
+
+<body>
+	<button onclick="ornek()">İşlem Yap</button>
+	<br><br><br>
+	<a href="https://www.google.com.tr" id="baglanti" targer="_blank" class="deneme">Google</a>
+	
+<script type="text/javascript" language="javascript">
+	// removeAttributeNode()	= Belge içerisindeki herhangi bir HTML elemanına getAttributeNode() metodu ile belirtilmiş özellik node'unu (düğümünü) node object'inden (düğüm nesnesinden) kaldırmak / silmek için kullanılır.
+	
+	function ornek(){
+		var deger				= document.getElementById("baglanti");
+		var kaldirilacakdugum	= deger.getAttributeNode("href");
+		var kaldirilacakdugum2 	= deger.getAttributeNode("class");
+		deger.removeAttributeNode(kaldirilacakdugum);
+		deger.removeAttributeNode(kaldirilacakdugum2);
+	}
+	
+</script>	
+</body>
+</html>

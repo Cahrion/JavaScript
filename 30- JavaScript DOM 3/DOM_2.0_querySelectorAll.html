@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<p class="ikinci">*----*</p>
+	<div class="birinci"> Volkan Alakent JavaScript Eğitim seti</div>
+	<div class="ikinci">  Volkan Alakent  PHP Eğitim seti</div>
+	<div class="ucuncu">  Volkan Alakent  HTML Eğitim seti</div>
+	<div class="dorduncu">Volkan Alakent  CSS Eğitim seti</div>
+	<p 	 class="besinci"> Volkan Alakent  JQuery Eğitim seti</p>
+	<p 	 class="altinci"> Volkan Alakent  MySql  Eğitim seti</p>
+	<br><br>
+	<span id="sonucalani"></span>
+	<br><br>
+	<button onClick="ornek()">Sayı adedini göster.</button><br>
+	<button onClick="ornek2()">Renklendir.</button><br>
+	<button onClick="ornek3()">Belitilen değeri yaz.</button><br>
+	<br><br>
+	
+<script type="text/javascript" language="javascript">
+	// querySelector()	= CSS (Cascading Style Sheet) (Basamaklı Stil Şablonları) seçiçileri ile belgedeki eleman veya elemanların referansını elde etmek için kullanılır. Eleman referansları birden fazla ise her bir eleman döngüyle elde edilebilir.
+	
+	function ornek(){
+		var islem  = document.querySelectorAll("div").length;
+		document.getElementById("sonucalani").innerHTML	= "Talep Edilen Tag Adedi : " + islem;
+	}		
+	function ornek2(){
+		document.querySelectorAll("div")[1].style.backgroundColor	= "yellow";
+	}		
+	function ornek3(){
+		var sonuc 	= document.querySelectorAll("div")[1].innerHTML;
+		document.getElementById("sonucalani").innerHTML = sonuc;
+	}	
+
+</script>	
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+										/* Konum Belirleyicisi */
+	// ?=		: Düzenli ifade dahilinde kontrol edilecek olan değişken içeriği karakter dizilimi içerisindeki belirtilen bir referans değerinin önünde düzenli ifadeyle eşleşebilecek değerleri aramak için kullanılır.
+	
+	var metin 	= "JavaScript dünya üzerinde ve Türkiye'de en yaygın olarak kullanılmakta olan Script dilidir.";
+	var ifade 	= new RegExp("Script(?= dünya)","ig");
+	// (?= dünya) dünya yazısının önünde olmak şartıyla ara
+	var ifade2 	= new RegExp("Script(?= di)","ig"); 
+	// (?= di) di yazısının önünde olmak şartıyla ara
+	var sonuc	= metin.search(ifade);
+	var sonuc2	= metin.search(ifade2);
+	document.write(sonuc + "<br>");
+	document.write(sonuc2);
+	
+</script>	
+</body>
+</html>

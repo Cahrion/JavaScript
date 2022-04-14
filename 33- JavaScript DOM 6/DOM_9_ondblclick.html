@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<div>İşlem sonucunu görmek istiyorsanız aşağıdaki işlem metnine çift tıklama yapınız.</div>
+	<div ondblclick="deneme()">5 + 3 = <span id="sonuc"></span></div>
+
+
+	
+<script type="text/javascript" language="javascript">
+	// ondblclick	= Belge içerisindeki herhangi bir elemana mouse (fare) ile çift sol tıklandığında belirtilecek olan fonksiyon çalışır.
+	
+	function deneme(){
+		var islem = 5 + 3;
+		document.getElementById("sonuc").innerHTML = islem;
+	}
+</script>	
+</body>
+</html>

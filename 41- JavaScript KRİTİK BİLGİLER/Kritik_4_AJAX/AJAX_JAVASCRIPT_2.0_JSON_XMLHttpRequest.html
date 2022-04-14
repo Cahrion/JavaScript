@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<button onClick="deney()">Bilgileri Getir</button>
+	<br><br>
+	<div id="sonuc">Verileri elde etmek için Yukarıdaki butona tıklayınız.</div>
+	
+<script type="text/javascript" language="javascript">
+	function deney(){
+		var istek	= new XMLHttpRequest();
+		istek.onreadystatechange = function(){
+			if(this.readyState == 4 && this.status==0){
+				
+				var metinsonuc		= "";
+				
+				var jsondegerleri 	= JSON.parse(this.responseText);
+				var isimdegeri 		= jsondegerleri.isim;
+				var soyisimdegeri 	= jsondegerleri.soyisim;
+				var yasdegeri 		= jsondegerleri.yas;
+				var meslekdegeri 	= jsondegerleri.meslek;
+				var sehirdegeri 	= jsondegerleri.sehir;
+				var dillerdegeri 	= jsondegerleri.bilinendiller;
+				var dillerinsayisi  = dillerdegeri.length;
+				var dillersonucu	= "";
+				for(var baslangic=0;baslangic<dillerinsayisi;baslangic++){
+					dillersonucu   += "Dil : " + dillerdegeri[baslangic].dil + " ~ Seviye: " + dillerdegeri[baslangic].seviye + "<br>";
+				}
+				
+				
+				metinsonuc			= "İsim Soyisim: " + isimdegeri + " " + soyisimdegeri + "<br>Yaşı: " + yasdegeri + "<br>Mesleği: " + meslekdegeri + "<br>yaşadığı sehir: " + sehirdegeri + "<br>Bildiği diller: <br>" + dillersonucu; ;
+				
+				document.getElementById("sonuc").innerHTML = metinsonuc;
+			}else{
+				document.getElementById("sonuc").innerHTML = "Bilinmeyen bir hata oluştu.";
+			}
+			
+		};
+		istek.open("GET","Dokuman/veri.json", true);
+		istek.send();
+	}
+	
+</script>	
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<div>
+		<p id="birincieleman">JavaScript</p>
+		<div id="ikincieleman">PHP</div>
+		<p id="ucuncueleman">CSS</p>
+		<div id="dorduncueleman">HTML</div><p id="besincieleman">JQuery</p>
+		<div id="altincieleman">XML</div>
+		
+	</div>
+	<div id="sonuc"></div>
+	<div id="sonuc2"></div>
+	
+<script type="text/javascript" language="javascript">
+	// nextSibling	= Belge içerisindeki herhangi bir HTML elemanının içerisindeki aynı seviye de yani kardeş olan notlardan belirtlilecek olan node'lardan (düğümlerden) sonra gelen ilk düğümü belli etmek için kullanılır.
+	
+	var sonuc		= document.getElementById("dorduncueleman").nextSibling;
+	document.getElementById("sonuc").innerHTML = sonuc;
+	document.getElementById("sonuc2").innerHTML = sonuc.style.color="red";
+	
+</script>	
+</body>
+	
+</html>

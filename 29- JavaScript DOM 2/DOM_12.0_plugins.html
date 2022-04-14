@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<div id="deger"></div>
+	<br><br>Ara bölüm<br><br>
+	<div id="deger2"></div>
+	<br><br>Ara bölüm<br><br>
+	<div id="deger3"></div>
+<script type="text/javascript" language="javascript">
+	// plugins 	= Browser'daki (tarayıcıdaki) tüm eklentilerin referansını elde etmek için kullanılır. Eklenti referansları birden fazla ise her bir eklenti döngüyle elde edilebilr.
+	
+	var sonuc = navigator.plugins;
+	for(var baslangic=0;baslangic<sonuc.length;baslangic++){
+		var Plugin 	= sonuc[baslangic].name;
+		document.getElementById("deger").innerHTML += "Pluginlerin adları: " + Plugin + "<br>" ;
+	}	
+	for(var baslangic=0;baslangic<sonuc.length;baslangic++){
+		var Plugin 	= sonuc[baslangic].filename;
+		document.getElementById("deger2").innerHTML += "Pluginlerin dosya adları: " + Plugin + "<br>" ;
+	}	
+	for(var baslangic=0;baslangic<sonuc.length;baslangic++){
+		var Plugin 	= sonuc[baslangic].description;
+		document.getElementById("deger3").innerHTML += "Pluginlerin açıklamaları " + Plugin + "<br>" ;
+	}
+	
+</script>	
+</body>
+</html>

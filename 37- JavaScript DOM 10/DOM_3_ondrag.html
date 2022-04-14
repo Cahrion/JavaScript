@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<div draggable="true" ondrag="ornek()">JavaScript</div>
+	<div id="sonuc"></div>
+<script type="text/javascript" language="javascript">
+	// ondrag	= Belge içerisindeki herhangi bir eleman sürüklendiğinde belirtilecek olan fonksiyon çalışır.
+	
+	function ornek(){
+		document.getElementById("sonuc").innerHTML += "Sürükleniyor. ";
+	}
+</script>	
+</body>
+</html>

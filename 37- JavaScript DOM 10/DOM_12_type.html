@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<button onClick="ornek(event)">Tıkla</button>
+	<div id="sonuc"></div>
+<script type="text/javascript" language="javascript">
+	// type 	= Belge içerisinde tanımlı herhangi bir event (olay) türü adının referansını elde etmek için kullanılır.
+	
+	function ornek(event){
+		var deger = event.type
+		document.getElementById("sonuc").innerHTML = "Tıklama işlemi gerçekleşti: " + deger;
+	}
+</script>	
+</body>
+</html>

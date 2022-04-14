@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	// hasOwnProperty 	= Bir nesnenin parametrik girilen özelliğin kullanılıp kullanılmadığı kontrol ederek Boolean (Mantıksal) veri türünde geriye döndürür.
+	
+	var bilgiler	= {
+		isim		:"Volkan",
+		soyisim		:"Alakent",
+		yas			:36
+	};
+	
+	var isimkontrolet		=	bilgiler.hasOwnProperty("isim");
+	var soyisimkontrolet	=	bilgiler.hasOwnProperty("soyisim");
+	var yaskontrolet		=	bilgiler.hasOwnProperty("yas");
+	var meslekkontrolet		=	bilgiler.hasOwnProperty("meslek");
+	
+	document.write("isim özelliği:" 	+ isimkontrolet 	+ "<br>")
+	document.write("soyisim özelliği:" 	+ soyisimkontrolet 	+ "<br>")
+	document.write("yas özelliği:" 		+ yaskontrolet 		+ "<br>")
+	document.write("meslek özelliği:" 	+ meslekkontrolet 	+ "<br>")
+</script>	
+</body>
+</html>

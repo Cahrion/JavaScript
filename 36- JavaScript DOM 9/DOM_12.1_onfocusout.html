@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	Ad Soyad: <input type="text" onfocusin="giris()" onfocusout="cikis()">
+	<div id="sonuc"></div>
+<script type="text/javascript" language="javascript">
+	// onfocusout	= Form içerisindeki bir elemanın odağından çıkılmak üzereyken belirtilecek olan fonksiyon çalışır.
+	
+	var zaman;
+	var zamaniki;
+	function giris(){
+		var tarih = new Date();
+		zaman = (tarih.getMinutes())*60;
+		zaman = zaman  + (tarih.getSeconds());
+	}	
+	function cikis(){
+		var tarih = new Date();
+		zamaniki = (tarih.getMinutes())*60;
+		zamaniki = zamaniki  + (tarih.getSeconds());
+		sonucum();
+	}
+	function sonucum(){
+		var deger =  zamaniki - zaman;
+		document.getElementById("sonuc").innerHTML = deger + " saniye geçti. ";
+	}
+
+</script>	
+</body>
+</html>

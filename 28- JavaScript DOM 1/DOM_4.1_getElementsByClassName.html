@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+	
+	<style>
+	
+		div {
+			border:1px solid black;
+			margin:5px;
+			padding:5px;
+		}
+		
+	</style>
+	
+</head>
+
+<body>
+	
+	<div class="bicimlendirme">JavaScript Eğitim Seti</div>
+	<div class="bicimlendirme">HTML Eğitim Seti</div>
+	<div class="bicimlendirme2">CSS Eğitim Seti</div>
+	<div class="bicimlendirme2">PHP Eğitim Seti</div>
+	<div class="bicimlendirme2">Python Eğitim Seti</div>
+	<div class="bicimlendirme">XML Eğitim Seti</div>
+	<div class="bicimlendirme">JQery Eğitim Seti</div>
+	
+	
+<script type="text/javascript" language="javascript">
+	// getElementsByClassName()	= Kendisine parametre olarak verilen değer doğrultusunda, belge içerisindeki belirtilen class (sınıf) adına sahip tüm elemanların referansını elde etmek için kullanılır. Eleman referansları birden fazla ise her bir eleman döngü ile elde edilebilir.
+	
+	var sonuc = document.getElementsByClassName("bicimlendirme2");
+	for(var baslangic=0;baslangic<sonuc.length;baslangic++){
+		sonuc[baslangic].style.backgroundColor = "#F1F1F1";
+	}
+	
+	
+	
+
+	
+</script>	
+</body>
+</html>

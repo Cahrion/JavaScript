@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	//  sort()		= Dizi içeriğinin sıralanmasını sağlar. Metot UNİCODE(Evrensel kod) olarak çalışır
+	
+						/* Alttaki fonksiyon çok önemli bir fonksiyondur. (Alfabetikler için)*/
+						/* Fazla IYI */
+	function sirala(sayi1,sayi2){
+		var alfabe = "AaBbCcÇçDdEeFfGgĞğHhIıİiJjKkLlMmNnOoÖöPpQqRrSsŞşTtUuÜüVvWwXxYyZz";
+		if(sayi1.length === 0 || sayi2.length === 0){
+		   return sayi1.length-sayi2.length;	// (-) 'in önünene sayi2 gelirse Z-A'ya oluşur (1)
+		   }else{
+			var bir 	=	alfabe.indexOf(sayi1[0]);
+			var iki 	=	alfabe.indexOf(sayi2[0]);
+				if(bir !== iki){
+						return bir-iki; // (-) 'in önünene iki gelirse Z-A'ya oluşur (2)
+				   }else{
+					   	return sirala(sayi1.slice(1),sayi2.slice(1));
+				   }
+		   }
+		return alfabe;
+	}
+	
+	var isimler 	= ["Volkan","Ümit","Ümmüye","Serkan","Onur","Hakan","İcabi"];// Rakamsal değer olamaz.
+	document.write(isimler + "<br> <br>");
+	
+	var islemyap 	= isimler.sort(sirala);
+	document.write("Son durum: " + isimler + "<br>");
+
+	
+</script>	
+</body>
+</html>

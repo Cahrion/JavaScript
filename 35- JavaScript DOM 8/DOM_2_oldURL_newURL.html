@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body onhashchange="yaz()">
+	<button onClick="baglanti()">Tıkla</button>
+	<div id="eski"></div>
+	<div id="yeni"></div>
+<script type="text/javascript" language="javascript">
+	// oldURL	=	Sayfa URL'inin (Uniform resource locator) (nizami kaynak bulucu) bağlantı bölümünde değişiklik olduğundaki eski URL (Uniform resource locator) (nizami kaynak bulucu) adresini geriye döndürür.
+	// newURL	=	Sayfa URL'inin (Uniform resource locator) (nizami kaynak bulucu) bağlantı bölümünde değişiklik olduğundaki eski URL (Uniform resource locator) (nizami kaynak bulucu) adresini geriye döndürür.
+	
+	function baglanti(){
+		location.hash 	= "OrnekSayfa";
+		var deger		= location.hash;
+		document.getElementById("sonuc").innerHTML = "Hash değeri değişti: " + deger;
+	}		
+	function yaz(){
+		var eskiadres = event.oldURL;
+		var yeniadres = event.newURL;
+		
+		document.getElementById("eski").innerHTML = eskiadres;
+		document.getElementById("yeni").innerHTML = yeniadres;
+	}	
+	
+</script>	
+</body>
+</html>

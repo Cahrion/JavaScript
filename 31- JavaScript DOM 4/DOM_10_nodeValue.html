@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<button onClick="ornek()">Tıklayınız</button><br><br>
+	<button onClick="ornek2()">Fonksiyon Tıklayınız</button><br>
+	<span id="kimlik">JavaScript Eğitim seti <!-- Volkan Alakent --></span><br><br>
+	<div id="sonuc"></div>
+	<div id="sonuc2"></div><br><br>
+	<div id="Ekstra"></div>
+<script type="text/javascript" language="javascript">
+	// nodeValue	= Belge içerisindeki herhangi bir node'un (düğümün) değerini elde etmek için kullanılır.
+	
+	function ornek(){
+		
+		var deger		= document.getElementById("kimlik");
+		var tur			= deger.childNodes[0].nodeType
+		var isim		= deger.childNodes[0].nodeName
+		var icerik		= deger.childNodes[0].nodeValue
+		
+		var birlestir	= "Düğümün Türü: " + tur + "<br>Düğümün İsmi: " + isim + "<br>Düğümün İçeriği: " + icerik; 
+		document.getElementById("sonuc").innerHTML = birlestir;
+
+		var islemyapiki	= document.getElementById("kimlik").childNodes[0].nodeValue;
+		document.getElementById("sonuc2").innerHTML = islemyapiki;
+	}
+	function ornek2(){
+		var deger 	= document.body.childNodes;
+		var metin	= "";0
+		for(var baslangic=0;baslangic<deger.length;baslangic++){
+			var sonuc	= deger[baslangic].childNodes[0].nodeValue;
+			metin		= metin + sonuc + "<br>";
+		}
+		document.getElementById("Ekstra").innerHTML = metin;
+		
+		// Neden Çalışmıyor ? === Çünkü platformdaki bazı kelimeler bu programın çalışmasını zorluyor ve iptal ediyor.
+		
+	}
+	
+</script>	
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	
+	<button onClick="ornek()">HTML akışı aç</button>
+<script type="text/javascript" language="javascript">
+	// open()	= Belge içerisinden yeni bir HTML çıktı akışı açmak için kullanılır.
+	// close()	= open() metodu ile açılan HTML çıktı akışını kapatmak / sonlandırmak için kullanılır.
+	// Parametreler :
+	// 1. MimeType
+	// 2. Geçmiş aktarımı
+	
+	function ornek(){
+		var islem 	= window.open();
+		
+		
+		islem.document.open("text/html","replace");
+		islem.document.write("<html><head><title>Yeni Sayfa başladi</title></head><body>Hello</body></html>");
+		islem.document.close();
+	}
+</script>	
+</body>
+</html>

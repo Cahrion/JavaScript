@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<div id="kimlik" contenteditable="true">JavaScript Eğitim Seti</div>
+	<div id="sonuc"></div>
+<script type="text/javascript" language="javascript">
+	// isContentEditable 	=	Belge içerisindeki herhangi bir HTML elemanının düzenlenebilir olup olmadığını kontrol ederek boolean (mantıksal) veri tipinde sonucu geriye döndürür.
+	var islem =	document.getElementById("kimlik").isContentEditable;
+	if(islem){
+		document.getElementById("sonuc").innerHTML = "İlgili HTML elemanının düzenlenebilirlik özelliği vardır.";
+	}else{
+		document.getElementById("sonuc").innerHTML = "İlgili HTML elemanının düzenlenebilirlik özelliği yoktur.";
+	}
+</script>	
+</body>
+</html>

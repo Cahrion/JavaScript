@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	// try		=	Hata oluşturabilecek kodlar için kullanılır.
+	// catch	=	Hata oluşursa çalıştırılacak kodlar için kullanılır.
+	// finally	=	Hata oluşsa da oluşmasada çalıştırılacak kodlar için kullanılır.
+	// throw	=	Hata oluşturabilecek kodlar için istisnai durumlarda kullanılır.
+
+	try{
+		var isim = "Volkan";
+		throw("Değişken Tanımlama Hatası. soyisim adındaki değişken yok"); //Catche aktarılır. İstisnai bir durum oluşturulur ve istisnayi yazdırır.
+		// throw hatadan öncesi için konulması gerekir. içine (err)'e yazılabilir.
+		document.write(isim + "<br>");
+		document.write(soyisim);
+	}
+	catch(err){
+		 document.write("Hata oluştu" + "<br>");
+		 document.write(err + "<br>");
+	}
+	finally{
+		document.write("Son");
+	}
+</script>	
+</body>
+</html>

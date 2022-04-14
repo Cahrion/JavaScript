@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<button onClick="ornek()">TIKLA</button>
+	<div id="sonucalani"></div>
+<script type="text/javascript" language="javascript">
+	// readyState	= Belge içeriğinin  browser (tarayıcı) tarafından yüklenme durumu değeri referansını elde etmek için kullanılır.
+	
+	function ornek(){	
+		var sonuc 		= document.readyState;
+		document.getElementById("sonucalani").innerHTML = sonuc;
+	}
+
+	
+</script>	
+</body>
+</html>

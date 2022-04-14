@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	// Fonksiyona parametre gönderme ve üst fonksiyonun parametresini alma
+	
+	function demo1(degerbir,degeriki,degeruc){
+		function demo2(){
+			function demo3(){
+				document.write(degerbir + degeriki + degeruc);
+			}
+			return demo3;
+		}
+		return demo2;
+	}
+	demo1("Icabi KIRGIZ"," Beyfendi"," ...")()();
+	
+</script>	
+</body>
+</html>

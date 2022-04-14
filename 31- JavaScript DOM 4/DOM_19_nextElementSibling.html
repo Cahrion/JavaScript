@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+	
+	
+<body>
+	
+	<div>
+		<p 		id="bir" >JavaScript</p>
+		<div	id="iki" >PHP</div>
+		<p 		id="uc"  >HTML</p>
+		<div	id="dort">JQuery</div>
+		<p 		id="bes" >CSS</p>
+	</div>
+	<div id="sonuc"></div>
+	<div id="sonuc2"></div>
+	<div id="sonuc3"></div>
+	<div id="sonuc4"></div>
+	
+<script type="text/javascript" language="javascript">
+	// nextElementSibling	= Belge içerisindeki herhangi bir HTML elemanının içerisindeki aynı seviyede yani kardeş olan elemanlardan belirtilecek olan elemandan sonra gelen ilk elemanı elde etmek için kullanılır.
+	
+	var deger	= document.getElementById("bir").nextElementSibling;
+	document.getElementById("sonuc").innerHTML = deger;
+	document.getElementById("sonuc2").innerHTML = deger.innerHTML;
+	document.getElementById("sonuc3").innerHTML = deger.tagName;
+	document.getElementById("sonuc4").innerHTML = deger.id;
+	
+</script>	
+</body>
+</html>

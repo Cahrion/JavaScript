@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body onclick="ornek(event)">
+	<div><span>Eğitim Seti Adı: </span>JavaScript</div>
+	<div id="sonuc"></div>
+<script type="text/javascript" language="javascript">
+	// target =	Belge içerisinde tanımlı event'i (olayı) tetikleyen herhangi bir HTML elemanının tag (etiket) adı referansı elde etmek için kullanılır.
+	
+	function ornek(event){
+		var deger	 = event.target.nodeName;
+		// Tıklanan değişkeni verir.
+		document.getElementById("sonuc").innerHTML = deger;
+	}
+	
+</script>	
+</body>
+</html>

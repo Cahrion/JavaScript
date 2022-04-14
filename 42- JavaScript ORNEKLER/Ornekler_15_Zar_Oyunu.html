@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<div id="kapsam" style="width: 110px; height: 50px; overflow: hidden;">
+		<div id="birincizaralani" style="width: 50px;height: 50px;float:left;padding-right: 10px;">
+			<img id="birincizar" src="Dokuman/ZarBos.png">
+		</div>	
+		<div id="ikincizaralani" style="width: 50px;height: 50px;float:left;">
+			<img id="ikincizar" src="Dokuman/ZarBos.png">
+		</div>
+	</div>
+	<br>
+	<div id="butonalani" style="width: 110px; height: 50px; overflow: hidden; text-align: center;">
+		<button id="zarat" onclick="yenizar()">Fırlat</button>
+	</div>
+<script type="text/javascript" language="javascript">
+	
+	function yenizar(){
+		var rastgelesayibir	= Math.ceil(Math.random() * 6);
+		var rastgelesayiiki	= Math.ceil(Math.random() * 6);
+		
+		document.getElementById("birincizar").src = "Dokuman/Zar" + rastgelesayibir + ".png";
+		document.getElementById("ikincizar").src  = "Dokuman/Zar" + rastgelesayiiki + ".png";
+	}
+</script>	
+</body>
+</html>

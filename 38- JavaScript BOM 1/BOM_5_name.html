@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<button onClick="pencereac()">Pencereyi Aç</button>
+<script type="text/javascript" language="javascript">
+	// name	 	= Pencere adının referansını elde etmek veya ayarlamak için kullanılır.
+	
+	function pencereac(){
+		var pencere		= window.open("","Yeni Sayfalık Deney","width=1000, height=750,left=400",true);
+		var pencereadi 	= pencere.name;
+		var pencereadi 	= pencere.name = "Eski Sayfalık Deney"; // İsim değiştirilebilir.
+		pencere.document.write("<div>Penceremizin Adı: " + pencereadi + "</div>");
+	}
+</script>	
+</body>
+</html>

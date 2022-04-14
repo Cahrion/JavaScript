@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	// parse()	= Kendisine parametre olarak belirtilmiş değer doğrultusunda kullanıldığı değişken içeriğine tarihin zaman damgası başlangıcı ile arasındaki zaman farkı bilgisini depolayarak depoladığı değeri geriye döndürür.
+	// Zaman damgası başlangıç tarihi 	= 01.01.1970
+								// Sırayla.
+	var fark 	= Date.parse("July"); // Ay ingilizce yazılır. (July)
+	var fark 	= Date.parse("July 5"); // Gün yazılır . (5)
+	var fark 	= Date.parse("July 5,1975"); // Yıl yazılır. (1975)
+	// (05.07.1975) - (01.01.1970) == fark;
+	document.write(fark);
+		
+</script>	
+</body>
+</html>

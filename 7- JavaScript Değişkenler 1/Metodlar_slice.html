@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	// slice() 		= Kendisine verilecek olan parametreler ile tanımlanmış değişken içeriği aralığında bulunan değerleri kopyalayarak yeni bir içerik oluşturur ve oluşturduğu değeri döndürür.
+	
+	var icerik		= "Volkan Alakent JavaScript Eğitim Seti";
+	document.write(icerik + "<br>");
+	
+	var sonuc 		= icerik.slice(); // Hiç bir parametre verilmezse bütün içeriği kopyalar.
+	document.write(sonuc + "<br>");
+	
+	var sonuc 		= icerik.slice(15); // Başlangıç değeri (15) olduğundan dolayı 15'den başlar
+	document.write(sonuc + "<br>");
+	
+	var sonuc 		= icerik.slice(15, 25); // Başlangıç değeri (15) olduğundan dolayı 15'den başlar ve son değeri (25) olduğundan 25'e kadar içeriği yazar. (15,25)
+	document.write(sonuc + "<br>");
+</script>	
+</body>
+</html>

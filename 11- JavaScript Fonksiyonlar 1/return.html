@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	
+	function demo(){
+		var isim 	= "Volkan";
+		var soyisim = "Alakent <br>";
+		var coklu	= [isim,soyisim]; 
+		return coklu;
+	}
+	document.write(demo());
+	
+			/* İkincil kullanım */
+		
+	function demot(){
+		document.write("Volkan <br>")
+		document.write("Hakan <br>")
+		document.write("Onur <br>")
+		return; // Çıkış parametresi olarak da görülebilir.
+		document.write("Ümit <br>") // Ümit yazılmadı çünkü 'return;' kullanıldı
+	}
+	demot();
+
+	
+</script>	
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	
+	var renkler = ["Siyah","Beyaz","Kırmızı","Sarı","Mavi",];
+	document.write(renkler + "<br>");
+	document.write(renkler[0] + "<br>");
+	document.write(renkler[1] + "<br>");
+	document.write(renkler[2] + "<br>");
+	document.write(renkler[3] + "<br>");
+	document.write(renkler[4] + "<br>" + "<br>" + "<br>");
+	
+	for(var sonuc in renkler){
+		if(sonuc>=2 && sonuc <=4){
+			
+		   continue;
+		   }
+		document.write("Benim istediğim renk: " + renkler[sonuc] + "<br>");
+	}
+	
+</script>	
+</body>
+</html>

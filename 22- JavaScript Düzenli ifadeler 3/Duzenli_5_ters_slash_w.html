@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	// \w	= Düzenli ifade dahilinde kontrol edilecek olan değişken içeriği karakter diziliminde bulunan değerin, harf rakam veya (_) karakterlerinden herhangi birisiyle eşleşmesi gerektiğini belirtmek için kullanılır.
+	
+	var metin 	= "!'V^+%o&/l()=k?*{a}[]n_19+%80&&";
+	var ifade 	= new RegExp("\\w","g"); //--> /\w/g --> Aynısıdır
+	var sonuc 	= metin.match(ifade);
+	document.write(sonuc);
+	
+</script>	
+</body>
+</html>

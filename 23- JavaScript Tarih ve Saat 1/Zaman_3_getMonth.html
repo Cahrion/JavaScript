@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	// getMonth()	=Kullanıldığın değişken içeriğine ay bilgisini 0 ila 11 arasında olmak üzere rakamsal olarak depolayarak, depoladığı değeri geriye döndürür.
+	
+	// ilk ay "ocak" değeri = 0 !
+	var zaman 	= new Date();
+	var sonuc 	= zaman.getMonth();
+	if(sonuc=="0"){
+		var ayiyaz = "Ocak";
+	}else if(sonuc=="1"){
+		var ayiyaz = "Şubat";
+	}else if(sonuc=="2"){
+		var ayiyaz = "Mart";
+	}else if(sonuc=="3"){
+		var ayiyaz = "Nisan";
+	}else if(sonuc=="4"){
+		var ayiyaz = "Mayıs";
+	}else if(sonuc=="5"){
+		var ayiyaz = "Haziran";
+	}else if(sonuc=="6"){
+		var ayiyaz = "Temmuz";
+	}else if(sonuc=="7"){
+		var ayiyaz = "Ağustos";
+	}else if(sonuc=="8"){
+		var ayiyaz = "Eylül";
+	}else if(sonuc=="9"){
+		var ayiyaz = "Ekim";
+	}else if(sonuc=="10"){
+		var ayiyaz = "Kasım";
+	}else if(sonuc=="11"){
+		var ayiyaz = "Aralık";
+	}else{
+		var ayiyaz = "Hata";
+	}
+	document.write(ayiyaz);
+	
+	
+	
+</script>	
+</body>
+</html>

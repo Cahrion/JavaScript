@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	// \d	= Düzenli ifade dahilinde kontrol edilecek olan değişken içeriği karakter diziliminde bulunan değerin, sadece rakam karakterlerinden herhangi birisiyle eşleşmesi gerektiğini belirtmek için kullanılır.
+	
+	var metin 	= "Volk15an Al1ake9nt 1980";
+	var ifade 	= new RegExp("\\d","g"); // --> /\d/g; --> Aynısı
+	var sonuc 	= metin.match(ifade);
+	document.write(sonuc);
+	
+</script>	
+</body>
+</html>

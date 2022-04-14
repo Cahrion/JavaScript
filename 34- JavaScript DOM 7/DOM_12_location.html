@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<input type="text" onKeyDown="deney()">
+	<div id="sonuc"></div>
+<script type="text/javascript" language="javascript">
+	// location 	= Belge içerisindeki onkeydown veya onkeyup event'ı (olayı) gerçekleştiğinde ilgili tuşun klavyedeki lokasyon / konum bilgisi değerini geriye döndürür.
+	/*
+	O	=	Standart Tuşlar
+	1	=	Sol Tuşlar
+	2	=	Sağ Tuşlar
+	3	=	NumPad Tuşlar
+	*/
+	function deney(){
+		var deger = event.location
+		document.getElementById("sonuc").innerHTML = deger;
+	}
+</script>	
+</body>
+</html>

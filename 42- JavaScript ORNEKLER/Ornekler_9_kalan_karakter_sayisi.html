@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<textarea name="" id="alan" style="width:500px; height: 100px;" onKeyPress="ornek()"></textarea>
+	<br>
+	<div>Kullanilan Karakter Sayısı: <span id="kullanilan">0</span></div>
+	<div>Kalan Karakter Sayısı: <span id="kalan">258</span></div>
+	
+<script type="text/javascript" language="javascript">
+	var kullanilan			= 0;
+	var maksimum			= 257;
+	
+	function ornek(){
+		var baglan	= document.getElementById("alan");
+		var uzunluk	= baglan.value.length;
+		if(uzunluk>=maksimum){
+		   	var deger	= baglan.value;
+			var olustur = deger.substr(0, maksimum);
+			document.getElementById("alan").value 			= olustur;
+			document.getElementById("kullanilan").innerHTML = maksimum + 1;
+			document.getElementById("kalan").innerHTML 		= 0;
+		}else{
+			var deger	= baglan.value;
+			var olustur	= deger.substr(0, maksimum)
+			document.getElementById("alan").value 			= olustur;
+			document.getElementById("kullanilan").innerHTML = uzunluk + 1;
+			document.getElementById("kalan").innerHTML 		= (maksimum) - (uzunluk);
+		}
+	}
+</script>	
+</body>
+</html>

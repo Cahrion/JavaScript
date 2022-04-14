@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	
+	var bilgiler	={
+		isim	:"Volkan",
+		soyisim	:"Alakent",
+		yas		: 36
+	};
+	
+	delete bilgiler.isim;			// Kritik veri alanlarında önce silinmesi daha iyidir.
+	bilgiler.isim		= "Hakan"; // Sonrasında eklenecek veri girilir.
+	
+	var isimdegeri 		= bilgiler.isim;
+	var soyisimdegeri 		= bilgiler.soyisim;
+	var yasdegeri 		= bilgiler.yas;
+	
+	
+	document.write(isimdegeri + "<br>");
+	document.write(soyisimdegeri + "<br>");
+	document.write(yasdegeri + "<br>");
+</script>	
+</body>
+</html>

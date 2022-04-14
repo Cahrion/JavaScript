@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<button onClick="ornek()">Ekle</button>
+	<button onClick="butto()">Button yap</button><br><br>
+	
+	<a id="baglanti" target="_blank">Bağlantıya Git</a>
+	<br>
+	<input id="deneme">
+<script type="text/javascript" language="javascript">
+	// setAttribute()	= Belge içerisindeki herhangi bir HTML elemanına belirtilen özelliği ve değerini eklemek için kullanılır.
+	
+	function ornek(){
+		document.getElementById("baglanti").setAttribute("href","https://www.google.com.tr");
+		document.getElementById("baglanti").setAttribute("style","color:red");
+	}
+	function butto(){
+		document.getElementById("deneme").setAttribute("type","button");
+		document.getElementById("deneme").setAttribute("onClick","ornek()");
+	}
+</script>	
+</body>
+</html>

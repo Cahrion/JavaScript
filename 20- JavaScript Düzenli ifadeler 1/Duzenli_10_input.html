@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	// input	=	Değişken içeriğinde düzenli ifade ile aranan değerin eşleşmesi durumunda eşleşmeyi sağlayan değişken içeriğinin tüm değeri geriye döndürülür.
+	
+	var metin 	= "Volkan Alakent JavaScript eğitim seti.";
+	var ifade 	= new RegExp("JavaScript");
+	ifade.test(metin); // Koşul belirtir
+	var sonuctm = RegExp.input;
+	/*
+	// Üsttekiyle aynı mantıkta çalışıyor.
+	
+	kontrol = ifade.test(metin);
+	if(kontrol){
+		var sonuctm = RegExp.input;
+		document.write(sonuctm);
+	}else{
+		document.write("Herhangi bir eşleşme bulunamdı!");
+	}
+	
+	
+	*/
+	
+	document.write(sonuctm)
+</script>	
+</body>
+</html>

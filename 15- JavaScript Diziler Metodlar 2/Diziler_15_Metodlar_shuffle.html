@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	//  shuffle()	= Dizinin her elemanı üzerinde tek tek çalışarak tüm elemanları karıştırır ve yeni bir dizi oluşturarak oluşturduğu diziyi geriye döndürür.
+	
+	Array.prototype.shuffle	= function(){
+		var elemansayisi 	= this.length; 
+		while(--elemansayisi > 0){
+			var rastgelesayi	= Math.floor(Math.random() * (elemansayisi + 1));
+			var gecicideger 	= this[rastgelesayi];
+			this[rastgelesayi]	= this[elemansayisi];
+			this[elemansayisi]	= gecicideger;
+			return this;
+		}
+	}
+	
+	var renkler 	= ["Siyah","Gri","Beyaz","Sarı","Bej"];
+	document.write(renkler + "<br> <br>");
+
+	var islemyap 	= renkler.shuffle();
+	document.write(" ~ " + renkler + "<br>");
+
+	
+</script>	
+</body>
+</html>

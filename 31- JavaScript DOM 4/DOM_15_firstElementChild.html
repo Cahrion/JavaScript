@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<div>
+		<p>Volkan Alakent</p>
+		<p>JavaScript Eğitim Seti</p>
+		
+	</div>
+	
+	<div id="sonuc"></div>
+<script type="text/javascript" language="javascript">
+	// firstElementChild		= Belge içerisindeki herhangi bir HTML elemanının içerdiği ilk elemanı elde etmek içn kullanılır.
+		
+	var deger	= document.getElementById("alan").firstElementChild.tagName;
+	document.getElementById("sonuc").innerHTML = deger;
+	
+</script>	
+</body>
+</html>

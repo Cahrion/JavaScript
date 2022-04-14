@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+	
+<body>
+	<div draggable="true" ondragend="deney(this)">JavaScript Eğitim Seti</div>
+	<div id="sonuc"></div>
+<script type="text/javascript" language="javascript">
+	// ondragend	= Belge içerisindeki herhangi bir elemanının sürüklenmesi bittiğinde belirtilecek olan fonksiyon çalışır.
+	
+	function deney(){
+		document.getElementById("sonuc").innerHTML = "Sürüklenme bitti";
+	}
+</script>	
+</body>
+</html>

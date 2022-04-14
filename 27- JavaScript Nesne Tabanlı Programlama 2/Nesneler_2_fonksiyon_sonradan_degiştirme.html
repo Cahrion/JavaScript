@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	
+	function bilgi(isim,soyisim,yas,meslek, sehir){
+		this.isimozelligi		= isim;
+		this.soyisimozelligi	= soyisim;
+		this.yasozelligi		= yas;
+		this.meslekozelligi		= meslek;
+		this.sehirozelligi		= sehir;
+		this.islem				= function(yeniisim,yenisoyisim,yeniyas){
+			this.isimozelligi		= yeniisim;	
+			this.soyisimozelligi	= yenisoyisim;	
+			this.yasozelligi		= yeniyas;	
+		}	 
+		
+	}
+	
+	var sonuc 	= new bilgi("icabi","kırgız","18","Yazılım Mühendisi","İstanbul");
+	sonuc.islem("İcabi","Kırgız","19");
+	document.write(sonuc.isimozelligi 		+ "<br>" );
+	document.write(sonuc.soyisimozelligi	+ "<br>" );
+	document.write(sonuc.yasozelligi 		+ "<br>" );
+	document.write(sonuc.meslekozelligi 	+ "<br>" );
+	document.write(sonuc.sehirozelligi 		+ "<br>" );
+	
+</script>	
+</body>
+</html>

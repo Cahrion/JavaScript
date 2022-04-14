@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	// isSafeInteger 	=	Kendisine parametrik olarak verilen değişken içeriğinin güvenli bir tam sayı olup olmadığını kontrol ederek boolean (Mantıksal) veri türünde sonuc geriye döndürür.
+	
+	var degerbir		= 10; // Güvenli bir tam sayı
+	var degeriki		= 10.1; 
+	var degeruc			= 2.188584334423014e+21; // Güvenli bir tam sayı değil.
+	var degerdort		= "10"; 
+	
+	var sonucbir 		= Number.isSafeInteger(degerbir);
+	var sonuciki 		= Number.isSafeInteger(degeriki);
+	var sonucuc 		= Number.isSafeInteger(degeruc);
+	var sonucdort		= Number.isSafeInteger(degerdort);
+
+	document.write("Değer: " + degerbir + "<br>");
+	document.write("Sonuç: " + sonucbir + "<br><br>");	
+	
+	document.write("Değer: " + degeriki + "<br>");
+	document.write("Sonuç: " + sonuciki + "<br><br>");	
+	
+	document.write("Değer: " + degeruc + "<br>");
+	document.write("Sonuç: " + sonucuc + "<br><br>");	
+	
+	document.write("Değer: " + degerdort + "<br>");
+	document.write("Sonuç: " + sonucdort + "<br><br>");
+	
+</script>	
+</body>
+</html>

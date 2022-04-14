@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	
+	var tanimlar  	= ["Volkan","Hakan", ["Aslı","Banu","Hatice", ["Siyah","Beyaz","Sarı","Lacivert","Kırmızı","Yeşil"] ,"Derya","Ayşe"] ,"Mesut","Onur","Ümit","Serkan","Levent","Faik","Hasan"];
+			
+					/* isArray kullanımı ve her dizide geçerli yapı */
+	
+	for(var sonuc in tanimlar){
+		if(Array.isArray(tanimlar[sonuc])){
+			for(var durum in tanimlar[sonuc]){
+				
+				if(Array.isArray(tanimlar[sonuc][durum])){
+					for(var durumt in tanimlar[sonuc][durum]){
+						document.write(tanimlar[sonuc][durum][durumt] + "<br>");
+					}
+				}else{
+					document.write(tanimlar[sonuc][durum] + "<br>");
+				}
+			}
+		}else{
+		document.write(tanimlar[sonuc] +"<br>");
+		}
+	}
+
+					/* if sonuc mantığı bilinen veride geçerli */
+						document.write("<br><br><br>")
+					/* if sonuc mantığı bilinen veride geçerli */
+	
+	for(var sonucum in tanimlar){
+		if(sonucum==2){
+			for(var durumum in tanimlar[sonucum]){
+				
+				if(durumum==3){
+					for(var durumtum in tanimlar[sonucum][durumum]){
+						document.write(tanimlar[sonucum][durumum][durumtum] + "<br>");
+					}
+				}else{
+					document.write(tanimlar[sonucum][durumum] + "<br>");
+				}
+			}
+		}else{
+		document.write(tanimlar[sonucum] +"<br>");
+		}
+	}
+	
+</script>	
+</body>
+</html>

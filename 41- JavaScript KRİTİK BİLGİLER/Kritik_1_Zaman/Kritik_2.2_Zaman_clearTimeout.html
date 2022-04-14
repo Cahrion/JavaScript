@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<button onClick="baslat()"		>Zamanlayıcıyı Başlat</button>
+	<button onClick="sonlandir()"	>Zamanlayıcıyı Durdur</button>
+	<button onClick="sifirla()"		>Zamanlayıcıyı Sıfırla</button>
+	<br><br>
+	<div id="sonuc">0</div>
+<script type="text/javascript" language="javascript">
+	// clearTimeout()	= setTimeout() metodu kullanılarak oluşturulmuş olan zamanlayıcıyı kaldırmak veya iptal etmek için veya geçersiz kılmak için kullanılır.
+	var islem;
+	
+	function baslat(){
+		var deger	= parseInt(document.getElementById("sonuc").innerHTML);
+		deger		= deger + 1;
+		document.getElementById("sonuc").innerHTML = deger;
+		islem 	= setTimeout(function(){
+			baslat();
+		},1000);
+	}	
+	function sonlandir(){
+		clearTimeout(islem); 
+	}	
+	function sifirla(){
+		sonlandir();
+		document.getElementById("sonuc").innerHTML = 0;
+	}
+
+</script>	
+</body>
+</html>

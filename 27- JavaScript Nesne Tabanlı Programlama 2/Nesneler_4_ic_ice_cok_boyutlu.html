@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	
+	var bilgiler	= {
+		isim	:"İcabi",
+		soyisim	:"Kırgız",
+		detay	:{
+			yas	 	:"18",
+			sehir	:"İstanbul",
+			diller	:{
+				birincidil	:"Python",
+				ikincidil	:"JavaScript",
+				ucuncudil	:"Dart",
+			}
+		}
+	};
+	// İlk katman
+	var isimdeger		= bilgiler.isim;
+	document.write("İsim değeri: " + isimdeger + "<br>");	
+	var soyisimdeger	= bilgiler.soyisim;
+	document.write("Soyisim değeri: " + soyisimdeger + "<br>");
+	
+	// İkinci katman	
+	var yasdeger		= bilgiler.detay.yas;
+	document.write("Yaş değeri: " + yasdeger + "<br>");	
+	var sehirdeger		= bilgiler.detay.sehir;
+	document.write("Şehir değeri: " + sehirdeger + "<br>");
+	
+	// ucuncu katman
+	var birincidildeger	= bilgiler.detay.diller.birincidil;
+	document.write("Birinci dil değeri: " + birincidildeger + "<br>");
+	var ikincidildeger		= bilgiler.detay.diller.ikincidil;
+	document.write("İkinci dil değeri: " + ikincidildeger + "<br>");		
+	var ucuncudildeger		= bilgiler.detay.diller.ucuncudil;
+	document.write("Ucuncu dil değeri: " + ucuncudildeger + "<br>");	
+
+	
+</script>	
+</body>
+</html>

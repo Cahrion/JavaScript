@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	// trunc()	= Kendisine parametre olarak verilen herhangi bir ondalıklı sayı değerinin ondalık kısmını kaldırarak. Tam sayı değerini alır.
+	
+	var sayibir 	= "10";
+	var sayiiki		= Number(true) + 1.99;
+	var sayiuc		= 10.499;
+	var sayidort	= new Date(); // Number'a da çevirir.
+	var sayibes		= "5.50";
+	var sayialti	= "10.45984821654684651";
+
+	document.write("Değer: " + sayibir  + "<br>");
+	document.write("Değer: " + sayiiki  + "<br>");	
+	document.write("Değer: " + sayiuc   + "<br>");	
+	document.write("Değer: " + sayidort + "<br>");
+	document.write("Değer: " + sayibes  + "<br>");
+	document.write("Değer: " + sayialti + "<br> <br>");
+	
+	var sonucbir		= Math.trunc(sayibir);
+	var sonuciki		= Math.trunc(sayiiki);
+	var sonucuc			= Math.trunc(sayiuc);
+	var sonucdort		= Math.trunc(sayidort);
+	var sonucbes		= Math.trunc(sayibes);
+	var sonucalti		= Math.trunc(sayialti);
+
+	document.write("Sonuç: " + sonucbir  	+"<br>");
+	document.write("Sonuç: " + sonuciki 	+"<br>");
+	document.write("Sonuç: " + sonucuc  	+"<br>");	
+	document.write("Sonuç: " + sonucdort 	+"<br>");
+	document.write("Sonuç: " + sonucbes   	+"<br>");	
+	document.write("Sonuç: " + sonucalti 	+"<br>");
+	
+	
+</script>	
+</body>
+</html>

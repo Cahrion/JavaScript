@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	
+	<div>
+		<div id="ornekbir">	JavaScript Eğitim Seti</div>
+		<div id="ornekiki">	PHP Eğitim Seti</div>
+		<!-- Deneme için Gizli HTML Açıklama Alanı-->
+		<div id="ornekuc">	CSS Eğitim Seti</div>
+		<div id="ornekdort">XML Eğitim Seti</div>
+	
+	</div>
+	<br><br>
+	<div id="sonuc"></div>
+	
+<script type="text/javascript" language="javascript">
+	// parentNode	= Belge içerisindeki herhangi bir node'un (düğümün) bir üst node'unu (düğümünü) elde etmek için kullanılır	
+	
+	deger = document.getElementById("ornekuc").parentNode;
+	document.getElementById("sonuc").innerHTML = deger;
+	
+</script>	
+</body>
+</html>

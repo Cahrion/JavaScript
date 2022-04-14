@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	// toLocaleDateString()		=	Kullanıldığı değişken içeriğine atanmış olan tarih ve saat bilgilerini tarayıcı lokasyonuna / diline göre sadece tarih kısmını alarak string (metin) veri türünde düz bir metne dönüştürerek. Oluşturduğu değeri geriye döndürür.
+	
+	var zaman =  new Date();
+	document.write(zaman + " ~ " + typeof zaman + "<br>");
+	
+	var sonuc = zaman.toLocaleDateString();
+	document.write(sonuc + " ~ " + typeof sonuc); 	
+</script>	
+</body>
+</html>

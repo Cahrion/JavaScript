@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+	
+	<style>
+		body { 
+			color:green;
+			font-size: 25px;
+		}
+		p { 
+			color:blue;
+		}
+	</style>	
+	<style>
+		body {
+			font-weight: bold;
+		}
+	</style>
+	
+</head>
+<body>
+	
+	Volkan Alakent JavaScript Eğitim Seti
+	<div id="sonucalani"></div>
+	<div id="sonucalani2"></div>
+	<div id="sonucalani3"></div>
+	<div id="sonucalani4"></div>
+	
+<script type="text/javascript" language="javascript">
+	// styleSheets	= Belge üzerinde etkisi olan tüm stil sayfalarının nesne referansını elde etmek için kullanılır. Eğer ki stil sayfaları referansları birden fazla ise her stil sayfası referansı döngü ile elde edilebilir.
+	
+	var islem	= document.styleSheets;
+	console.log(islem);	// fazla detay verir.
+
+	var islem	= document.styleSheets.length;
+	document.getElementById("sonucalani").innerHTML = "Kaç tane Style var: " + islem;	
+	
+	var islem	= document.styleSheets[0].cssRules[0].cssText;
+	document.getElementById("sonucalani2").innerHTML = islem;
+	
+	var islem	= document.styleSheets[0].href;
+	document.getElementById("sonucalani3").innerHTML = "Dosya yolu: " + islem;
+	// CSS dosyası eğer eklenirse bunun yolunu verir eğer sayfa içindeyse (null) değeri döner
+	
+	var islem	= document.styleSheets[0].type;
+	document.getElementById("sonucalani4").innerHTML = "Dosya türü: " + islem;
+	
+</script>	
+</body>
+</html>

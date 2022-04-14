@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	JavaScript eğitim seti <br> <div id="saniye"></div>
+<script type="text/javascript" language="javascript">
+	// hasFocus()	= Belge odağının olup olmadığı referansını boolean (mantıksal) veri türünde elde etmek için kullanılır.
+	
+	setInterval("ornek()",1);
+	
+	function ornek(){
+		var islem = document.hasFocus();
+		if(document.hasFocus()){
+			document.getElementById("saniye").innerHTML = "Sayfaya odaklanıldı.";
+		}else{
+			document.getElementById("saniye").innerHTML = "Sayfa odağından çıkıldı.";
+		}
+	}
+</script>	
+</body>
+</html>

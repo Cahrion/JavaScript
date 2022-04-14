@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	// parseInt()	= Kendisine parametre olarak verilen değerler doğrultusunda değişken içeriğini tam sayı haline dönüştürerek yeni bir içerik oluşturur ve oluşturduğu içeriği geriye döndürür. ((+) veya (-) değeri haricinde bir karakter gördüğünde işlem durur.)
+	
+	var sayibir  		= "10";
+	var sayiiki 		= "10.55";
+	var sayiuc			= "30 20 10";
+	var sayidort		= " 25 ";
+	var sayibes			= "10 numara işlem";
+	var sayialti 		= "fiyat 60";
+	var sayiyedi 		= 10;
+	var sayisekiz 		= 12.43;
+		
+	var veriturubir		= typeof sayibir;
+	var verituruiki		= typeof sayiiki;
+	var verituruuc		= typeof sayiuc;
+	var veriturudort	= typeof sayidort;
+	var veriturubes		= typeof sayibes;
+	var veriturualti	= typeof sayialti;
+	var verituruyedi	= typeof sayiyedi;
+	var veriturusekiz	= typeof sayisekiz;
+	
+	var sonucbir		= parseInt(sayibir);
+	var sonuciki		= parseInt(sayiiki);
+	var sonucuc			= parseInt(sayiuc);
+	var sonucdort		= parseInt(sayidort);
+	var sonucbes		= parseInt(sayibes);
+	var sonucalti		= parseInt(sayialti);
+	var sonucyedi		= parseInt(sayiyedi);
+	var sonucsekiz		= parseInt(sayisekiz);
+	
+	var sveriturubir	= typeof sonucbir;
+	var sverituruiki	= typeof sonuciki;
+	var sverituruuc		= typeof sonucuc;
+	var sveriturudort	= typeof sonucdort;
+	var sveriturubes	= typeof sonucbes;
+	var sveriturualti	= typeof sonucalti;
+	var sverituruyedi	= typeof sonucyedi;
+	var sveriturusekiz	= typeof sonucsekiz;
+	
+	document.write("Değer: " + sayibir   + "( "+ veriturubir +" )"   +"<br>");
+	document.write("Sonuç: " + sonucbir  + "( "+ sveriturubir +" )" 	+"<br><br>");
+	
+	document.write("Değer: " + sayiiki   + "( "+ verituruiki +" )"   +"<br>");
+	document.write("Sonuç: " + sonuciki  + "( "+ sverituruiki +" )"  	+"<br><br>");
+	
+	document.write("Değer: " + sayiuc    + "(" + verituruuc + " ) " +"<br>");
+	document.write("Sonuç: " + sonucuc   + "(" + sverituruuc + " ) " +"<br><br>");	
+	
+	document.write("Değer: " + sayidort  + "(" + veriturudort + " ) " +"<br>");
+	document.write("Sonuç: " + sonucdort + "(" + sveriturudort + " ) "+"<br><br>");
+	
+	document.write("Değer: " + sayibes   + "(" + veriturubes + " ) "  +"<br>");
+	document.write("Sonuç: " + sonucbes  + "(" + sveriturubes + " ) " +"<br><br>");	
+	
+	document.write("Değer: " + sayialti  + "(" + veriturualti + " ) " +"<br>");
+	document.write("Sonuç: " + sonucalti + "(" + sveriturualti + " ) "+"<br><br>");	
+	
+	document.write("Değer: " + sayiyedi  + "(" + verituruyedi + " ) " +"<br>");
+	document.write("Sonuç: " + sonucyedi + "(" + sverituruyedi + " ) "+"<br><br>");	
+	
+	document.write("Değer: " + sayisekiz + "(" + veriturusekiz + " ) "+"<br>");
+	document.write("Sonuç: " + sonucsekiz+ "(" + sveriturusekiz + " ) "+"<br><br>");
+	
+</script>	
+</body>
+</html>

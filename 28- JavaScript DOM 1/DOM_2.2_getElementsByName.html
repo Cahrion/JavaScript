@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	
+	Volkan'ın sevdiği hayvan <span name="Hayvanadi">sibirya kurdu</span>'dur. Onur'un en sevdiği hayvan <span name="Hayvanadi">kedi</span>'dir. Aslı'nın en sevdiği hayvan <span name="Hayvanadi">kuş</span>'tur.
+	<br>
+	Etiket adı: <span id="Etiket"></span>
+<script type="text/javascript" language="javascript">
+	// getElementsByName()	=	Kendisine parametre olarak verilen değer doğrultusunda, belge içerisinde belirtilen name özelliğine / niteliğine sahip tüm elemanların referansını elde etmek için kullanılır. Eleman referansları birden fazla ise her bir eleman döngüyle elde edilebilir.
+	
+	var sonuc	= document.getElementsByName("Hayvanadi")[0].tagName;
+	document.getElementById("Etiket").innerHTML	= sonuc;
+
+</script>	
+</body>
+</html>

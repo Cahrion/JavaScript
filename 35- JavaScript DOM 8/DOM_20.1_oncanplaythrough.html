@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<audio src="Ses.mp3" oncanplaythrough="deney()" controls></audio>
+	<div id="sonuc"></div>
+<script type="text/javascript" language="javascript">
+	// oncanplaythrough	= Medya elemanı verisi tamamiyle ara belleğe yüklendiğinde ve oynatmaya / yürütmeye hazır olduğunda belirtilecek fonksiyon çalışır.
+	
+	function deney(){
+		document.getElementById("sonuc").innerHTML += "Medya verisi tam anlamıyla browser tarafından yüklendi. <br>";
+	}
+</script>	
+</body>
+</html>

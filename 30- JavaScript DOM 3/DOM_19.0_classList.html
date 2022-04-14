@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+	<style>
+		.bir{
+			color:red;
+		}
+		.iki{
+			background-color: yellow;
+		}
+		.uc{
+			width:300px;
+			height:20px;
+			padding-top:5px; 
+			text-align: center;
+			border:1px dotted black
+		}
+	</style>
+</head>
+
+<body>
+	<button onClick="ornek()">İşlem Yap</button>
+	<br><br>
+	<div id="alan" class="bir iki uc">JavaScript Eğitim Seti</div>
+	<br><br>
+	<div id="sonuc"></div>
+<script type="text/javascript" language="javascript">	
+	// classList		= Belge içerisinde herhangi bir HTML elemanına atanmış olan class listesi isimlerini elde etmek veya ayarlamak için kullanılır.
+	/*
+	item		=	Sınıf seçiçisinin adını döndürür.
+	length		=	Sınıf seçiçisinin sayısını döndürür.
+	add			=	Sınıf seçicisi ekler
+	remove 		= 	Sınıf seçiçisi kaldırır / siler
+	toggle 		=	Sınıf seçiçisi ekler veya kaldırır.
+	contains	=	Sınıf seçiçisi arar.
+	*/
+	function ornek(){
+	var deger	=  document.getElementById("alan").classList;
+	document.getElementById("sonuc").innerHTML	= "Ilgili Elemanın class Listesi: " + deger;
+	}
+	
+	
+	
+	
+	
+</script>	
+</body>
+</html>

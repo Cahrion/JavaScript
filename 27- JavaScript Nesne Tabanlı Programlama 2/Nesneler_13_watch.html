@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	// watch()	 	= Nesnenin belirtilen bir özelliği değiştiğinde, çalıştırılacak olan herhangi bir işlev eklemek için kullanılır.
+	// 1. Parametre	= Özelliğin adı
+	// 2. Parametre	= Özelliğin eski değeri
+	// 3. Parametre	= Özelliğin yeni değeri
+	
+	
+	var bilgiler	= {
+		isim	:	"İcabi",
+		soyisim	:	"Kırgız",
+	};
+	
+	bilgiler.watch("isim",function(ozellikadi,eskideger,yenideger){
+			var metin	= "Özellik adı :" + ozellikadi + " isimli nesneyi\n" + eskideger + " yerine " + yenideger + " yazmak istediğinize emin misiniz ?";
+			alert(metin);
+	}); // Sadece Mozilla ile çalışmaktadır. | 2020'de artık ondada çalışmıyor.
+	document.write("title");
+	bilgiler.isim	= "Hakan";
+</script>	
+</body>
+</html>

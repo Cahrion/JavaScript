@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<iframe id="cercevealani" src="DOM_4.1_cercevesi.html" style="width:500px;height:500px;"></iframe>
+	<br>
+	<button onClick="ornek()">İşlemi yap</button><br><br>
+	
+	
+<script type="text/javascript" language="javascript">
+	// importNode()	= Belge içerisine başka bir belgeden node (dügüm) eklemek için kullanılır. Eklenecek olan node (dügüm) 'ün varsa tüm alt node (dügümleri)'de işleme dahil edilir.
+	// appendChild 	= Bir Node'u (dügümü) belirtilecek olan herhangi bir elemanın içerisine en sonda olmak üzere eklemek için kullanılır. 
+	
+	function ornek(){
+		var cerceve 	= document.getElementById("cercevealani");
+		var alan		= cerceve.contentWindow.document.getElementsByTagName("DIV")[0];
+		var sonuc		= document.importNode(alan, true);
+		document.body.appendChild(sonuc);
+	}
+	
+	
+</script>	
+</body>
+</html>

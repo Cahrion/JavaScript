@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<button onClick="ornek(event)">Tıkla</button>
+	<div id="sonuc"></div>
+<script type="text/javascript" language="javascript">
+	// timeStamp	= Belge içerisinde tanımlı eventin (olayın) oluşturulduğu zaman ile çalıştırıldığı zaman arasındaki fark süresinin mikro saniye olarak referansını elde etmek için kullanılır.
+	
+	function ornek(event){
+		var zaman = event.timeStamp;
+		document.getElementById("sonuc").innerHTML = zaman;
+	}
+	
+</script>	
+</body>
+</html>

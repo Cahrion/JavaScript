@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<button onClick="deney()">Tıkla</button>
+	<div id="sonuc"></div>
+<script type="text/javascript" language="javascript">
+	// prompt()	 = Kullanıcıdan bilgi talep etmek için girdi penceresi oluşturmak için kullanılır.
+	
+	function deney(){
+		var deger = window.prompt("Merhabalar, Sayfanın arkaplan rengi (siyah,kırmızı,sarı,mavi) renklerinden hangisi olsun ?");
+		if(deger=="siyah"){
+		  	 document.body.style.backgroundColor = "black";
+		   }else if(deger=="kırmızı"){
+		  	 document.body.style.backgroundColor = "red";
+		   }else if(deger=="sarı"){
+			 document.body.style.backgroundColor = "yellow";
+		   }else if(deger=="mavi"){
+			 document.body.style.backgroundColor = "blue";  
+		   }else{
+			   deney()
+		   }
+	}
+</script>	
+</body>
+</html>

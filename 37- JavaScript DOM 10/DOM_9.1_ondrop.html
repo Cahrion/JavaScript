@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+	<style>
+	
+		.hedefalani {
+			background-color: #F1F1F1;
+			border: 1px solid black;
+			width: 250px;
+			height: 25px;
+			margin: 20px;
+			padding: 20px;
+			float: left;
+			text-align: center;
+		}
+	
+	</style>
+	
+	
+</head>
+
+<body>
+	<div> İşlem Sonucu: <span id="sonuc"></span></div>
+	<br><br>
+	
+	<div class="hedefalani" ondrop="birakildi(event)" ondragover="uzerinde(event)" ondragleave="ayrildi(event)">
+		<span id="kimlik" ondragstart="basladi(event)" draggable="true">JavaScript</span>
+	</div>
+	
+	<div id="hedef" ondrop="birakildi(event)" ondragover="uzerinde(event)" class="hedefalani" ondragleave="ayrildi(event)"></div>
+
+	<br><br><br>
+	
+	
+<script type="text/javascript" language="javascript">
+
+	
+	function basladi(event){
+		event.dataTransfer.setData("TasinanEleman", event.target.id);
+		//document.getElementById("sonuc").innerHTML = "Sürüklenmeye başlandi.";
+	}
+	function ayrildi(event){
+		document.getElementById("sonuc").innerHTML = "Hedefe üzerine çıkıldı.";
+	}	
+	
+	function uzerinde(event){
+		event.preventDefault();
+		document.getElementById("sonuc").innerHTML = "Hedefe üzerine gelindi.";
+	}
+	function birakildi(event){
+		event.preventDefault();
+		var veri	= event.dataTransfer.getData("TasinanEleman");
+		event.target.appendChild(document.getElementById(veri));
+		document.getElementById("sonuc").innerHTML = "Eleman Bırakıldı.";
+	}		
+
+</script>	
+</body>
+</html>

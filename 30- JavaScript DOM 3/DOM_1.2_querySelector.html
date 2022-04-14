@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<div id="birinci">Volkan Alakent</div>
+	<p>JQuery</p>
+	<div >JavaScript</div>
+	<div >PHP</div>
+	<div >CSS</div>
+	<div >HTML</div>
+	<br><br>
+	<button onClick="ornek()">İşlemi Gerçekleştir.</button><br>
+	
+<script type="text/javascript" language="javascript">
+	// querySelector()	= CSS (Cascading Style Sheet) (Basamaklı Stil Şablonları) seçiçileri ile belgedeki bir elemanın referansını elde etmek için kullanılır.
+
+	function ornek(){
+		// + Parametresi seçili adresten sonraki ilk tag verisini seçer.
+		document.querySelector("div#birinci+p").style.fontSize = "25px"; 
+	}		
+
+
+</script>	
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<button onClick="deney()">TIKLA</button>
+	<ul id="liste">
+		<li id="bir">PHP</li>
+		<li id="iki">HTML</li>
+		<li id="uc">CSS</li>
+		<li id="dort">XML</li>
+	</ul>
+	
+<script type="text/javascript" language="javascript">
+	// replaceChild()	= Belge içerisindeki herhangi bir HTML elamnının içerdiği node' (düğümü) değiştirmek için kullanılır.
+	
+	function deney(){
+		var yenieleman	= document.createElement("LI");
+		var yenidugum	= document.createTextNode("JavaScript");
+		yenieleman.appendChild(yenidugum)
+		var deger = document.getElementById("liste");
+		deger.replaceChild(yenieleman, deger.childNodes[3]);
+	}
+</script>	
+</body>
+</html>

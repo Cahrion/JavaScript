@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	// [^deger(x)-deger(y)] 	= Düzenli ifade dahilinde kontrol edilecek olan değişken içeriği karakter diziliminde bulunan değerin belirtilen karakter aralığı dışındaki karakterlerin herhangi birisiyle eşleşmesi gerektiğini belirtmek için kullanılır.
+	
+	var metin 	= "JavaScript / Icabi Kırgız 2002";
+	var ifade 	= new RegExp("[^a-z]","g");	// abc....xyz
+	var sonuc 	= metin.match(ifade);
+	
+	document.write(sonuc);
+	
+</script>	
+</body>
+</html>

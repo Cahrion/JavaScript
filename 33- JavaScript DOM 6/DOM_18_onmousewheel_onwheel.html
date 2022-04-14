@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	
+	<div id="olay" onmousewheel="sonuc()">JavaScript Eğitim Seti - Volkan Alakent</div>
+	<div id="olay2" onwheel="sonuc2()">JavaScript Eğitim Seti - Volkan Alakent</div>
+	
+<script type="text/javascript" language="javascript">
+	// onmousewheel  &  onwheel		=	Belge içerisindeki herhangi bir eleman üzerindeyken mouse'un (fare) tekerleği yukarı veya aşağıya yuvarlandığında belirtilecek olan fonksiyon çalışır.
+	
+	function sonuc(){
+		document.getElementById("olay").innerHTML = "HTML Eğitim Seti - Volkan Alakent";
+		document.getElementById("olay").style.fontSize = "30px";
+	}	
+	function sonuc2(){
+		document.getElementById("olay2").innerHTML = "HTML Eğitim Seti - Volkan Alakent";
+		document.getElementById("olay2").style.fontSize = "30px";
+	}
+</script>	
+</body>
+</html>

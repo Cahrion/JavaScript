@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	// toUTCString() 	= Kullanıldığı değişken içeriğine atanmış olan tarhi ve saat bilgilerini evrensel zaman dilimine göre alarak string (metin) veri türünde düz bir metne dönüştürerek oluşturduğu değeri geriye döndürür.
+	// UTC				= Coordinated universal time 	: Eş güdümlü evrensel zaman
+
+	var zaman = new Date();
+	document.write(zaman + " " + typeof zaman + "<br>");
+	var sonuc = zaman.toUTCString();
+	document.write(sonuc + " " + typeof sonuc);	
+</script>	
+</body>
+</html>

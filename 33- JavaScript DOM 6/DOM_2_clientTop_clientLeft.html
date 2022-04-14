@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+
+	<style>
+		.ornek	{
+			width:200px;
+			height:10px;
+			border-left:50px solid black ;
+			border-top :10px solid black;
+		}
+	</style>	
+	
+</head>
+
+<body>
+	<div id="alan" class="ornek">JAVASCRIPT EGİTİM SETİ</div>
+	<br><br>
+	<div id="sonuc"></div>
+<script type="text/javascript" language="javascript">
+	// clientLeft	= Belge içerisindeki herhangi bir HTML elemanının sol kenarlık genişlik değerini elde etmek için kullanılır
+	// clientTop	= Belge içerisindeki herhangi bir HTML elemanının üst kenarlık genişlik değerini elde etmek için kullanılır
+	
+	var solkenarlikdegeri	= document.getElementById("alan").clientLeft
+	var ustkenarlikdegeri	= document.getElementById("alan").clientTop
+	document.getElementById("sonuc").innerHTML = "Sol kenarlık genişliği: " + solkenarlikdegeri + "px, üst kenarlık yüksekliği: " + ustkenarlikdegeri + "px";
+	
+</script>	
+</body>
+</html>

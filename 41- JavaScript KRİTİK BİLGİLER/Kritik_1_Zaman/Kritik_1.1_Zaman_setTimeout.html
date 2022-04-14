@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<button onclick="deney()">Saymaya başla</button>
+	<div id="sonuc">0</div>
+<script type="text/javascript" language="javascript">
+	// setTimeout()	=	Belge içerisinde tanımlanan herhangi bir kodlamayı belirtilen süre sonunda sadece bir defa olmak üzere çalıştırmak için kullanılır.
+	// Süre Değeri	= 	MikroSaniye(MiliSaniye)		= 	1000Ms : 1s
+	
+	function deney(){
+		var sayidegeri	= parseInt(document.getElementById("sonuc").innerHTML);
+		sayidegeri		= sayidegeri + 1;
+		document.getElementById("sonuc").innerHTML = sayidegeri;
+		setTimeout(function(){
+			deney();
+		},1000);
+	}
+
+</script>	
+</body>
+</html>

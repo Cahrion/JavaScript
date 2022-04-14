@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<button onClick="pencereac()">Pencere Ac</button>
+	<button onClick="pencereyikapat()">Pencereyi Kapat</button>
+	<button onClick="pencerekontrol()">Kontrol Et</button>
+	<div id="sonuc"></div>
+<script type="text/javascript" language="javascript">
+	// closed	= Bir pencerenin kapatılıp kapatılmadığını kontrol ederek, boolean (mantıksal) veri türünde sonucu geriye döndürür.
+	
+	var pencere;
+	
+	function pencereac(){
+		pencere	= window.open("https://www.google.com.tr","Google Web","width=1000,height=750,left=400",true);
+	}	
+	function pencereyikapat(){
+		pencere.close();
+	}	
+	function pencerekontrol(){
+		if(!pencere){
+		   	document.getElementById("sonuc").innerHTML = "Pencere Kapalı";
+		   }else{
+		   	if(pencere.closed){
+				document.getElementById("sonuc").innerHTML = "Pencere Kapatılmış";
+			}else{
+				document.getElementById("sonuc").innerHTML = "Pencere Hala Açık";
+			}		   
+		   }
+	}
+	
+</script>	
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<button onClick="deney()">İşlemi başlat.</button>
+	
+<script type="text/javascript" language="javascript">
+	
+	function deney(){ 
+		var pencere = window.open("https://www.google.com.tr","Yeni Pencerem","width=750,height=500,left=400,top=500",true);
+		pencere.document.write("Merhabalar 5saniye sonra bu pencere kapanacaktır.");
+		setTimeout(function (){
+			pencere.close();
+		},5000);
+	}
+	
+</script>	
+</body>
+</html>

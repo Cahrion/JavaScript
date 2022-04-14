@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	// setUTCHours() 	= Kendisine parametre belirtilmiş değer doğrultusunda kullanıldığı değişken içeriğine evrensel zaman dilimine ait saat bilgisini 0 ila 23 arasında olmak üzere rakamsal olarak ayarlayarak depolar. Depoladığı değeri geriye döndürür. Ek olarak da çoklu ayarlama işlemleri yapabilir.
+	// UTC				= Coordinated universal time 	: Eş güdümlü evrensel zaman
+		
+	var zaman = new Date();
+	zaman.setUTCHours(5); // Saat verisi (5) verilebilir.
+	zaman.setUTCHours(5,39); // Dakika verisi (39) verilebilir.
+	zaman.setUTCHours(5,39,27); // saniye verisi (27) verilebilir.
+	zaman.setUTCHours(5,39,27,941); // milisaniye verisi (941) verilebilir.
+	var Milizaman = zaman.getUTCMilliseconds();
+	document.write(zaman + "<br>");
+	document.write(Milizaman);
+</script>	
+</body>
+</html>

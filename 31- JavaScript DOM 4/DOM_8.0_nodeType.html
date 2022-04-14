@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<div id="OrnekBir">JavaScript Eğitim Seti</div>
+	<div id="sonuc"></div>
+
+<script type="text/javascript" language="javascript">
+	// nodeType	= Belge içerisindeki herhangi bir node'un (düğümün) türünü elde etmek için kullanılır.
+	/*
+	1		ELEMENT_NODE	 			(Eleman  							Düğümü)
+	2		ATTRIBUTE_NODE	 			(Özellik 							Düğümü)
+	3		TEXT_NODE	 	 			(Metin 								Düğümü)
+	4		CDATA_SECTION_NODE			(CDATA Kesit 						Düğümü)
+	5		ENTITY_REFERANCE_NODE		(Varlık Referansı 					Düğümü)
+	6		ENTITY__NODE				(Varlık 							Düğümü)
+	7		PROCESSING_INSTRUCTION_NODE	(İşlem Yönergesi 					Düğümü)
+	8		COMMENT_NODE				(Açıklama 							Düğümü)
+	9		DOCUMENT_NODE				(Döküman / Belge 					Düğümü)
+	10		DOCUMENT_TYPE_NODE	 		(Döküman / Belge Türü				Düğümü)
+	11		DOCUMENT_FARGMENT_NODE		(Döküman / Belge Parçası / Bölümü 	Düğümü)
+	12		NOTATION_NODE				(Gösterim							Düğümü)
+	*/
+	
+	var dugumbul	= document.getElementById("OrnekBir").nodeType;
+	var deger;
+	if(dugumbul==1){
+		deger	=  "ELEMENT_NODE (Eleman Düğümü)"
+	}else if(dugumbul==2){
+		deger	=  "ATTRIBUTE_NODE (Özellik Düğümü)"
+	}else if(dugumbul==3){
+		deger	=  "TEXT_NODE (MetinDüğümü)"
+	}else if(dugumbul==4){
+		deger	=  "CDATA_SECTION_NODE (CDATA Kesit Düğümü)"
+	}else if(dugumbul==5){
+		deger	=  "ENTITY_REFERANCE_NODE (Varlık Referansı Düğümü)"
+	}else if(dugumbul==6){
+		deger	=  "ENTITY__NODE (Varlık Düğümü)"
+	}else if(dugumbul==7){
+		deger	=  "PROCESSING_INSTRUCTION_NODE	(İşlem Yönergesi Düğümü)"
+	}else if(dugumbul==8){
+		deger	=  "COMMENT_NODE (Açıklama Düğümü)"
+	}else if(dugumbul==9){
+		deger	=  "DOCUMENT_NODE (Döküman / Belge Düğümü)"
+	}else if(dugumbul==10){
+		deger	=  "DOCUMENT_TYPE_NODE (Döküman / Belge Türü Düğümü)"
+	}else if(dugumbul==11){
+		deger	=  "DOCUMENT_FARGMENT_NODE (Döküman / Belge Parçası / Bölümü Düğümü)"
+	}else if(dugumbul==12){
+		deger	=  "NOTATION_NODE (Gösterim	Düğümü)"
+	}else{
+		deger 	=  "Tanımlanmayan Düğüm."
+	}
+	document.getElementById("sonuc").innerHTML = "Düğümün Numara değeri: " + dugumbul + " , " + "Düğümün Açıklaması: " + deger;
+</script>	
+</body>
+</html>

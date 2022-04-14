@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	// concat() 	=	Üzerinde çalışılan değişkene parametrik olarak verilen değişken veya değişkenlere dahil ederek yeni bir içerik oluşturur. Oluşturduğu değeri geriye döndürür.
+				/* Tekli */
+	var bir 		= "icabi";
+	var iki 		= " Kırgız";
+	document.write(bir + "<br>");
+	document.write(iki + "<br>");
+	
+	var sonuc 		= bir.concat(iki); // Birleştirme işlemi yapılır.
+	document.write(sonuc + "<br>");
+				/* Çoklu */
+	var bir 		= "icabi ";
+	var iki 		= " Kırgız ";
+	var uc			= "JavaScript ";
+	var dort 		= "Eğitim ";
+	var bes 		= "Seti ";
+	document.write(bir + "<br>");
+	document.write(iki + "<br>");
+	
+	var sonuc 		= bir.concat(iki, uc, dort ,bes); // Birleştirme işlemi yapılır.
+	document.write(sonuc + "<br>");
+
+	
+</script>	
+</body>
+</html>

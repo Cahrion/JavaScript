@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<button onClick="sonlandir()">Olay Dinleyicisini kaldır.</button>
+	<div id="sonucalani"></div>
+<script type="text/javascript" language="javascript">
+	// removeEventListener()	= Belgeye addEventListener() metodu ile eklenmiş olan event (olay) işaretleyicisini silmek için kullanılır.
+	document.addEventListener("mousemove", ornek);
+	function ornek(){
+		document.getElementById("sonucalani").innerHTML = Math.random()*10;
+	}	
+	function sonlandir(){
+		document.removeEventListener("mousemove", ornek);	
+	}
+</script>	
+</body>
+</html>

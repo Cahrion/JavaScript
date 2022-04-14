@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<form action="#" method="get">
+		İsim Soyisim: <input id="adsoyad" type="text" oninvalid="deney()" required>
+		<input type="submit" value="Gönder">
+	</form>
+<script type="text/javascript" language="javascript">
+	// oninvalid	=	Form içerisindeki bir elemanın değeri geçersiz ise belirtilecek olan fonksiyon çalışır.
+	
+	function deney(){
+		alert("Lütfen boş yer bırakmayınız.");
+	}
+</script>	
+</body>
+</html>

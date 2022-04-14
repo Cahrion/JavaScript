@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<div id="kimlik" onMouseDown="deney()">Sol yada Sağ tıkla</div>
+	<div id="sonuc"></div>
+<script type="text/javascript" language="javascript">
+	// onmousedown	= Belge içerisindeki herhangi bir elemana mouse ile sol veya sağ tıklandığında belirtilecek olan fonksiyon çalışır.
+	
+	function deney(){
+		document.getElementById("sonuc").innerHTML = "Süpriz buradaydım";
+		document.getElementById("sonuc").style.color = "red";
+	}
+	
+</script>	
+</body>
+</html>

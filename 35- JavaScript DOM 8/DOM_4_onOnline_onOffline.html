@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body onOnline="bir()" onOffline="iki()">
+	<div id="sonuc"></div>
+<script type="text/javascript" language="javascript">
+	// onOnline =	Bromser (tarayıcı) sayfayı çevrimdışı modda çalıştırırken, çevrimiçi modda çalıştırmaya başladığında belirtilecek olan fonksiyon çalışır 
+	// onOffline =	Bromser (tarayıcı) sayfayı çevrimiçi modda çalıştırırken, çevrimdışı modda çalıştırmaya başladığında belirtilecek olan fonksiyon çalışır 
+	
+	function bir(){
+		document.getElementById("sonuc").innerHTML = "Sayfa çevrimiçi modda çalıştırılmaya başladı.";
+	}	
+	function iki(){
+		document.getElementById("sonuc").innerHTML = "Sayfa çevrimdışı modda çalıştırılmaya başladı.";
+	}
+
+	
+</script>	
+</body>
+</html>

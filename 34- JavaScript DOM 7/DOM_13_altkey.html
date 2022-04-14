@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<div onMouseDown="deney()">JavaScript Eğitim Seti</div>
+	<input onKeyDown="deney2()">
+	<div id="sonuc"></div>
+	<div id="sonuc2"></div>
+<script type="text/javascript" language="javascript">
+	// altKey 	= Belge içerisindeki herhangi bir event (olay) tetiklenirken alt tuşuna basılıp basılmadığını kontrol ederek boolean (mantıksal) veri türünde sonucu geriye döndürür.
+	
+	function deney(){
+		var deger = event.altKey;
+		if(deger){
+			document.getElementById("sonuc").innerHTML = "Alt Tuşuna basıldı ?";
+		}else{
+			document.getElementById("sonuc").innerHTML = "Alt Tuşuna basılmadı.";
+		}
+	}	
+	function deney2(){
+		var deger = event.altKey;
+		if(deger){
+			document.getElementById("sonuc2").innerHTML = "Alt Tuşuna basıldı ?";
+		}else{
+			document.getElementById("sonuc2").innerHTML = "Alt Tuşuna basılmadı.";
+		}
+	}
+</script>	
+</body>
+</html>

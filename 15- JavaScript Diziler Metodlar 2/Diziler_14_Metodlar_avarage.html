@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	// avarage() 	= Number veri türü içerikli dizinin her elemanı üzerinde tek tek olmak üzere çalışır ve tüm elemanlarının ortalamasını bularak. Bulduğu değeri geriye döndürür.
+
+	Array.prototype.avarage 	= 	function(){
+		var islem = 0;
+		for(var baslangic = 0; baslangic<this.length ;baslangic++){
+			islem  += this[baslangic];
+		}
+		var sonuc 	= islem / this.length;
+		return sonuc;
+	}
+	
+	var sayilar 	= [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15];
+	document.write(sayilar + "<br> <br>");
+	
+	var ortalama 	= sayilar.avarage();
+	document.write("Normal Dizi: " + sayilar + "<br>");
+	document.write("Ortalaması " + ortalama + "<br> <br>");
+
+	
+</script>	
+</body>
+</html>

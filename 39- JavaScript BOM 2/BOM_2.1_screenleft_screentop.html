@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<button onClick="deney()">Pencere Aç</button>
+<script type="text/javascript" language="javascript">
+	// screenleft 	=	Pencerenin bilgisayar ekranına göre yatay konum koordinatının değerini geriye döndürür.
+	// screentop	=	Pencerenin bilgisayar ekranına göre dikey konum koordinatının değerini geriye döndürür.
+	
+	function deney(){
+		var pencere	= open("","Yeni Pencere","width=1000,height=750,left=400,top=200",true);
+		var yatay	= pencere.screenLeft;
+		var dikey	= pencere.screenTop;
+
+		pencere.document.write("Yatay Koordinat: " + yatay + "<br>");
+		pencere.document.write("Dikey Koordinat: " + dikey);
+		
+	}	
+
+</script>	
+</body>
+</html>

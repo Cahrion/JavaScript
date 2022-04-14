@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	 // ()	= Düzenli ifadelerde grup tanımlamak için kullanılır.
+	
+	var metin 	= "Volkan Alakent Html ve JavaScript eğitim seti.";
+	var ifade 	= new RegExp("(Html|JavaScript)","g"); 
+	// "g" önemli yoksa ilk bulduğunu diğerine de atar.
+	var ifade2 	= new RegExp("(J)(a)(v)(a)(S)(c)(r)(i)(p)(t)"); 
+	// g'siz de varsayılabilir bu tür istekler ama farklı içerik öne sürer.
+	var sonuc 	= metin.match(ifade); 
+	var sonuc2 	= metin.match(ifade2); 
+	
+	document.write(sonuc + "<br>");
+	document.write(sonuc2);
+	
+</script>	
+</body>
+</html>

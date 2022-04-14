@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	Renk Seçiniz: 
+	<select name="" id="secim" onchange="bir(this)">
+		<option>Mavi</option>
+		<option>Kırmızı</option>
+		<option>Siyah</option>
+		<option>Beyaz</option>
+	
+	</select>
+	<div id="sonuc"></div>
+<script type="text/javascript" language="javascript">
+	// onchange	= Form içerisindeki bir elemanın değeri yada seçimi değiştirildiğinde belirtilecek olan fonksiyon çalışır.
+	
+	function bir(parametre){
+		var veri 	= parametre.value;
+		document.getElementById("sonuc").innerHTML = veri;
+	}
+</script>	
+</body>
+</html>

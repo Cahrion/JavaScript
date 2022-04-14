@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<embed id="birinci" name="birincianimasyon" src="Images - embeds/Dosya.swf">
+	<embed id="birinci" name="birincianimasyon" src="Images - embeds/Dosya.swf">
+	<div id="sonucalani"></div>
+	
+<script type="text/javascript" language="javascript">
+	// embeds	= Belge içerisindeki embed veya object tag'ına (etiket) sahip tüm elemanların referansını elde etmek için kullanılır. Eleman referansları birden fazla ise her bir eleman döngüyle elde edilebilir.
+	
+	var sonuc	= document.embeds.length;
+	document.getElementById("sonucalani").innerHTML = "İçerik sayısı: "+ sonuc;
+	/* dosya dolunu döndürür. */
+	var sonuc	= document.embeds[0].src;
+	document.getElementById("sonucalani").innerHTML = "Src: "+ sonuc;	
+	/* Üstekiyle aynı ama farklı yazılış */
+	var sonuc	= document.embeds.item(0).src;
+	document.getElementById("sonucalani").innerHTML = "Src: "+ sonuc;	
+	/* Üstekiyle aynı ama ID ile yazılış */
+	var sonuc	= document.embeds.namedItem("birinci").src;
+	document.getElementById("sonucalani").innerHTML = "Src: "+ sonuc;
+	
+		/* Boyut ayarlama*/
+	document.embeds[0].width 	= 500; // Enine büyüme yapılmak için kullanılır.
+	document.embeds[0].height 	= 500; // Yatay büyüme yapılmak için kullanılır.
+</script>	
+</body>
+</html>

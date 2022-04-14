@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<ul id="listebir">
+		<li id="a1">JavaScript</li>
+		<li id="a2">PHP</li>
+		<li id="a3">CSS</li>
+	</ul>
+	<br><br>
+	<ul id="listeiki">
+		<li id="b1">Photoshop</li>
+		<li id="b2">Corel</li>
+		<li id="b3">Paint</li>
+	</ul>
+	<br><br>
+	<button onClick="ornek()">Tıkla</button>
+	
+<script type="text/javascript" language="javascript">
+	// cloneNode()	= Belge içerisindeki herhangi bir HTML elemanının içerdiği node'u (düğümü) kopyalamak için kullanılır.
+	
+	function ornek(){
+		var deger	= document.getElementById("listebir").children[0];
+		var kopyala	= deger.cloneNode(true);
+		document.getElementById("listeiki").appendChild(kopyala);
+	}
+</script>	
+</body>
+</html>

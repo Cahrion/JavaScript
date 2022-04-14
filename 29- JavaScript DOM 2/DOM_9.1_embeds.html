@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	
+	<embed id="birinci" name="birincianimasyon" src="Images - embeds/Dosya.swf">
+	<embed id="ikinci" 	name="ikincianimasyon"  src="Images - embeds/IkinciDosya.swf">
+	<div id="sonucalani"></div>
+	
+<script type="text/javascript" language="javascript">
+	var sonuc	= document.embeds;
+	var dizi 	= [];
+	for(var baslangic=0;baslangic<sonuc.length;baslangic++){
+		var deger = sonuc[baslangic].src;
+		dizi[baslangic]	= deger;
+	}
+	document.getElementById("sonucalani").innerHTML += "Src Değerleri: " + dizi + "<br>";
+</script>	
+</body>
+</html>

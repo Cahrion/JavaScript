@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<pre> <!--  <pre> parametresi kullandım çünkü \n parametresi sadece bu şekilde çalışır.-->
+<script type="text/javascript" language="javascript">
+	// \n	= Düzenli ifade dahilinde kontrol edilecek olan değişken içeriği karakter diziliminde bulunan değerin, sadece yeni satır karakteri ile eşlşemesi gerektiğini belirtmek için kullanılır.
+	// \u000A 	= 16'bitlik yazım şekli (\n'nin)
+	
+	var metin 	="Volkan Alakent \nJavaScript eğitim seti.";
+	var ifade	= new RegExp("\\n","g");
+	var sonuc 	= ifade.test(metin)
+	document.write(metin + "<br>");
+	document.write(sonuc);
+	
+</script>
+</pre>
+</body>
+</html>

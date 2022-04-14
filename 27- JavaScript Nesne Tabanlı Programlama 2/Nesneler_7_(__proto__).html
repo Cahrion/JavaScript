@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	// __proto__ 	= Bir nesnenin prototip nesnesini elde etmek için kullanılır. Sonra prototype nesnesi içerisinde ki özelliklere ulaşarak değeri geriye döndürür.
+	
+	function bilgiler(){
+		this.isim		= "Volkan";
+		this.soyisim	= "Alakent";
+	}
+	
+	bilgiler.prototype.islem	= function(){
+		this.ifade		= "Merhaba";
+		
+	}
+	
+	var sonuc	= new bilgiler();
+	
+	sonuc.__proto__.islem(); // önemli
+	
+	var isimyaz = sonuc.isim;
+	var soyisimyaz = sonuc.soyisim;
+	var ifadeyaz = sonuc.ifade;	// alttakinin aynısı
+	var ifadeyaz = sonuc.__proto__.ifade; // üstekinin aynısı
+	
+	document.write(isimyaz + "<br>");
+	document.write(soyisimyaz + "<br>");
+	document.write(ifadeyaz + "<br>");
+	
+</script>	
+</body>
+</html>

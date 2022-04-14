@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<button onClick="deney()">Dönüştür</button>
+	<div id="icerik">İcabi Kırgız</div> 
+	<!-- Türkçe karakterler geçersiz varsayılır. -->
+<div id="sonuc"></div>
+	
+<script type="text/javascript" language="javascript">
+	// btoa()	 = Pencere içerisindeki bir metnin tüm karakterlerini base64 kodlamasına dönüştürerek oluşturduğu değeri geriye döndürür.
+
+	
+	function deney(){
+		var gercekdeger	 = document.getElementById("icerik").innerHTML;
+		var donusturmeislemi = 	window.btoa(encodeURIComponent(gercekdeger));
+		document.getElementById("sonuc").innerHTML = donusturmeislemi;
+	}
+	
+</script>	
+</body>
+</html>

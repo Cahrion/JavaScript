@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+	<style>
+		.ornek{
+			background-color: yellow;
+			border:1px dotted black;
+			width:250px;
+			height:130px;
+			padding: 10px;
+			padding-top: 100px;
+			text-align: center;
+		}
+		.ornekiki{
+			background-color: white;
+			padding: 25px;
+			
+		}
+	</style>
+</head>
+
+<body>
+	<div class="ornek" onmouseleave="demo()" onmouseenter="demo2()"><span id="sonuc" class="ornekiki">JavaScript</span></div>
+	
+<script type="text/javascript" language="javascript">
+	// onmouseleave	 =	Belge içerisindeki herhangi bir elemanın mouse ile kapsama alanından çıkış yapıldığında belirtilen fonksiyon çalışır.
+	
+	function demo(){
+		document.getElementById("sonuc").style.backgroundColor = "white";
+	}	
+	function demo2(){
+		document.getElementById("sonuc").style.backgroundColor = "blue";
+	}
+	
+</script>	
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	// parseInt()	= Bitlik işlemleride yapabilir (8'lik, 16'lik,10'luk,2'lik olarak)
+	
+	var sayibir  		= "0x10"; // 16'lık (hexadecimal)
+	var sayiiki 		= "10"; // 16'lık (hexadecimal)
+	var sayiuc			= "10"; // 8'lık (octal)
+		
+	var veriturubir		= typeof sayibir;
+	var verituruiki		= typeof sayiiki;
+	var verituruuc		= typeof sayiuc;
+	
+	var sonucbir		= parseInt(sayibir);
+	var sonuciki		= parseInt(sayiiki, 16);
+	var sonucuc			= parseInt(sayiuc, 8);
+	
+	var sveriturubir	= typeof sonucbir;
+	var sverituruiki	= typeof sonuciki;
+	var sverituruuc		= typeof sonucuc;
+
+	document.write("Değer: " + sayibir   + "( "+ veriturubir +" )"   +"<br>");
+	document.write("Sonuç: " + sonucbir  + "( "+ sveriturubir +" )" 	+"<br><br>");
+	
+	document.write("Değer: " + sayiiki   + "( "+ verituruiki +" )"   +"<br>");
+	document.write("Sonuç: " + sonuciki  + "( "+ sverituruiki +" )"  	+"<br><br>");
+	
+	document.write("Değer: " + sayiuc    + "(" + verituruuc + " ) " +"<br>");
+	document.write("Sonuç: " + sonucuc   + "(" + sverituruuc + " ) " +"<br><br>");	
+
+
+	
+</script>	
+</body>
+</html>

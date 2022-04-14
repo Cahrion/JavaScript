@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body onpageshow="bir()" onpagehide="iki()">
+	<div id="sonuc"></div>
+<script type="text/javascript" language="javascript">
+	// onpageshow	=	Sayfa kullanıcı tarafından görüntülenebiliryorsa  belirtilecek olan fonksiyon çalışır
+	// onpagehide	=	Sayfa kullanıcı tarafından görüntülenemiyorsa  belirtilecek olan fonksiyon çalışır
+	
+	function bir(){
+		document.getElementById("sonuc").innerHTML = "Sayfamıza Hoş Geldiniz...";
+	}	
+	function iki(){
+		document.getElementById("sonuc").innerHTML = "Sayfa Görüntülenemedi...";
+	}
+</script>	
+</body>
+</html>

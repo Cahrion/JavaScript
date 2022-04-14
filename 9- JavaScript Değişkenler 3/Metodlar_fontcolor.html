@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	// fontcolor() 	= Kendisine parametre olarak verilen değeri renklendirir ve geriye döndürür.
+	
+	var metin = "Volkan Alakent JavaScript Eğitim Seti";
+	document.write(metin + "<br>");
+	
+	var sonuc = metin.fontcolor(); // Hiçbir veri girilmezse yeşil girer.
+	document.write(sonuc + "<br>");
+
+	var sonuc2 = metin.fontcolor("blue"); // belli renk isimleriyle birlikte çalışabilen bir yapıya sahiptir.
+	document.write(sonuc2 + "<br>");
+	
+	var sonuc2 = metin.fontcolor("#FF9606"); // Renk kodlarında da kullanılabilir.
+	document.write(sonuc2);
+</script>	
+</body>
+</html>

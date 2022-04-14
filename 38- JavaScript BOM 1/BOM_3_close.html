@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<button onClick="Pencereac()">Aç</button>
+	<button onClick="Pencerekap()">Kapat</button>
+	<button onClick="tamamikap()">Büyük Pencereyi kapat</button>
+<script type="text/javascript" language="javascript">
+	// close()		=	Geçerli pencereyi kapatmak için kullanılır. (En son pencereyi kapatır.)
+	
+	var pencere;
+	function Pencereac(){
+		pencere = window.open("https://www.google.com.tr","Google","width=1000,height=750,left=400",true);
+	}	
+	function Pencerekap(){
+		pencere.close();
+	}	
+	function tamamikap(){
+		window.close();
+	}
+</script>	
+</body>
+</html>

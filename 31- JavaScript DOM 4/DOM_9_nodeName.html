@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body> <!-- Deneme için Gizli Açıklama (HTML) -->
+	<p id="deneme">JavaScript Eğitim Seti</p>
+	
+	<button onClick="ornek()">Tıklayınız</button>
+	<br><br>
+	<div id="sonuc"></div>
+	
+<script type="text/javascript" language="javascript">
+	// nodeName	= Belge içerisindeki herhangi bir node'un (dügümün) adını elde etmek için kullanılır.
+	
+
+	function ornek(){
+		var deger = document.body.childNodes;
+		var metin = "";
+		for(var baslangic=0;baslangic<deger.length;baslangic++){
+			var sonuc	= deger[baslangic].nodeName;
+			var metin	= metin + sonuc + "<br>";
+		}
+		document.getElementById("sonuc").innerHTML = metin;	
+	}
+</script>	
+</body>
+</html>

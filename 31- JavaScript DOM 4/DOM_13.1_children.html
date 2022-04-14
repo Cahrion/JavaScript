@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<div id="alanimiz">
+		<p>JavaScript </p>
+		<span>PHP</span><br>
+		<div>CSS</div>
+	</div><br>
+
+	<div id="sonuc"></div>
+
+<script type="text/javascript" language="javascript">
+	// children	= Belge içerisindeki herhangi bir HTML elemanının içerdiği alt elemanları elde etmek için kullanılır.
+	
+	var baglan	= document.getElementById("alanimiz").children;
+	var metin	= "";
+	
+	for(var baslangic=0;baslangic<baglan.length;baslangic++){
+		metin	= metin + "Tag ismi: " + baglan[baslangic].tagName + "<br>";
+		baglan[baslangic].style.color = "blue";
+	}
+	document.getElementById("sonuc").innerHTML = metin;
+</script>	
+</body>
+</html>

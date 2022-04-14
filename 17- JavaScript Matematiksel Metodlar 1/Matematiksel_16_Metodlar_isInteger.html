@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	// isInteger	= Kendisine parametrik olarak verilen değişken içeriğinin tam sayı olup olmadığını kontrol ederek. Boolean veri türünde sonucu geriye döndürür.
+	
+	var deger1 = "String ifade";
+	var deger2 = 10;
+	var deger3 = 10.10;
+	var deger4 = Number.MAX_VALUE;
+	var deger5 = Number.MAX_VALUE * 2;
+	
+	var sonucbir 	= Number.isInteger(deger1);
+	var sonuciki 	= Number.isInteger(deger2);
+	var sonucuc 	= Number.isInteger(deger3);
+	var sonucdort 	= Number.isInteger(deger4);
+	var sonucbes	= Number.isInteger(deger5);
+
+	document.write("Değer: " + deger1 + "<br>"); 
+	document.write("Sonuç: " + sonucbir + "<br> <br>"); 
+	
+	document.write("Değer: " + deger2 + "<br>"); 
+	document.write("Sonuç: " + sonuciki + "<br> <br>"); 
+	
+	document.write("Değer: " + deger3 + "<br>"); 
+	document.write("Sonuç: " + sonucuc + "<br> <br>"); 
+	
+	document.write("Değer: " + deger4 + "<br>"); 
+	document.write("Sonuç: " + sonucdort + "<br> <br>"); 	
+	
+	document.write("Değer: " + deger5 + "<br>"); 
+	document.write("Sonuç: " + sonucbes + "<br> <br>"); 
+</script>	
+</body>
+</html>

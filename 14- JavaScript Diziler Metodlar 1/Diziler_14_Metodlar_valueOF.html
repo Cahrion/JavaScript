@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	//  valueOf()	= Üzerinde çalışılan dizi değerinin tam anlamıyla aktarımı sağlayarak yeni bir dizi oluştur. Oluşturduğu dizi değerini geriye döndürür.
+	
+	var renkler 	= ["Siyah","Gri","Beyaz","Sarı","Bej","Mavi","Kırmızı"];
+	document.write(renkler + "<br> <br>");
+	
+	var islemyap 	= renkler.valueOf();
+	document.write("Gerçek Dizi:" + renkler + "<br>" + "Dizi mi: " + Array.isArray(renkler) + "<br>");
+	document.write("Kopyalanan Dizi:" + islemyap + "<br>" + "Dizi mi: " + Array.isArray(renkler) + "<br> <br>");
+
+	renkler.fill("Volkan");
+	document.write(renkler + "<br>")
+	document.write(islemyap); // Aynı veritabanına sahip oldukları için hepsine etki ediyor.
+	
+</script>	
+</body>
+</html>

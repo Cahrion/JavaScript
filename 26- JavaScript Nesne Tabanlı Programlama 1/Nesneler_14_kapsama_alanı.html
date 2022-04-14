@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	var ad 		= "Icabi";
+	var yil 	= 2002;
+	var metin	= "S.a";
+	
+	
+	var bilgilerbir 	= {
+		isim:ad,
+		tarih:yil,
+		detay:function(){
+			var ifade	= metin;
+			document.write(ifade + "<br>");
+		}
+	};
+	var bilgileriki 	= {
+		isim:"hakan",
+		tarih:1978,
+		detay:function(){
+			var ifade	= "selam";
+			document.write(ifade + "<br>");
+		}
+	};
+	
+	var isimdegeribir = bilgilerbir.isim;
+	var tarihdegeribir = bilgilerbir.tarih;	
+	
+	var isimdegeriiki = bilgileriki.isim;
+	var tarihdegeriiki = bilgileriki.tarih;
+	
+	document.write(isimdegeribir + " " + tarihdegeribir + "<br>");
+	bilgilerbir.detay();
+	document.write(isimdegeriiki + " " + tarihdegeriiki + "<br>");
+	bilgileriki.detay();
+</script>	
+</body>
+</html>

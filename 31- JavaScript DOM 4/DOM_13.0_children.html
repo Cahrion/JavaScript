@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<div id="alanimiz">
+		<p>JavaScript </p>
+		<span>PHP</span>
+		<div>CSS</div>
+	</div>
+	<div id="sonuc"></div>
+	<div id="sonuc2"></div>
+	<div id="sonuc3"></div>
+<script type="text/javascript" language="javascript">
+	// children	= Belge içerisindeki herhangi bir HTML elemanının içerdiği alt elemanları elde etmek için kullanılır.
+	
+	var baglan	= document.getElementById("alanimiz").children;
+	document.getElementById("sonuc").innerHTML = baglan;	
+	
+	var baglan	= document.getElementById("alanimiz").children.length;
+	document.getElementById("sonuc2").innerHTML = "Ilgili HTML elemanının: " + baglan + "adet alt (çoçuk) elemanı vardır.";	
+
+</script>	
+</body>
+</html>

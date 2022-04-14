@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+
+<script type="text/javascript" language="javascript">
+	// m ayarı 	= Düzenli ifade dahilinde kontrol edilecek olan değişken içeriğinin bir den fazla satırı varsa tüm satırları kontrol edilmesini sağlar.
+	
+	var metin	= "\nVolkan\nvolkan\nVOLKAN\nVolkan" 
+	
+	var ifade 	= new RegExp("Volkan");
+	var ifade2 	= new RegExp("^Volkan");
+	var ifade3 	= new RegExp("^Volkan","m");
+	var ifade4 	= new RegExp("^Volkan","mgi");
+	
+	var sonuc 	= metin.match(ifade);
+	var sonuc2 	= metin.match(ifade2);
+	var sonuc3 	= metin.match(ifade3);
+	var sonuc4 	= metin.match(ifade4);
+	
+	document.write(sonuc + "<br>")
+	document.write(sonuc2 + "<br>")
+	document.write(sonuc3 + "<br>")
+	document.write(sonuc4 + "<br>")
+</script>	
+
+</body>
+</html>

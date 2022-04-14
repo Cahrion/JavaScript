@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	
+	function tekrarla(baslangicdeger,bitisdeger){
+		if(baslangicdeger<bitisdeger){
+		    document.write("Icabi Kırgız <br>");
+			baslangicdeger += 1;
+			tekrarla(baslangicdeger,bitisdeger);
+		   }else{
+			   document.write("İşlem tamamlandı");
+			   return;
+		   }
+
+	}
+	tekrarla(1,10);
+</script>	
+</body>
+</html>

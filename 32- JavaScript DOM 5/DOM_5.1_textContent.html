@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<button onClick="ornek()" id="deneme">TextContent</button>
+	<button onClick="ornek2()">innerHTML</button>
+	<br><br>
+	<ul id="liste">
+		<li>JavaScript</li>
+		<li>PHP</li>
+		<li>HTML</li>
+	</ul>
+	<br><br>
+	<div id="sonuc"></div>	
+<script type="text/javascript" language="javascript">
+	// textContent	=	Belge içerisindeki herhangi bir node'un (düğümün), text node'larının (metin düğümlerinin) değerini elde etmek için kullanılır.
+	
+	function ornek(){
+		var deger 	= document.getElementById("liste").textContent;
+		document.getElementById("sonuc").innerHTML = deger;
+	}	
+	function ornek2(){
+		var deger 	= document.getElementById("liste").innerHTML;
+		document.getElementById("sonuc").innerHTML = deger;
+	}
+	
+</script>	
+</body>
+</html>

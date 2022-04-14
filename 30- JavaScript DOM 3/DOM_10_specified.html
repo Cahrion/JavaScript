@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<div id="deney">Volkan Alakent javaScript eğitim seti.</div>
+	<div id="sonucalani"></div>
+	<div id="sonucalani2"></div>
+<script type="text/javascript" language="javascript">
+	// specified	= Belge içerisindeki HTML elemanına herhangi bir özelliğin eklenip eklenmediği referansını boolean (mantıksal) veri türünde elde etmek için kullanılır.
+	
+	var sonuc	=  document.getElementsByTagName("DIV")[0].getAttributeNode("id").specified;
+	document.getElementById("sonucalani").innerHTML = "ID alanı var mı: " + sonuc;
+
+	var sonuc2	=  document.getElementsByTagName("DIV")[0].getAttributeNode("name").specified;
+	document.getElementById("sonucalani2").innerHTML = "name alanı var mı: " + sonuc2; 
+	// false değer döndürmez işlemi sonlandırır.
+</script>	
+</body>
+</html>

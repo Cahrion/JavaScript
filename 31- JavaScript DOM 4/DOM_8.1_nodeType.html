@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+	<style>
+		.ornek{
+			font-weight:bold;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="OrnekBir"><span class="ornek">JavaScript</span>Eğitim Seti</div> <!--HTML Açıklama Alanı-->
+	<br><br>
+	<div id="sonuc"></div>
+	
+
+	<button onClick="deneme()">Tıklayınız</button>
+	
+<script type="text/javascript" language="javascript">
+	// nodeType	= Belge içerisindeki herhangi bir node'un (düğümün) türünü elde etmek için kullanılır.
+	/*
+	1		ELEMENT_NODE	 			(Eleman  							Düğümü)
+	2		ATTRIBUTE_NODE	 			(Özellik 							Düğümü)
+	3		TEXT_NODE	 	 			(Metin 								Düğümü)
+	4		CDATA_SECTION_NODE			(CDATA Kesit 						Düğümü)
+	5		ENTITY_REFERANCE_NODE		(Varlık Referansı 					Düğümü)
+	6		ENTITY__NODE				(Varlık 							Düğümü)
+	7		PROCESSING_INSTRUCTION_NODE	(İşlem Yönergesi 					Düğümü)
+	8		COMMENT_NODE				(Açıklama 							Düğümü)
+	9		DOCUMENT_NODE				(Döküman / Belge 					Düğümü)
+	10		DOCUMENT_TYPE_NODE	 		(Döküman / Belge Türü				Düğümü)
+	11		DOCUMENT_FARGMENT_NODE		(Döküman / Belge Parçası / Bölümü 	Düğümü)
+	12		NOTATION_NODE				(Gösterim							Düğümü)
+	*/
+	
+	function deneme(){
+		var islem	= document.body.childNodes;
+		var metin	= "";
+		for(baslangic=0; baslangic<islem.length;baslangic++){
+			metin	=islem[baslangic].nodeType;
+			var deger;
+			if(metin=="1"){
+				deger	=  "ELEMENT_NODE (Eleman Düğümü)"
+			}else if(metin=="2"){
+				deger	=  "ATTRIBUTE_NODE (Özellik Düğümü)"
+			}else if(metin=="3"){
+				deger	=  "TEXT_NODE (MetinDüğümü)"
+			}else if(metin=="4"){
+				deger	=  "CDATA_SECTION_NODE (CDATA Kesit Düğümü)"
+			}else if(metin=="5"){
+				deger	=  "ENTITY_REFERANCE_NODE (Varlık Referansı Düğümü)"
+			}else if(metin=="6"){
+				deger	=  "ENTITY__NODE (Varlık Düğümü)"
+			}else if(metin=="7"){
+				deger	=  "PROCESSING_INSTRUCTION_NODE	(İşlem Yönergesi Düğümü)"
+			}else if(metin=="8"){
+				deger	=  "COMMENT_NODE (Açıklama Düğümü)"
+			}else if(metin=="9"){
+				deger	=  "DOCUMENT_NODE (Döküman / Belge Düğümü)"
+			}else if(metin=="10"){
+				deger	=  "DOCUMENT_TYPE_NODE (Döküman / Belge Türü Düğümü)"
+			}else if(metin=="11"){
+				deger	=  "DOCUMENT_FARGMENT_NODE (Döküman / Belge Parçası / Bölümü Düğümü)"
+			}else if(metin=="12"){
+				deger	=  "NOTATION_NODE (Gösterim	Düğümü)"
+			}else{
+				deger 	=  "Tanımlanmayan Düğüm."
+			}
+			document.getElementById("sonuc").innerHTML += "Düğümün Numara değeri: " + metin + " , " + "Düğümün Açıklaması: " + deger + "<br>";
+			
+		}
+	}
+	
+</script>	
+</body>
+</html>

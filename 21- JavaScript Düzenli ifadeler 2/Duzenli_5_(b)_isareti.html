@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+										/* Konum belirleyici*/
+	// \b	= Düzenli ifade dahilinde kontrol edilecek olan değişken içeriğinin düzenli ifade uygun olabilecek metin parçalarını karakter dizilim içerisindeki kelimelerin başında yada sonunda aranılır.
+	
+	var metin	= "xvolkanx xvolkanx xVolkan";
+	var ifade 	= new RegExp("volkan\\b","ig"); // (//b) nerede ise oradan başlar.
+	var sonuc 	= metin.search(ifade);
+	document.write(sonuc);
+	
+</script>	
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	//  sort()		= Dizi içeriğinin sıralanmasını sağlar. Metot UNİCODE(Evrensel kod) olarak çalışır
+	
+	
+									/* String veriler */
+				document.write("<br> String verilerle <br><br>")
+									/* String veriler */
+	
+	
+	var isimler 	= ["Volkan","Ümit","Serkan","Onur","Hakan","Icabi"];
+	document.write(isimler + "<br> <br>");
+	
+	isimler.sort();
+	document.write("Çıktılar : " + isimler + "<br>");
+	
+
+									/* Sayısal veriler */
+				document.write("<br> Sayısal verilerle <br><br>")
+									/* Sayısal veriler */
+	
+	
+	
+	var sayilar 	= [2,12,100,44,53,8.55,75,10.12];
+	document.write(sayilar + "<br> <br>");
+	sayilar.sort();
+	document.write("Çıktılar : " + sayilar + "<br>");
+	
+	
+									/* Karışık veriler */
+				document.write("<br> Karışık verilerle <br><br>")
+									/* Karışık veriler */
+	
+	
+	var icerikler 	= ["Volkan","Ümit","Serkan","Onur",12,100,"$","!","+","Hakan","Icabi"];
+	document.write(icerikler + "<br> <br>");
+	
+	icerikler.sort();
+	document.write("Çıktılar : " + icerikler + "<br>"); 
+	// Özel karakterler önce başlar sonra sayılar sonra string değerler.
+	
+</script>	
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+	<div id="alan">
+		<p id="bir">JavaScript Eğitim Seti</p>
+		<p id="iki">PHP Eğitim Seti</p>
+	
+	</div>
+	<div id="sonuc"></div>
+	
+<body>
+<script type="text/javascript" language="javascript">
+	// contains()	= Belge içerisindeki herhangi bir node'un (düğümün), başka bir node'un (düğümün) alt node (düğüm) olup olmadığını kontrol ederek sonucu boolean (mantıksal) veri türünde sonucu geriye döndürür.
+	
+	var kontrol	= document.getElementById("iki");
+	var islem	= document.getElementById("alan").contains(kontrol);
+	document.getElementById("sonuc").innerHTML = islem;
+</script>	
+</body>
+</html>

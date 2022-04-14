@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	// {deger} 	= Düzenli ifade dahilinde kontrol edilecek olan değişken içeriği karakter diziliminde bulunan değerin (deger) defa tekrarlanmış olması gerektiğini belirtmen için kullanılır.
+	
+	var metin	= "JavAaAAScript eğitim seti";
+	var ifade 	= new RegExp("a{4}","i"); /// Yan yana olması gerekiyor (a)'ların --> /a{4}/i; --> aynısı
+	var ifade2 	= new RegExp("a{5}","i"); /// False dönecektir çünkü yan yana 5 tane (a) yok.
+	var sonuc 	= ifade.test(metin);
+	var sonuc2 	= ifade2.test(metin);
+	
+	document.write(sonuc + "<br>");
+	document.write(sonuc2);
+	
+</script>	
+</body>
+</html>

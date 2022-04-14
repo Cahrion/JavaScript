@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<button onClick="ornek()">Tıklayınız</button>
+	<br><br>
+	
+	<a id="baglanti">Bağlantıya Git</a>
+	
+<script type="text/javascript" language="javascript">
+	// setAttributeNode()	=	Belge içerisindeki her hangi bir HTML elemanına createAttribute() metodu ile oluşturulan özellik node'unu (düğümünü) node object'ine (düğüm nesenesine) uygulamak için kullanılır.
+	
+	function ornek(){
+		var baglan 	= document.getElementById("baglanti");
+		var eklenecekozellik 	= document.createAttribute("href");
+		eklenecekozellik.value	= "https://www.google.com.tr";
+		var eklenecekozellik2 	= document.createAttribute("target");
+		eklenecekozellik2.value	= "_blank";		
+		var eklenecekozellik3 	= document.createAttribute("style");
+		eklenecekozellik3.value	= "color:blue;font-size:25px;";
+		baglan.setAttributeNode(eklenecekozellik);
+		baglan.setAttributeNode(eklenecekozellik2);
+		baglan.setAttributeNode(eklenecekozellik3);
+	}
+</script>	
+</body>
+</html>

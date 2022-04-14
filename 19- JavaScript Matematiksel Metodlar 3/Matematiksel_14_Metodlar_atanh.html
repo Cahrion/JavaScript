@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	// atanh()	= Kendisine parametre olarak verilen -1 ile 1 sayısı arasında herhangi bir sayı değerinin arc hiperbolik  tanjantını bularak,bulduğu değeri geriye döndürür.
+	
+	var sayibir 	= "-0.5656";
+	var sayiiki		= true; // 1
+	var sayiuc		= false; // 0 
+	var sayidort	= new Date();  // Yüksek sayı
+	var sayibes		= -10; // Alçak sayı
+	var sayialti	= "10 - Lale"; // String Sayı
+	
+	document.write("Değer: " + sayibir  + "<br>");
+	document.write("Değer: " + sayiiki  + "<br>");	
+	document.write("Değer: " + sayiuc   + "<br>");	
+	document.write("Değer: " + sayidort + "<br>");
+	document.write("Değer: " + sayibes  + "<br>");
+	document.write("Değer: " + sayialti + "<br> <br>");
+	
+	var sonucbir		= Math.atanh(sayibir);
+	var sonuciki		= Math.atanh(sayiiki);
+	var sonucuc			= Math.atanh(sayiuc);
+	var sonucdort		= Math.atanh(sayidort);
+	var sonucbes		= Math.atanh(sayibes);
+	var sonucalti		= Math.atanh(sayialti);
+
+	document.write("Sonuç: " + sonucbir  +"<br>");
+	document.write("Sonuç: " + sonuciki  +"<br>");
+	document.write("Sonuç: " + sonucuc   +"<br>");	
+	document.write("Sonuç: " + sonucdort +"<br>");
+	document.write("Sonuç: " + sonucbes  +"<br>");	
+	document.write("Sonuç: " + sonucalti +"<br>");
+	
+</script>	
+</body>
+</html>

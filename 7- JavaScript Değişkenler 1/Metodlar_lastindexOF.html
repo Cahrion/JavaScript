@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	// lastindexOf() 	= 	Değişken içerisinde parametrik olarak verilen değeri arar ve son eşleşmeyi sağlayan değişken içeriğinin indis / index değerini geriye gönderir.
+	
+	var metin 	= "JavaScript dünya genelinde kullanılan en yaygın Script dilidir";
+	document.write(metin + "<br>");
+	
+	var sonuc = metin.lastIndexOf("Script"); // Sondaki değeri alır.
+	document.write(sonuc + "<br>");
+			/* 	Belli bir sınıra kadar bak denilebilir.*/
+	var sonuc = metin.lastIndexOf("Script",5); // Sondaki değeri alır.
+	document.write(sonuc);
+</script>	
+</body>
+</html>

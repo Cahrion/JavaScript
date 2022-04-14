@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	var bilgiler = {
+		isim:"İcabi",
+		soyisim:"Kırgız",
+		detaylar:function(){
+			var yas 	= "18";
+			var meslek 	= "Yazılımcı";
+			var islem 	= [yas,meslek];
+			return islem;
+		}
+	};
+	
+	var bilgi 	= bilgiler.detaylar();
+	document.write(bilgi);
+	
+</script>	
+</body>
+</html>

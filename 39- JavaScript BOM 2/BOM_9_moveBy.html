@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<button onClick="bir()">Pencere Aç</button>
+	<button onClick="iki()">Taşı (+)</button>
+	<button onClick="uc()"> Taşı (-)</button>
+	
+<script type="text/javascript" language="javascript">
+	// moveBy()	=	Pencerenin sol üst koşe koordinatı baz alınarak bilgisayar ekranına göre belirtilen konuma taşımak için kullanılır.
+	
+	var pencere;
+	
+	function bir(){
+		pencere	= window.open("","Icabi Kırgız","width=100,height=75,left=400,top=500",true)
+	}	
+	function iki(){
+		pencere.moveBy(100,400); // Verilen Sayının üstüne verilen sayıyı ekler. (left-top)
+	}	// Ek bilgi değiştirilse o değiştirilen veriye göre ekleme yapılır.
+	function uc(){
+		pencere.moveBy(-100,-100); // Verilen Sayının üstüne verilen sayıyı ekler. (left-top)
+	}	// Ek bilgi değiştirilse o değiştirilen veriye göre ekleme yapılır.
+	
+</script>	
+</body>
+</html>

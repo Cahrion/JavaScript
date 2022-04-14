@@ -1,0 +1,14 @@
+{
+	"isim"				:"Volkan",
+	"soyisim"			:"Alakent",
+	"yas"				:"36",
+	"meslek"			:"Bilgisayar Yazılımcısı",
+	"sehir"				:"İstanbul",
+	"bilinendiller"		:[
+		{"dil":"JavaScript", "seviye":"Uzman"},
+		{"dil":"PHP", 		 "seviye":"Uzman"},
+		{"dil":"HTML", 		 "seviye":"Uzman"},
+		{"dil":"CSS", 		 "seviye":"Uzman"},
+		{"dil":"ASP", 		 "seviye":"İleri Seviye"}
+	]
+}

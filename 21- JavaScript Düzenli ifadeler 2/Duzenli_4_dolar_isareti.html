@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+										/* Konum belirleyici*/
+	// $ 	=  Düzenli ifade dahilinde kontrol edilecek olan değişken içeriği karakter diziliminin sonu ile düzenli ifade arasındaki bir eşleşme aramak için kullanılır.
+	
+	var metin 	= "Dersimizin konusu JavaScript.";
+	
+	var ifade1		= new RegExp("JavaScript$"); // ($) eğer varsa sonda olmak zorunludur.
+	var ifade2		= new RegExp("JavaScript.$"); // ($) eğer varsa sonda olmak zorunludur.
+	var ifade3		= new RegExp("Dersimizin$","gim"); // (Ayarlar) işe yaramaz.
+	var ifade4		= new RegExp("^Dersimizin$"); // Bir yanlış değer hepsini yanlış yapar.
+	
+	var sonuc1 		= ifade1.test(metin);
+	var sonuc2 		= ifade2.test(metin);
+	var sonuc3		= ifade3.test(metin);
+	var sonuc4		= ifade4.test(metin);
+	
+	document.write(sonuc1 + "<br>");
+	document.write(sonuc2 + "<br>");
+	document.write(sonuc3 + "<br>");
+	document.write(sonuc4 + "<br>");
+	
+</script>	
+</body>
+</html>

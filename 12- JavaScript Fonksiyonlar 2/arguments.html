@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	// arguments 	= Fonksiyona herhangi bir parametre tanımlanmadan bile gelebilecek tüm parametre değerlerinin alınmasını sağlar.
+	
+	function ornek(isim,soyisim){
+		for(var baslangic =0;baslangic<arguments.length;baslangic++){
+			document.write(arguments[baslangic] + "<br>");
+		}
+	}
+	ornek("Volkan","Alakent","18","Dünya","Avrupayi");
+	
+	
+	function ornek2(){
+		var sonuc = arguments.length;
+		document.write(sonuc);
+		
+	}
+	ornek2("Icabi","KIRGIZ","18","Dünya")
+</script>	
+</body>
+</html>

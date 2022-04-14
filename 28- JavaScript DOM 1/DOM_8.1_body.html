@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<button onClick="islem('yellow')">Boya</button>
+	<button onClick="islem('black')">Siyah</button>
+	<button onClick="islem('blue')">Mavi</button>
+	<button onClick="islem('red')">Kırmızı</button>
+	<button onClick="islem('green')">Yeşil</button>
+	<button onClick="islem('white')">Beyaz</button>
+<script type="text/javascript" language="javascript">
+	// body		= Belge içerisindeki body tag'ının (etiketinin) referansını elde etmek için kullanılır.
+	function islem(renk){
+		document.body.style.backgroundColor = renk;
+	}
+</script>	
+</body>
+</html>

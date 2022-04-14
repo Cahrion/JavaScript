@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+	<style>
+		.deneme { font-size:25px; color:whitesmoke}
+	</style>
+</head>
+
+<body>
+	<div id="birincikimlik" name="birinciism" style="background-color: #FF0004" class="deneme">Volkan Alakent</div><br>
+	<div id="sonucalani"></div>
+	<div id="sonucalani2"></div>
+	<div id="sonucalani3"></div>
+	<div id="sonucalani4"></div>
+	
+	
+<script type="text/javascript" language="javascript">
+	// name	= Belge içerisindeki HTML elemanına eklenmiş olan özellik adı referansını elde etmek için kullanılır. HTML elemanının içerisindeki özellik sayısı 1'den fazla ise her bir özellik adı referansı döngüyle elde edilebilir.
+	var islem	= document.getElementById("birincikimlik").attributes[0].name;
+	var islem2	= document.getElementById("birincikimlik").attributes[1].name;
+	var islem3	= document.getElementById("birincikimlik").attributes[2].name;
+	var islem4	= document.getElementById("birincikimlik").attributes[3].name;
+	document.getElementById("sonucalani").innerHTML  = "İlk özelligin adı : " + islem;
+	document.getElementById("sonucalani2").innerHTML = "ikinci özelligin adı : " + islem2;
+	document.getElementById("sonucalani3").innerHTML = "ucuncu özelligin adı : " + islem3;
+	document.getElementById("sonucalani4").innerHTML = "son özelligin adı : " + islem4;
+</script>	
+</body>
+</html>

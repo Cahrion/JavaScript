@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	
+	function deneme(){
+		var deger	=	"İşlem";
+		function sonuc(deger="Örnek"){
+			document.write(deger);
+		}
+		document.write(deger);
+		return sonuc;
+	}
+	deneme()("Volkan");
+	
+	
+	
+	// Deney // Deger="Örnek" sadece Local alanda çalışır globala etki etmez.
+	
+	function deneme(){
+		var deger	=	"İşlem";
+		function sonuc(deger="Örnek"){
+			document.write(deger);
+		}
+		sonuc();
+		document.write(deger);
+	}
+	deneme();
+</script>	
+</body>
+</html>

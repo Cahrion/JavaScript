@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	// concat() 	= Üzerinde çalışılan diziye parametrik olarak verilen eleman veya elemanları yada dizi veya dizileri dahil ederek yeni bir dizi oluşturur. Oluşturmuş olduğu dizi değerini geriye döndürür.
+	
+	var renkler 	= ["Siyah","Gri","Beyaz","Sarı","Bej","Mavi","Kırmızı"];
+	var ekrenkler 	= ["Siyam","Açık Mavi","Lacivert"];
+	var isimler 	= ["Aslı","Ahmet","Umut","Ali","Muzaffer","Ayça"];
+	document.write("Renkler  : " + renkler + "<br> <br>");
+	document.write("EkRenkler: " + ekrenkler + "<br> <br>");
+	
+	// 1. Parametre = Alınan değeri sona ekleme yaparak döndürür.
+	var islemyap 	= renkler.concat(ekrenkler,isimler,"Abdullah");
+	document.write("Normal Dizi :" + renkler + "<br>");
+	document.write("Normal Dizi :" + ekrenkler + "<br>");
+	document.write("Normal Dizi :" + isimler + "<br> <br>");
+	document.write("Yeni oluşan dizi:" + islemyap + "<br> <br>");
+
+	
+</script>	
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body onclick="aktifeleman()">
+	İsim Soyisim :
+	<br>
+	<input id="1" type="text">
+	<br>
+	<input id="2" type="text">
+	<br>
+	<input id="3" type="text">
+	<br>	
+	<input id="4" type="text">
+	<br>	
+	<input id="5" type="text">
+	<br>	
+	<input id="6" type="text">
+	<br>	
+	<input id="7" type="text">
+	<br>	
+	<input id="8" type="text">
+	<br>
+	<div id="Sonuc">Sonuc: </div>
+	
+<script type="text/javascript" language="javascript">
+	// activeElement	= Belge içerisinde ki seçili veya odaklanılmış elemanın referansını elde etmek için kullanılır.
+	function aktifeleman(){
+		var sonuc	= document.activeElement.id;
+		document.getElementById("Sonuc").innerHTML += sonuc + "<br>";
+	}
+</script>	
+</body>
+</html>

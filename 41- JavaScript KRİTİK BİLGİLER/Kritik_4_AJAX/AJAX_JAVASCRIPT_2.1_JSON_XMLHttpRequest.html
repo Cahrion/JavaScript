@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<button onClick="deney()">Bilgileri Getir</button>
+	<br><br>
+	<div id="sonuc">Verileri elde etmek için Yukarıdaki butona tıklayınız.</div>
+	
+<script type="text/javascript" language="javascript">
+	function deney(){
+		var istek	= new XMLHttpRequest();
+		istek.onreadystatechange = function(){
+			if(this.readyState == 4 && this.status==200){
+				var jsondegerleri 	= JSON.parse(this.responseText);
+				var metinsonuc		= "";
+				var setdegerleri	= jsondegerleri.setler;
+				var setuzunlugu		= setdegerleri.length;
+				for(var baslangic=0;baslangic<setuzunlugu;baslangic++){
+					metinsonuc   += "Eğitim Seti Adı : " + setdegerleri[baslangic].icerik + "<br>Eğitmen: " + setdegerleri[baslangic].egitmen + "<br>Fiyat: " + setdegerleri[baslangic].fiyat + "<br><br>";
+				}
+				
+				document.getElementById("sonuc").innerHTML = metinsonuc;
+			}else{
+				document.getElementById("sonuc").innerHTML = "Bilinmeyen bir hata oluştu.";
+			}
+			
+		};
+		istek.open("GET","Dokuman/veriiki.json", true);
+		istek.send();
+	}
+	
+</script>	
+</body>
+</html>

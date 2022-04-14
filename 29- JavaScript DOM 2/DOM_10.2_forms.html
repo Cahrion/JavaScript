@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<form id="birinciform">
+		Adı Soyad: <input type="text" id="birincimetinkutusu" name="metinkutusubir" value="Volkan Alakent">
+		Sehir 	 : <input type="text" id="birincisehirkutusu" name="sehirkutusubir" value="istanbul">
+	</form>
+			<button onClick="bilgi()">Kaydet</button>
+	<br><br><br>
+	
+	<form id="ikinciform">
+		Web Sitesi 	 : <input type="text" id="birinciwebkutusu" name="webkutusubir" value="https://www.extraegitim.com">
+		E-mail Adresi 	 : <input type="text" id="birinciemailkutusu" name="emailkutusubir" value="info@extraegitim.com">
+		<button>Kaydet</button>
+	</form>
+	
+	<br><br><br>
+	
+	<div id="sonucalani"></div>
+
+<script type="text/javascript" language="javascript">
+	// forms	=	Belge içerisindeki form tag'ına (etiketine) sahip elemanların referansını elde etmek için kullanılır. Eleman referansları birden fazla ise her bir eleman döngüyle elde edilebilir.
+	function bilgi(){
+		var formumuz 	= document.forms[0];
+		var adet		= formumuz.length;
+		var dizi  = []
+		for(var baslangic=0;baslangic<adet;baslangic++){
+			var deger = formumuz.elements[baslangic].value;
+			dizi[baslangic] = deger;
+		}
+		document.getElementById("sonucalani").innerHTML = "Form Elemanları içerikleri: " + dizi;
+	}
+</script>	
+</body>
+</html>

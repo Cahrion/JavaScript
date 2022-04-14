@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+	<style>
+		.hedefalani{
+			background-color: #F1F1F1;
+			color:blue;
+			width: 500px;
+			height: 250px;
+			text-align: center;
+			border: 3px double #3D3D3D;
+		}
+	</style>
+</head>
+
+<body>
+	<span draggable="true">JavaScript</span><br><br><br>
+	<div id="hedef" class="hedefalani" ondragover="deney(this)" ondragleave="deney2()">Hedef Alani</div>
+	<div id="sonuc"></div>
+<script type="text/javascript" language="javascript">
+	// ondragover	= Belge içerisindeki herhangi bir elemanın hedef kapsama alanı üzerindeyken belirtilecek olan fonksiyon çalışır.
+	function deney(parametre){
+		document.getElementById("sonuc").innerHTML += "Alanın içinde";
+		parametre.style.backgroundColor = "black";
+		parametre.style.color = "white";
+		parametre.style.borderColor = "red";
+	}	
+	function deney2(){
+		document.getElementById("sonuc").innerHTML  = "Alandan çıktı";
+	}
+</script>	
+</body>
+</html>

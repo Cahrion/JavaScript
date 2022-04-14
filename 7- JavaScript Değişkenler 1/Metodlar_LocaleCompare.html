@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	// localeCompare() =  Üzerinde çalışılan değişkene parametrik olarak verilen diğer bir değişken içeriğini tarayıcı diline göre karşılaştırarak sonucu geriye döndürür. (UNİCOD (Evrensel kod))
+	// Sonuç değerleri:
+	// -1			=  Birinci değişken içeriği, ikinci değişken içeriğinde önce geliyorsa	
+	// 0			=  Birinci değişken içeriği, ikinci değişken içeriğine eşitse
+	// 1			=  Birinci değişken içeriği, ikinci değişken içeriğinde sonra geliyorsa
+	var icerikbir = "199";
+	var icerikiki = "29";
+	document.write(icerikbir + "<br>");
+	document.write(icerikiki + "<br>" + "<br>");
+	
+	var sonuc  		= icerikbir.localeCompare(icerikiki);
+	document.write(typeof sonuc + " : "+ sonuc + "<br>");
+
+	
+</script>	
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	
+	<div id="sonucalani"></div>
+	<button id="button2">Tıkla.</button>
+	
+<script type="text/javascript" language="javascript">
+	// addEventListener()	=	Belgeye event (olay) işaretleyicisi / dinleyicisi eklemek için kullanılır. İşaretlenen veya dinlenen event (olay) belgede gerçekleşecek olur ise belirtilecek olan fonksiyon veya fonksiyonlar çalışır.
+
+		// Parametreler.
+	// mousemove = Harekete göre işlevi çalıştırır.
+	// mouseover = Fare sitenin içine girdiyse çalıştırır.
+	// mouseout  = Fare sitenin dışına çıktıysa çalıştırır.
+	// click  	 = Tıklanınca çalıştırır.
+	
+	document.getElementById("button2").addEventListener("click", function ornek(){
+		document.body.style.background = "yellow" ;
+	});
+	document.getElementById("button2").addEventListener("mousemove"	, ornek2);
+	document.getElementById("button2").addEventListener("mouseover"	, ornek3);
+	document.getElementById("button2").addEventListener("mouseout"	, ornek4);
+
+
+	function ornek2(){
+		document.getElementById("sonucalani").innerHTML = Math.random() *10;
+	}		
+	function ornek3(){
+		document.getElementById("button2").style.backgroundColor = "blue";
+	}		
+	function ornek4(){
+		document.getElementById("button2").style.backgroundColor = "white";
+	}	
+
+	
+</script>	
+</body>
+</html>

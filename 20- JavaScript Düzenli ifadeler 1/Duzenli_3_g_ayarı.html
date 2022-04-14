@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	// g ayarı 	= Düzenli ifade dahilinde kontrol edilecek olan değişken içereğinin tamamının kontrol edilmesini sağlar.
+	
+	var icerik 	= "Merhabalar Volkan nasılsın";
+	var ifade	= new RegExp("a","g"); // ikinci parametre (g) ayarı mantığında
+	var ifade2	= /a/g; // ikinci parametre (g) ayarı mantığında
+	var sonuc 	= icerik.match(ifade);
+	var sonuc2 	= icerik.match(ifade2);
+	document.write(sonuc + "<br>")
+	document.write(sonuc2 + "<br>")
+	
+</script>	
+</body>
+</html>

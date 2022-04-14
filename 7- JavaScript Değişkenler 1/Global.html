@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	/*
+	Global alan
+	{
+	
+	Local Alan
+	
+	}
+	Global alan
+	{
+	Local Alanın Globalı ve Global alanın localı
+		{
+		Local Alan
+		
+		}
+	
+	
+	}
+	Global alan
+	*/
+	
+	// var | var
+	
+var isim 	=	"Volkan";
+	
+if(true){
+	var isim 	=	"Hakan";
+	document.write(isim);
+   }
+document.write(isim);
+	
+	// let | let
+	
+let isimlet 	=	"Volkan";
+	
+if(true){
+	let isimlet 	=	"Hakan";
+	document.write(isimlet);
+   }
+document.write(isimlet);
+
+	// const | const
+	
+const isimconst 	=	"Volkan";
+	
+if(true){
+	const isimconst 	=	"Hakan";
+	document.write(isimconst);
+   }
+document.write(isimconst);
+	// Normal olarak ise localdan globala çıkıyoruz
+if(true){
+	isimglobal 	=	"Hakan";
+   }
+document.write(isimglobal);	
+	
+
+	
+</script>	
+</body>
+</html>

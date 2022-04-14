@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	// replace()	= 	Kendisine verilecek olan düzenli ifadeli parametreler doğrultusunda değişken içeriğini kontrol eder ve aranan değerin eşleşmesi durumunda eşleşmeyi sağlayan değerlerin değişimini saplayarak. Yeni bir içerik oluşturur. Oluşturduğu değeri geriye döndürür.
+	
+	var metin 		= "Merhabalar Volkan, merhaba hakan ve onur. Hakan nasılsın";
+	var ifade		= new RegExp("(hakan|onur)","ig"); // (|) parentezler içindeki grup olarak görür ve (|) bu işaretle ikisini de tekil olarak alarak istenene dönüştürür.
+	var sonuc 		= metin.replace(ifade,"yahya");
+	document.write(sonuc);
+	
+</script>	
+</body>
+</html>

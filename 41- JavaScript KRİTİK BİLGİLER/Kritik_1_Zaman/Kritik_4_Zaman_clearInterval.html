@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<button onClick="aktif()">Zamanlayıcıyı aktif et</button>
+	<button onClick="iptal()">Zamanlayıcıyı iptal et</button>
+	<button onClick="sifirlama()">Zamanlayıcıyı sıfırla</button>
+	<div id="sonuc">0</div>
+<script type="text/javascript" language="javascript">
+	// clearInterval()		= setInterval() metodu kullanılarak oluşturulmuş olan zamanlayıcıyı kaldırmak / iptal etmek / geçersiz kılmak için kullanılır.
+	var zamanlayici;
+	function aktif(){
+		zamanlayici = setInterval(function(){
+			ozel();
+		},1000)
+	}
+	function ozel(){
+		var deger = Number(document.getElementById("sonuc").innerHTML);
+		deger	  =	deger + 1;
+		document.getElementById("sonuc").innerHTML = deger;
+
+	}
+	function iptal(){
+		clearInterval(zamanlayici);
+	}	
+	function sifirlama(){
+		clearInterval(zamanlayici);
+		document.getElementById("sonuc").innerHTML = 0;
+	}
+
+	
+	
+</script>	
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	
+	var bilgiler	= {
+		deger:function(isim,soyisim,setadi="JavaScript"){ 
+			// Varsayılan değer = "JavaScript" eğer verilmezse bu değer girilir.
+			var isimdegeri 		= isim;
+			var soyisimdegeri 	= soyisim;
+			var setadidegeri 	= setadi;
+			
+			var metin 			= isimdegeri + " " + soyisimdegeri + " | " + setadidegeri + " Eğitimi";
+			return metin;
+		}
+	};
+	
+	var sonuc 	= bilgiler.deger("Volkan","Alakent");
+	document.write(sonuc);
+</script>	
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<pre> <!-- Burada ki pre dikey tab'ın gözükebilmesi için gereklidir.-->
+<script type="text/javascript" language="javascript">
+	// \v 		= Düzenli ifade dahilinde kontrol edilecek olan değişken içeriği karakter diziliminde bulunan değerin, sadece dikey sekme karakteriyle eşleşmesi gerektiğini belirtmek için kullanılır. (Dikey Tab)
+	// 	\u000B	=	16 Bit yazma şekli (Dikey Tab | \v)
+	
+	var metin 	= 	"Volkan Alakent\u000B JavaScript eğitim seti";
+	var ifade 	= 	new RegExp("\\v","g");//--> \/v\g;
+	var sonuc 	=	ifade.test(metin);
+	
+	document.write(metin + "<br>");
+	document.write(sonuc);
+	
+	
+</script>
+</pre>
+</body>
+</html>

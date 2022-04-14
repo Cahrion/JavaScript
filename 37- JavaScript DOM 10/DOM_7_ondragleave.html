@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+	<style>
+		.hedefalani{
+			background-color: #F1F1F1;
+			border: 1px solid black;
+			width: 500px;
+			height: 250px;
+			text-align: center;
+		}
+	</style>
+</head>
+
+<body>
+	<span draggable="true">Volkan Alakent</span><br><br>
+	<div id="hedef" class="hedefalani" ondragleave="deney()">Hedef</div>
+	<div id="sonuc"></div>
+<script type="text/javascript" language="javascript">
+	// ondragleave 	= Belge içerisindeki herhangi bir elemanın hedef kapsama alanından çıkış yaptığında belirtilecek olan fonksiyon çalışır.
+	
+	function deney(){
+		document.getElementById("sonuc").innerHTML = "Çıkış Yaptınız";
+		document.getElementById("hedef").style.backgroundColor = "#FFFFFF";
+		document.getElementById("hedef").style.borderColor = "blue";
+		document.getElementById("hedef").style.color = "blue";
+	}
+	
+</script>	
+</body>
+</html>

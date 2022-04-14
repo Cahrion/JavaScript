@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<button onClick="deney()">Pencere Aç</button>
+<script type="text/javascript" language="javascript">
+	// outerWidth	= Pencerenin tüm alanının genişlik değerini elde etmek içni kullanılır.
+	// outerWidth	= Pencerenin tüm alanının yükseklik değerini elde etmek içni kullanılır.
+	
+	function deney(){
+		var pencere	= open("","Yeni Pencere","width=1000,height=750,left=400,top=200",true);
+		var genislik	= pencere.outerWidth;
+		var yukseklik	= pencere.outerHeight;
+
+		pencere.document.write("Tüm pencere genisliği: " + genislik + "<br>");
+		pencere.document.write("Tüm pencere yüksekliği: " + yukseklik);
+		
+	}	
+
+</script>	
+</body>
+</html>

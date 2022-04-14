@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	//  fill()	 	= Kendisine verilecek olan parametreler ile tanımlanmış dizi aralığında bulunan değeri parametreler ile belirtilmiş olan değer doğrultusunda dizinin elemanlarını değiştirir. Dizinin değerini geriye döndürür.
+	
+	var renkler 	= ["Siyah","Gri","Beyaz","Sarı","Bej","Mavi","Kırmızı"];
+	document.write(renkler + "<br> <br>");
+	
+	//1. Parametre 	= Değer
+	//2. Parametre 	= Başlangıç İndisi / İndex
+	//3. Parametre 	= Bitiş İndisi / İndex
+
+	renkler.fill("Yeşil",4,6);
+	document.write("Son Durum :" + renkler + "<br>");	// Bej ve Mavi = Yeşile dönüştü.
+
+	
+</script>	
+</body>
+</html>

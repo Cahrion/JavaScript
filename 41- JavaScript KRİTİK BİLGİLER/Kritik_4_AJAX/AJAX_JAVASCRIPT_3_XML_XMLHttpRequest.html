@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+	<style>
+		table,th,td {
+			border: 1px solid black;
+			border-collapse: collapse;
+		}
+		th,td{
+			padding: 5px;
+			width: 350px;
+		}
+	</style>
+</head>
+
+<body>
+	 <button onClick="deney()">Eğitim Setlerini Listele</button>
+	<br><br>
+	<table id="sonuc">
+		
+	</table>
+	
+<script type="text/javascript" language="javascript">
+	 function deney(){
+		 var istek		= new XMLHttpRequest();
+		 istek.onreadystatechange = function(){
+			 if(this.readyState == 4 && this.status == 200){
+				 var tablo			=	"<tr style='background-color:#FFFCCC'><th>Eğitim Seti Adı</th><th>Eğitmen Adı</th><th>Set Ücreti</th></tr>";
+				 
+				 var xmldegerleri	=	istek.responseXML;
+				 var etiket 		=	xmldegerleri.getElementsByTagName("SETLER");
+				 var etiketsayisi	= 	etiket.length;
+				 for(var baslangic=0;baslangic<etiketsayisi;baslangic++){
+					 var renkkontrol		= baslangic % 2;
+					 if(renkkontrol==0){
+						 var renkyaz	=  "style=\"background-color: aliceblue\"";
+					 }else{
+						 var renkyaz	=  "style=\"background-color: #FFFFFF\"";
+					 }
+					 
+					 var icerik		=	etiket[baslangic].getElementsByTagName("ICERIK")[0].innerHTML;
+					 var egitmen	=	etiket[baslangic].getElementsByTagName("EGITMEN")[0].innerHTML;
+					 var fiyat		=	etiket[baslangic].getElementsByTagName("FIYAT")[0].innerHTML;
+					 tablo		   +=	"<tr " + renkyaz + " ><td>" + icerik + "</td><td>" + egitmen + "</td><td>" + fiyat + "</td></tr>";
+				 }
+				 document.getElementById("sonuc").innerHTML	 = tablo;
+			 }else{
+				document.getElementById("sonuc").innerHTML	 = "<tr><td>İstek veya Yanıt anında hata oluştu.</td></tr>";
+			 }
+		 }
+		 istek.open("GET","Dokuman/katalog.xml");
+		 istek.send();
+	 }
+	
+</script>	
+</body>
+</html>

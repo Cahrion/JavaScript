@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<input type="text" value="Icabi Kırgız" oncut="ornek()">
+	<div oncut="ornek()">Normal (DIV) etiketinde kesme işlemi yapılamaz</div>
+	<div contenteditable="true" oncut="ornek()">Düzenlenebilir (DIV) etiketinde kesme işlemi yapılabilir</div>
+<script type="text/javascript" language="javascript">
+	// oncut	= Form veya belge içerisindeki bir elemanının metin içeriği kullanıcı tarafından kesildiğinde belirtilecek olan fonksiyon çalıştırılır.
+
+	function ornek(){
+		alert("Metin içeriği kesildi.");
+	}
+</script>	
+</body>
+</html>

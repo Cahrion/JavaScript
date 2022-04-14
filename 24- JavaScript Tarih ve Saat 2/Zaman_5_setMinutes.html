@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	// setMinutes()	 = Kendisine parametre olarak belirtilmiş değer doğrultusunda kullanıldığı değişken içeriğine dakika bilgisini 0 ila 59 arasında rakamsal olarak depolar. Depoladığı veriyi geriye döndürür.  Ek olarak da çoklu ayarlama işlemi yapılabilir.
+	
+	var zaman = new Date();
+	zaman.setMinutes(15); // Dakika verisi (15) verilebilir.
+	zaman.setMinutes(15,2); // saniye verisi (2) verilebilir.
+	zaman.setMinutes(15,2,875); // milisaniye verisi (875) verilebilir.
+	var Milizaman = zaman.getMilliseconds();
+	document.write(zaman + "<br>");
+	document.write(Milizaman);
+</script>	
+</body>
+</html>

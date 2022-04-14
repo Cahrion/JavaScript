@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body onLoad="dugumsayisi()">
+	<button onClick="dugumekle()">Node (Dügüm) ekle</button><br>
+	<button onClick="dugumsayisi()">Normalize Çalıştır</button><br><br> <!-- birleştirir ve gereksiz kopyayı engeller.-->
+	
+	<div id="sonuc"></div>
+	<div id="sonuc2"></div>
+<script type="text/javascript" language="javascript">
+	// normalize()	= Belge içerisindeki boş text node'larını (dügümlerini) kaldırarak bitişik node'a (dügüme) katılmasını sağlar.
+	
+	function dugumekle(){
+		var islem	= document.createTextNode("Yeni Düğüm");
+		var deger 	= document.body;
+		deger.appendChild(islem);
+		document.getElementById("sonuc2").innerHTML = "Normal değer: " + deger.childNodes.length; // cocuk düğümler sayısı
+	}	
+	
+	function dugumsayisi(){
+		document.normalize();
+		var deger = document.body;
+		document.getElementById("sonuc").innerHTML = "Normalize deger: " + deger.childNodes.length; // cocuk düğümler sayısı
+	}
+	
+</script>	
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+	<style>
+		#saat{
+			padding: 10px;
+			background-color: #000000;
+			border: 1px solid red;
+			color: #F1F1F1;
+		}
+	
+	</style>
+</head>
+
+<body>
+	<div style="width: 150px; margin:25px auto;"><span id="saat"></span></div>
+<script type="text/javascript" language="javascript">
+	
+	function ekle(deger){
+		var stringyap = deger.toString();
+		var uzunluk	  = stringyap.length;
+		if(uzunluk == 1){
+		   	stringyap = "0" + stringyap;
+		}
+		return stringyap;
+		
+	}
+	
+	
+	function saatguncelle(){
+		var zaman 		= new Date();
+		var saatdegeri			= zaman.getHours();
+		var dakikadegeri		= zaman.getMinutes();
+		var saniyedegeri		= zaman.getSeconds();
+		document.getElementById("saat").innerHTML = ekle(saatdegeri) + " : " + ekle(dakikadegeri) + " : " + ekle(saniyedegeri);
+	}
+	setInterval(saatguncelle,1000);
+</script>	
+</body>
+</html>

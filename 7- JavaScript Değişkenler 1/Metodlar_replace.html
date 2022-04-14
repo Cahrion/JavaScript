@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	// .replace()	= Kendisine verilecek olan parametreler doğrultusunda değişken içeriğini kontrol eder ve eşleşen değerlerin değişimi sağlayarak yeni bir içerik oluşturur.Oluşturduğu içeriği geriye döndürür. (Düzenli ifade alabilir.)
+	// 1 . parametre : Değişecek içerik.
+	// 2 . parametre : Değiştikten sonra eklenecek içerik.
+	
+	var metin = "Dünyada en yaygın olarak kullanılan script dili Php'tir";
+	document.write(metin + "<br>");
+	
+	var sonuc = metin.replace("Php", "JavaScript"); // Değiştirme işlemi yapıldı.
+	document.write(sonuc);
+	
+								/* Düzenli ifade alabilir. */
+	
+	var metin = "Php PHP php Php PHP php Php PHP php Php PHP php";
+	document.write(metin + "<br>");
+	
+	var sonuc = metin.replace(/Php/g, "JavaScript"); // g 	= Bütün değerleri ele alır.
+	document.write(sonuc + "<br>");
+	
+	var sonuc = metin.replace(/php/i, "JavaScript"); // i 	= Büyük küçük harflere takılmadan alır
+	document.write(sonuc + "<br>");
+	
+	var sonuc = metin.replace(/php/ig, "JavaScript"); // ig = birleşik şekilde de yapılabilir.
+	document.write(sonuc);
+</script>	
+</body>
+</html>

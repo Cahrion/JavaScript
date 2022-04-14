@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+	<div style="background-color: yellow">JavaScript</div>
+	<br>
+	<button onClick="deney()">Tıkla ve kaldır.</button>
+<script type="text/javascript" language="javascript">
+	// removeNamedItem()	= Belge içerisindeki HTML elemanına eklenmiş olan özellik node'nu (düğümünü) kaldırmak için kullanılır.
+	function deney(){
+		var islem	= document.getElementsByTagName("DIV")[0];
+		islem.attributes.removeNamedItem("style");
+	}
+</script>	
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>JavaScript / İcabi Kırgız</title>
+</head>
+
+<body>
+<script type="text/javascript" language="javascript">
+	// setMonth()	 = Kendisine parametre olarak belirtilmiş değer doğrultusunda kullanıldığı değişken içeriğine ay bilgisini 0 ila 11 arasında rakamsal olarak depolar. Depoladığı veriyi geriye döndürür.  Ek olarak da çoklu ayarlama işlemi yapılabilir.
+	
+	// ilk ay Ocak'tır değeri = 0
+	var zaman = new Date();
+	zaman.setMonth(11); // Gün verisi de ona göre ayarlanır.
+	zaman.setMonth(11,10); // Gün verisi de girilebilir (10)
+
+	document.write(zaman);
+	
+</script>	
+</body>
+</html>
